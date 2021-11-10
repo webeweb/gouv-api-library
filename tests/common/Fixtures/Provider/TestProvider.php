@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Fixtures\Provider;
+namespace WBW\Library\GouvAPI\Common\Tests\Fixtures\Provider;
 
-use WBW\Library\GeoAPI\Provider\AbstractProvider;
+use WBW\Library\GouvAPI\Common\Provider\AbstractProvider;
 
 /**
  * Test provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Fixtures\Provider
+ * @package WBW\Library\GouvAPI\Common\Tests\Fixtures\Provider
  */
 class TestProvider extends AbstractProvider {
 

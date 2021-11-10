@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Provider;
+namespace WBW\Library\GouvAPI\Common\Provider;
 
 use Exception;
 use GuzzleHttp\Client;
@@ -23,7 +23,7 @@ use WBW\Library\Provider\Exception\ApiException;
  * Abstract provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Provider
+ * @package WBW\Library\GouvAPI\Common\Provider
  * @abstract
  */
 abstract class AbstractProvider extends BaseProvider {
