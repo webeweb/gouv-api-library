@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Request\Adresse;
+namespace WBW\Library\GouvAPI\Adresse\Request;
 
-use WBW\Library\GeoAPI\Request\AbstractRequest;
+use WBW\Library\GouvAPI\Common\Request\AbstractRequest;
 use WBW\Library\Traits\Floats\FloatLatTrait;
 use WBW\Library\Traits\Floats\FloatLonTrait;
 use WBW\Library\Traits\Strings\StringQTrait;
@@ -21,7 +21,7 @@ use WBW\Library\Traits\Strings\StringTypeTrait;
  * Search request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Request\Adresse
+ * @package WBW\Library\GouvAPI\Adresse\Request
  */
 class SearchRequest extends AbstractRequest {
 
