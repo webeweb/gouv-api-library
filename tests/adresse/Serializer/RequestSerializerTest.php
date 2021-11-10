@@ -9,22 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Serializer;
+namespace WBW\Library\GouvAPI\Adresse\Tests\Serializer;
 
-use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
-use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
-use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
-use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
-use WBW\Library\GeoAPI\Serializer\AdresseRequestSerializer;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
+use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;
+use WBW\Library\GouvAPI\Adresse\Request\SearchCsvRequest;
+use WBW\Library\GouvAPI\Adresse\Request\SearchRequest;
+use WBW\Library\GouvAPI\Adresse\Serializer\RequestSerializer;
+use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
 
 /**
- * Adresse request serializer test.
+ * Request serializer test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Serializer
+ * @package WBW\Library\GouvAPI\Adresse\Tests\Serializer
  */
-class AdresseRequestSerializerTest extends AbstractTestCase {
+class RequestSerializerTest extends AbstractTestCase {
 
     /**
      * Tests the serializeReverseCsvRequest() method.
@@ -37,7 +37,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
         $arg = new ReverseCsvRequest();
         $arg->setData("data");
 
-        $res = AdresseRequestSerializer::serializeReverseCsvRequest($arg);
+        $res = RequestSerializer::serializeReverseCsvRequest($arg);
         $this->assertCount(1, $res);
 
         $this->assertEquals("data", $res["data"]);
@@ -55,7 +55,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
         $arg->setLat(48.789);
         $arg->setLon(2.789);
 
-        $res = AdresseRequestSerializer::serializeReverseRequest($arg);
+        $res = RequestSerializer::serializeReverseRequest($arg);
         $this->assertCount(2, $res);
 
         $this->assertEquals(48.789, $res["lat"]);
@@ -73,7 +73,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
         $arg = new SearchCsvRequest();
         $arg->setData("data");
 
-        $res = AdresseRequestSerializer::serializeSearchCsvRequest($arg);
+        $res = RequestSerializer::serializeSearchCsvRequest($arg);
         $this->assertCount(1, $res);
 
         $this->assertEquals("data", $res["data"]);
@@ -97,7 +97,7 @@ class AdresseRequestSerializerTest extends AbstractTestCase {
         $arg->setCityCode("cityCode");
         $arg->setType(SearchRequest::TYPE_STREET);
 
-        $res = AdresseRequestSerializer::serializeSearchRequest($arg);
+        $res = RequestSerializer::serializeSearchRequest($arg);
         $this->assertCount(8, $res);
 
         $this->assertEquals("q", $res["q"]);
