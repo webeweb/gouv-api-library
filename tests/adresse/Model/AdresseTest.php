@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Model;
+namespace WBW\Library\GouvAPI\Adresse\Tests\Model;
 
-use WBW\Library\GeoAPI\Model\Adresse;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Adresse\Model\Adresse;
+use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
 
 /**
  * Adresse test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Model
+ * @package WBW\Library\GouvAPI\Adresse\Tests\Model
  */
 class AdresseTest extends AbstractTestCase {
 
