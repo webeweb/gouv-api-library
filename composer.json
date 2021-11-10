@@ -1,5 +1,5 @@
 {
-    "name": "webeweb/geo-api-library",
+    "name": "webeweb/gouv-api-library",
     "type": "library",
     "description": "Integrate Geo API with your projects",
     "keywords": [
@@ -12,7 +12,7 @@
         "region",
         "webeweb"
     ],
-    "homepage": "https://github.com/webeweb/geo-api-library",
+    "homepage": "https://github.com/webeweb/gouv-api-library",
     "license": "MIT",
     "authors": [
         {
@@ -50,6 +50,6 @@
         }
     },
     "support": {
-        "issues": "https://github.com/webeweb/geo-api-library/issues"
+        "issues": "https://github.com/webeweb/gouv-api-library/issues"
     }
 }

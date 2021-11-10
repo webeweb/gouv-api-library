@@ -22,7 +22,7 @@
         </whitelist>
     </filter>
     <testsuites>
-        <testsuite name="webeweb/geo-api-library">
+        <testsuite name="webeweb/gouv-api-library">
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>

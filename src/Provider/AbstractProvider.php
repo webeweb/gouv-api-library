@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the geo-api-library package.
+ * This file is part of the gouv-api-library package.
  *
  * (c) 2020 WEBEWEB
  *
@@ -47,7 +47,7 @@ abstract class AbstractProvider extends BaseProvider {
             "base_uri"    => $this->getEndpointPath() . "/",
             "debug"       => $this->getDebug(),
             "headers"     => [
-                "User-Agent" => "webeweb/geo-api-library",
+                "User-Agent" => "webeweb/gouv-api-library",
             ],
             "synchronous" => true,
         ];
