@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Request\Adresse;
+namespace WBW\Library\GouvAPI\Adresse\Request;
 
 /**
  * Reverse CSV request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Request\Adresse
+ * @package WBW\Library\GouvAPI\Adresse\Request
  */
 class ReverseCsvRequest extends AbstractCsvRequest {
 
