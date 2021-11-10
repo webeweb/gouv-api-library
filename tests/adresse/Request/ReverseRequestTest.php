@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Request\Adresse;
+namespace WBW\Library\GouvAPI\Adresse\Tests\Request;
 
-use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;
+use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
 
 /**
  * Reverse request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Request\Adresse
+ * @package WBW\Library\GouvAPI\Adresse\Tests\Request
  */
 class ReverseRequestTest extends AbstractTestCase {
 
