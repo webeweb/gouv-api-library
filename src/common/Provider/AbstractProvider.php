@@ -72,7 +72,7 @@ abstract class AbstractProvider extends BaseProvider {
             $client = new Client($config);
 
             $method  = 0 === count($postData) ? "GET" : "POST";
-            $uri     = substr($request->getResourcePath(), 1);
+            $uri     = substr($this->buildResourcePath($request), 1);
             $options = [
                 "query"     => $queryData,
                 "multipart" => $postData,
