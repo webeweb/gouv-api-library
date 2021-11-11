@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Request\Departement;
+namespace WBW\Library\GouvAPI\Geo\Request\Departement;
 
-use WBW\Library\GeoAPI\Request\AbstractRequest;
+use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
 
 /**
  * Départements request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Request\Departement
+ * @package WBW\Library\GouvAPI\Geo\Request\Departement
  */
 class DepartementsRequest extends AbstractRequest {
 
