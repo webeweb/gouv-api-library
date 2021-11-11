@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Request\Region;
+namespace WBW\Library\GouvAPI\Geo\Request\Region;
 
-use WBW\Library\GeoAPI\Model\Attribute\StringNomTrait;
-use WBW\Library\GeoAPI\Request\AbstractRequest;
+use WBW\Library\GouvAPI\Geo\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
 
 /**
  * Régions request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Request\Region
+ * @package WBW\Library\GouvAPI\Geo\Request\Region
  */
 class RegionsRequest extends AbstractRequest {
 
