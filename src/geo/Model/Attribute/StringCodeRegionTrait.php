@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Attribute;
+namespace WBW\Library\GouvAPI\Geo\Model\Attribute;
 
 /**
  * String code région trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Attribute
+ * @package WBW\Library\GouvAPI\Geo\Model\Attribute
  */
 trait StringCodeRegionTrait {
 
@@ -39,7 +39,7 @@ trait StringCodeRegionTrait {
      * Set the code région.
      *
      * @param string|null $codeRegion The code région.
-     * @return self Returns tis instance.
+     * @return self Returns this instance.
      */
     public function setCodeRegion(?string $codeRegion): self {
         $this->codeRegion = $codeRegion;
