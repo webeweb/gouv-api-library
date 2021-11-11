@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Request\Region;
+namespace WBW\Library\GouvAPI\Geo\Tests\Request\Region;
 
-use WBW\Library\GeoAPI\Request\Region\CommunesRequest;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Request\Region\CommunesRequest;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 
 /**
  * Communes request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Request\Region
+ * @package WBW\Library\GouvAPI\Geo\Tests\Request\Region
  */
 class CommunesRequestTest extends AbstractTestCase {
 
