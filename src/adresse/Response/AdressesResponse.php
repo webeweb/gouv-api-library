@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Response;
+namespace WBW\Library\GouvAPI\Adresse\Response;
 
-use WBW\Library\GeoAPI\Model\Adresse;
+use WBW\Library\GouvAPI\Adresse\Model\Adresse;
+use WBW\Library\GouvAPI\Common\Response\AbstractResponse;
 
 /**
  * Adresses response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Response
+ * @package WBW\Library\GouvAPI\Adresse\Response
  */
 class AdressesResponse extends AbstractResponse {
 
