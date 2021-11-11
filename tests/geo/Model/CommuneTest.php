@@ -9,20 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Model;
+namespace WBW\Library\GouvAPI\Geo\Tests\Model;
 
-use WBW\Library\GeoAPI\Model\Commune;
-use WBW\Library\GeoAPI\Model\Departement;
-use WBW\Library\GeoAPI\Model\Region;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 use WBW\Library\GeoJSON\Model\Geometry\Point;
 use WBW\Library\GeoJSON\Model\Geometry\Polygon;
+use WBW\Library\GouvAPI\Geo\Model\Commune;
+use WBW\Library\GouvAPI\Geo\Model\Departement;
+use WBW\Library\GouvAPI\Geo\Model\Region;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 
 /**
  * Commune test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Model
+ * @package WBW\Library\GouvAPI\Geo\Tests\Model
  */
 class CommuneTest extends AbstractTestCase {
 
