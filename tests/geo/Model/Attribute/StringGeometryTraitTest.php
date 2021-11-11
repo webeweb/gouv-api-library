@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Model\Attribute;
+namespace WBW\Library\GouvAPI\Geo\Tests\Model\Attribute;
 
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
-use WBW\Library\GeoAPI\Tests\Fixtures\Model\Attribute\TestStringGeometryTrait;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Tests\Fixtures\Model\Attribute\TestStringGeometryTrait;
 
 /**
  * String geometry trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Model\Attribute
+ * @package WBW\Library\GouvAPI\Geo\Tests\Model\Attribute
  */
 class StringGeometryTraitTest extends AbstractTestCase {
 

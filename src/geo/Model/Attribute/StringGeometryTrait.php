@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Attribute;
+namespace WBW\Library\GouvAPI\Geo\Model\Attribute;
 
 /**
  * String geometry trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Attribute
+ * @package WBW\Library\GouvAPI\Geo\Model\Attribute
  */
 trait StringGeometryTrait {
 
@@ -39,7 +39,7 @@ trait StringGeometryTrait {
      * Set the geometry.
      *
      * @param string|null $geometry The geometry.
-     * @return self Returns tis instance.
+     * @return self Returns this instance.
      */
     public function setGeometry(?string $geometry): self {
         $this->geometry = $geometry;
