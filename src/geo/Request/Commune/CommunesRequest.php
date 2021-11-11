@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Request\Commune;
+namespace WBW\Library\GouvAPI\Geo\Request\Commune;
 
-use WBW\Library\GeoAPI\Model\Attribute\StringGeometryTrait;
-use WBW\Library\GeoAPI\Request\AbstractRequest;
+use WBW\Library\GouvAPI\Geo\Model\Attribute\StringGeometryTrait;
+use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
 use WBW\Library\Traits\Strings\StringFormatTrait;
 
 /**
  * Communes request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Request\Commune
+ * @package WBW\Library\GouvAPI\Geo\Request\Commune
  */
 class CommunesRequest extends AbstractRequest {
 
