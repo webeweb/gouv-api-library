@@ -13,6 +13,7 @@ namespace WBW\Library\GouvAPI\Geo\Tests\Request\Region;
 
 use WBW\Library\GouvAPI\Geo\Request\Region\DepartementsRequest;
 use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Départements request test.
@@ -23,17 +24,16 @@ use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 class DepartementsRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the getResourcePath() method.
+     * Tests the getSubstituables() method.
      *
      * @return void
      */
-    public function testGetResourcePath(): void {
+    public function testGetSubstituables(): void {
 
         $obj = new DepartementsRequest();
-        $this->assertEquals(DepartementsRequest::RESOURCE_PATH, $obj->getResourcePath());
 
         $obj->setCode("code");
-        $this->assertEquals("/regions/code/departements", $obj->getResourcePath());
+        $this->assertEquals([":code" => "code"], $obj->getSubstituables());
     }
 
     /**
@@ -43,9 +43,11 @@ class DepartementsRequestTest extends AbstractTestCase {
      */
     public function test__construct(): void {
 
-        $this->assertEquals("/regions/%s/departements", DepartementsRequest::RESOURCE_PATH);
+        $this->assertEquals("/regions/:code/departements", DepartementsRequest::RESOURCE_PATH);
 
         $obj = new DepartementsRequest();
+
+        $this->assertInstanceOf(SubstituableRequestInterface::class, $obj);
 
         $this->assertEquals(DepartementsRequest::RESOURCE_PATH, $obj->getResourcePath());
     }
