@@ -9,24 +9,24 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Serializer;
+namespace WBW\Library\GouvAPI\Geo\Serializer;
 
-use WBW\Library\GeoAPI\Model\Commune;
-use WBW\Library\GeoAPI\Model\Departement;
-use WBW\Library\GeoAPI\Model\Region;
-use WBW\Library\GeoAPI\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Response\RegionsResponse;
 use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
+use WBW\Library\GouvAPI\Geo\Model\Commune;
+use WBW\Library\GouvAPI\Geo\Model\Departement;
+use WBW\Library\GouvAPI\Geo\Model\Region;
+use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
+use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvAPI\Geo\Response\RegionsResponse;
 use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
- * Découpage administratif response deserializer.
+ * Response deserializer.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Serializer
+ * @package WBW\Library\GouvAPI\Geo\Serializer
  */
-class DecoupageAdministratifResponseDeserializer extends JsonDeserializer {
+class ResponseDeserializer extends JsonDeserializer {
 
     /**
      * Deserializes a commune.

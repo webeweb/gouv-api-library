@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Serializer;
+namespace WBW\Library\GouvAPI\Geo\Tests\Serializer;
 
-use WBW\Library\GeoAPI\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Response\RegionsResponse;
-use WBW\Library\GeoAPI\Serializer\DecoupageAdministratifResponseDeserializer;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
+use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvAPI\Geo\Response\RegionsResponse;
+use WBW\Library\GouvAPI\Geo\Serializer\ResponseDeserializer;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 
 /**
- * Découpage administratif response deserializer test.
+ * Response deserializer test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Serializer
+ * @package WBW\Library\GouvAPI\Geo\Tests\Serializer
  */
-class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
+class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
      * Tests the deserializeCommunesResponse() method.
@@ -33,9 +33,9 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeCommunesResponse(): void {
 
         // Set a JSON mock.
-        $json = file_get_contents(__DIR__ . "/DecoupageAdministratifResponseDeserializerTest.testDeserializeCommunesResponse.json");
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeCommunesResponse.json");
 
-        $res = DecoupageAdministratifResponseDeserializer::deserializeCommunesResponse($json);
+        $res = ResponseDeserializer::deserializeCommunesResponse($json);
         $this->assertInstanceOf(CommunesResponse::class, $res);
 
         $this->assertEquals($json, $res->getRawResponse());
@@ -64,7 +64,7 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
         // Set a JSON mock.
         $json = "";
 
-        $res = DecoupageAdministratifResponseDeserializer::deserializeCommunesResponse($json);
+        $res = ResponseDeserializer::deserializeCommunesResponse($json);
         $this->assertInstanceOf(CommunesResponse::class, $res);
 
         $this->assertEquals($json, $res->getRawResponse());
@@ -79,9 +79,9 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeCommunesResponseWithGeoJSON(): void {
 
         // Set a JSON mock.
-        $json = file_get_contents(__DIR__ . "/DecoupageAdministratifResponseDeserializerTest.testDeserializeCommunesResponseWithGeoJSON.json");
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeCommunesResponseWithGeoJSON.json");
 
-        $res = DecoupageAdministratifResponseDeserializer::deserializeCommunesResponse($json);
+        $res = ResponseDeserializer::deserializeCommunesResponse($json);
         $this->assertInstanceOf(CommunesResponse::class, $res);
 
         $this->assertEquals($json, $res->getRawResponse());
@@ -109,9 +109,9 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeDepartementsResponse(): void {
 
         // Set a JSON mock.
-        $json = file_get_contents(__DIR__ . "/DecoupageAdministratifResponseDeserializerTest.testDeserializeDepartementsResponse.json");
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeDepartementsResponse.json");
 
-        $res = DecoupageAdministratifResponseDeserializer::deserializeDepartementsResponse($json);
+        $res = ResponseDeserializer::deserializeDepartementsResponse($json);
         $this->assertInstanceOf(DepartementsResponse::class, $res);
 
         $this->assertEquals($json, $res->getRawResponse());
@@ -133,7 +133,7 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
         // Set a JSON mock.
         $json = "";
 
-        $res = DecoupageAdministratifResponseDeserializer::deserializeDepartementsResponse($json);
+        $res = ResponseDeserializer::deserializeDepartementsResponse($json);
         $this->assertInstanceOf(DepartementsResponse::class, $res);
 
         $this->assertEquals($json, $res->getRawResponse());
@@ -148,9 +148,9 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeRegionsResponse(): void {
 
         // Set a JSON mock.
-        $json = file_get_contents(__DIR__ . "/DecoupageAdministratifResponseDeserializerTest.testDeserializeRegionsResponse.json");
+        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRegionsResponse.json");
 
-        $res = DecoupageAdministratifResponseDeserializer::deserializeRegionsResponse($json);
+        $res = ResponseDeserializer::deserializeRegionsResponse($json);
         $this->assertInstanceOf(RegionsResponse::class, $res);
 
         $this->assertEquals($json, $res->getRawResponse());
@@ -171,7 +171,7 @@ class DecoupageAdministratifResponseDeserializerTest extends AbstractTestCase {
         // Set a JSON mock.
         $json = "";
 
-        $res = DecoupageAdministratifResponseDeserializer::deserializeRegionsResponse($json);
+        $res = ResponseDeserializer::deserializeRegionsResponse($json);
         $this->assertInstanceOf(RegionsResponse::class, $res);
 
         $this->assertEquals($json, $res->getRawResponse());
