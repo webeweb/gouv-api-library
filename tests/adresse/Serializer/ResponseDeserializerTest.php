@@ -9,20 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Serializer;
+namespace WBW\Library\GouvAPI\Adresse\Tests\Serializer;
 
-use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
-use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
-use WBW\Library\GeoAPI\Serializer\AdresseResponseDeserializer;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Adresse\Response\ReverseCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Response\SearchCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Serializer\ResponseDeserializer;
+use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
 
 /**
- * Adresse response deserializer test.
+ * Response deserializer test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Serializer
+ * @package WBW\Library\GouvAPI\Adresse\Tests\Serializer
  */
-class AdresseResponseDeserializerTest extends AbstractTestCase {
+class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
      * Tests the deserializeReverseCsvResponse() method.
@@ -32,9 +32,9 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeReverseCsvResponse(): void {
 
         // Set a filename mock.
-        $filename = realpath(__DIR__ . "/../Fixtures/Response/Adresse/ReverseCsvResponse.csv");
+        $filename = realpath(__DIR__ . "/../Fixtures/Response/ReverseCsvResponse.csv");
 
-        $res = AdresseResponseDeserializer::deserializeReverseCsvResponse(file_get_contents($filename));
+        $res = ResponseDeserializer::deserializeReverseCsvResponse(file_get_contents($filename));
         $this->assertInstanceOf(ReverseCsvResponse::class, $res);
 
         $this->assertCount(4, $res->getAdresses());
@@ -132,9 +132,9 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
     public function testDeserializeSearchCsvResponse(): void {
 
         // Set a filename mock.
-        $filename = realpath(__DIR__ . "/../Fixtures/Response/Adresse/SearchCsvResponse.csv");
+        $filename = realpath(__DIR__ . "/../Fixtures/Response/SearchCsvResponse.csv");
 
-        $res = AdresseResponseDeserializer::deserializeSearchCsvResponse(file_get_contents($filename));
+        $res = ResponseDeserializer::deserializeSearchCsvResponse(file_get_contents($filename));
         $this->assertInstanceOf(SearchCsvResponse::class, $res);
 
         $this->assertCount(4, $res->getAdresses());
@@ -243,7 +243,7 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeSearchCsvResponseWithBadResponse(): void {
 
-        $res = AdresseResponseDeserializer::deserializeSearchCsvResponse("");
+        $res = ResponseDeserializer::deserializeSearchCsvResponse("");
         $this->assertInstanceOf(SearchCsvResponse::class, $res);
 
         $this->assertCount(0, $res->getAdresses());
@@ -256,7 +256,7 @@ class AdresseResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeSearchResponseWithBadResponse(): void {
 
-        $res = AdresseResponseDeserializer::deserializeSearchResponse("");
+        $res = ResponseDeserializer::deserializeSearchResponse("");
         $this->assertNull($res);
     }
 }

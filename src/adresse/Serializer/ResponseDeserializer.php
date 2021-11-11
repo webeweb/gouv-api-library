@@ -9,22 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Serializer;
+namespace WBW\Library\GouvAPI\Adresse\Serializer;
 
-use WBW\Library\GeoAPI\Model\Adresse;
-use WBW\Library\GeoAPI\Response\Adresse\AbstractCsvResponse;
-use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
-use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
 use WBW\Library\GeoJSON\Model\FeatureCollection;
 use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
+use WBW\Library\GouvAPI\Adresse\Model\Adresse;
+use WBW\Library\GouvAPI\Adresse\Response\AbstractCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Response\ReverseCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Response\SearchCsvResponse;
 
 /**
- * Adresse response deserializer.
+ * Response deserializer.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Serializer
+ * @package WBW\Library\GouvAPI\Adresse\Serializer
  */
-class AdresseResponseDeserializer {
+class ResponseDeserializer {
 
     /**
      * Deserialize an adresse.
