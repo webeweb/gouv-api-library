@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Request;
+namespace WBW\Library\GouvAPI\Geo\Request;
 
-use WBW\Library\GeoAPI\Model\Attribute\ArrayFieldsTrait;
+use WBW\Library\GouvAPI\Common\Request\AbstractRequest as BaseRequest;
+use WBW\Library\GouvAPI\Geo\Model\Attribute\ArrayFieldsTrait;
 use WBW\Library\Traits\Strings\StringCodeTrait;
 
 /**
  * Abstract request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Request
+ * @package WBW\Library\GouvAPI\Geo\Request
  * @abstract
  */
-abstract class AbstractRequest {
+abstract class AbstractRequest extends BaseRequest {
 
     use ArrayFieldsTrait;
     use StringCodeTrait;
@@ -32,13 +33,6 @@ abstract class AbstractRequest {
     public function __construct() {
         $this->setFields([]);
     }
-
-    /**
-     * Get the resource path.
-     *
-     * @return string Returns the resource path.
-     */
-    abstract public function getResourcePath(): string;
 
     /**
      * Implode a resource path.

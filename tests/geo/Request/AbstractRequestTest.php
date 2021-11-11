@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Request;
+namespace WBW\Library\GouvAPI\Geo\Tests\Request;
 
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
-use WBW\Library\GeoAPI\Tests\Fixtures\Request\TestRequest;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Tests\Fixtures\Request\TestRequest;
 
 /**
  * Abstract request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Request
+ * @package WBW\Library\GouvAPI\Geo\Tests\Request
  */
 class AbstractRequestTest extends AbstractTestCase {
 

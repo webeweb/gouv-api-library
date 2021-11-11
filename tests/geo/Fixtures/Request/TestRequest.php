@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Fixtures\Request;
+namespace WBW\Library\GouvAPI\Geo\Tests\Fixtures\Request;
 
-use WBW\Library\GeoAPI\Request\AbstractRequest;
+use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
 
 /**
  * Test request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Fixtures\Request
+ * @package WBW\Library\GouvAPI\Geo\Tests\Fixtures\Request
  */
 class TestRequest extends AbstractRequest {
 
