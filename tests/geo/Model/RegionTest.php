@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Model;
+namespace WBW\Library\GouvAPI\Geo\Tests\Model;
 
-use WBW\Library\GeoAPI\Model\Region;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Model\Region;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 
 /**
  * Région test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Model
+ * @package WBW\Library\GouvAPI\Geo\Tests\Model
  */
 class RegionTest extends AbstractTestCase {
 
