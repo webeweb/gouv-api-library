@@ -9,28 +9,29 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Provider;
+namespace WBW\Library\GouvAPI\Adresse\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
-use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
-use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
-use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
-use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
-use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
-use WBW\Library\GeoAPI\Serializer\AdresseRequestSerializer;
-use WBW\Library\GeoAPI\Serializer\AdresseResponseDeserializer;
 use WBW\Library\GeoJSON\Model\FeatureCollection;
+use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
+use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;
+use WBW\Library\GouvAPI\Adresse\Request\SearchCsvRequest;
+use WBW\Library\GouvAPI\Adresse\Request\SearchRequest;
+use WBW\Library\GouvAPI\Adresse\Response\ReverseCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Response\SearchCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Serializer\RequestSerializer;
+use WBW\Library\GouvAPI\Adresse\Serializer\ResponseDeserializer;
+use WBW\Library\GouvAPI\Common\Provider\AbstractProvider;
 use WBW\Library\Provider\Exception\ApiException;
 use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
- * Adresse provider.
+ * API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Provider
+ * @package WBW\Library\GouvAPI\Adresse\Provider
  */
-class AdresseProvider extends AbstractProvider {
+class ApiProvider extends AbstractProvider {
 
     /**
      * Endpoint path.
@@ -78,11 +79,11 @@ class AdresseProvider extends AbstractProvider {
      */
     public function reverse(ReverseRequest $request): ?FeatureCollection {
 
-        $queryData = AdresseRequestSerializer::serializeReverseRequest($request);
+        $queryData = RequestSerializer::serializeReverseRequest($request);
 
         $rawResponse = $this->callApi($request, $queryData);
 
-        return AdresseResponseDeserializer::deserializeReverseResponse($rawResponse);
+        return ResponseDeserializer::deserializeReverseResponse($rawResponse);
     }
 
     /**
@@ -95,7 +96,7 @@ class AdresseProvider extends AbstractProvider {
      */
     public function reverseCsv(ReverseCsvRequest $request): ReverseCsvResponse {
 
-        $queryData = AdresseRequestSerializer::serializeReverseCsvRequest($request);
+        $queryData = RequestSerializer::serializeReverseCsvRequest($request);
 
         $filename = realpath($queryData["data"]);
         $postData = [
@@ -108,7 +109,7 @@ class AdresseProvider extends AbstractProvider {
 
         $rawResponse = $this->callApi($request, [], $postData);
 
-        return AdresseResponseDeserializer::deserializeReverseCsvResponse($rawResponse);
+        return ResponseDeserializer::deserializeReverseCsvResponse($rawResponse);
     }
 
     /**
@@ -121,11 +122,11 @@ class AdresseProvider extends AbstractProvider {
      */
     public function search(SearchRequest $request): FeatureCollection {
 
-        $queryData = AdresseRequestSerializer::serializeSearchRequest($request);
+        $queryData = RequestSerializer::serializeSearchRequest($request);
 
         $rawResponse = $this->callApi($request, $queryData);
 
-        return AdresseResponseDeserializer::deserializeSearchResponse($rawResponse);
+        return ResponseDeserializer::deserializeSearchResponse($rawResponse);
     }
 
     /**
@@ -138,7 +139,7 @@ class AdresseProvider extends AbstractProvider {
      */
     public function searchCsv(SearchCsvRequest $request): SearchCsvResponse {
 
-        $queryData = AdresseRequestSerializer::serializeSearchCsvRequest($request);
+        $queryData = RequestSerializer::serializeSearchCsvRequest($request);
 
         $filename = realpath($queryData["data"]);
         $postData = [
@@ -153,6 +154,6 @@ class AdresseProvider extends AbstractProvider {
 
         $rawResponse = $this->callApi($request, [], $postData);
 
-        return AdresseResponseDeserializer::deserializeSearchCsvResponse($rawResponse);
+        return ResponseDeserializer::deserializeSearchCsvResponse($rawResponse);
     }
 }

@@ -9,26 +9,26 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Provider;
+namespace WBW\Library\GouvAPI\Adresse\Tests\Provider;
 
 use Exception;
-use WBW\Library\GeoAPI\Provider\AdresseProvider;
-use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
-use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
-use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
-use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
-use WBW\Library\GeoAPI\Response\Adresse\ReverseCsvResponse;
-use WBW\Library\GeoAPI\Response\Adresse\SearchCsvResponse;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
 use WBW\Library\GeoJSON\Model\FeatureCollection;
+use WBW\Library\GouvAPI\Adresse\Provider\ApiProvider;
+use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
+use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;
+use WBW\Library\GouvAPI\Adresse\Request\SearchCsvRequest;
+use WBW\Library\GouvAPI\Adresse\Request\SearchRequest;
+use WBW\Library\GouvAPI\Adresse\Response\ReverseCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Response\SearchCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
 
 /**
- * Adresse provider test.
+ * API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Provider
+ * @package WBW\Library\GouvAPI\Adresse\Tests\Provider
  */
-class AdresseProviderTest extends AbstractTestCase {
+class ApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the reverse() method.
@@ -41,7 +41,7 @@ class AdresseProviderTest extends AbstractTestCase {
         // Set a Reverse request mock.
         $arg = new ReverseRequest(49.897443, 2.290084);
 
-        $obj = new AdresseProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
         $res = $obj->reverse($arg);
         $this->assertInstanceOf(FeatureCollection::class, $res);
@@ -63,12 +63,12 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testReverseCsv(): void {
 
         // Set a data mock.
-        $data = realpath(__DIR__ . "/../../tests/Fixtures/Request/Adresse/ReverseCsvRequest.csv");
+        $data = realpath(__DIR__ . "/../Fixtures/Request/ReverseCsvRequest.csv");
 
         // Set a Reverse request mock.
         $arg = new ReverseCsvRequest($data);
 
-        $obj = new AdresseProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
         $res = $obj->reverseCsv($arg);
         $this->assertInstanceOf(ReverseCsvResponse::class, $res);
@@ -88,7 +88,7 @@ class AdresseProviderTest extends AbstractTestCase {
         // Set a Search request mock.
         $arg = new SearchRequest("8 bd du port");
 
-        $obj = new AdresseProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
         $res = $obj->search($arg);
         $this->assertInstanceOf(FeatureCollection::class, $res);
@@ -111,12 +111,12 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testSearchCsv(): void {
 
         // Set a data mock.
-        $data = realpath(__DIR__ . "/../../tests/Fixtures/Request/Adresse/SearchCsvRequest.csv");
+        $data = realpath(__DIR__ . "/../Fixtures/Request/SearchCsvRequest.csv");
 
         // Set a Search request mock.
         $arg = new SearchCsvRequest($data);
 
-        $obj = new AdresseProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
         $res = $obj->searchCsv($arg);
         $this->assertInstanceOf(SearchCsvResponse::class, $res);
@@ -134,7 +134,7 @@ class AdresseProviderTest extends AbstractTestCase {
     public function testSearchCsvWithColumns(): void {
 
         // Set a data mock.
-        $data = realpath(__DIR__ . "/../Fixtures/Request/Adresse/SearchCsvRequest.csv");
+        $data = realpath(__DIR__ . "/../Fixtures/Request/SearchCsvRequest.csv");
 
         // Set a Search request mock.
         $arg = new SearchCsvRequest($data);
@@ -143,7 +143,7 @@ class AdresseProviderTest extends AbstractTestCase {
         $arg->addResultColumn("result_id");
         $arg->addResultColumn("result_score");
 
-        $obj = new AdresseProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
         $res = $obj->searchCsv($arg);
         $this->assertInstanceOf(SearchCsvResponse::class, $res);
@@ -159,12 +159,12 @@ class AdresseProviderTest extends AbstractTestCase {
      */
     public function test__construct(): void {
 
-        $this->assertEquals("https://api-adresse.data.gouv.fr", AdresseProvider::ENDPOINT_PATH);
+        $this->assertEquals("https://api-adresse.data.gouv.fr", ApiProvider::ENDPOINT_PATH);
 
-        $obj = new AdresseProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
         $this->assertSame($this->logger, $obj->getLogger());
         $this->assertFalse($obj->getDebug());
-        $this->assertEquals(AdresseProvider::ENDPOINT_PATH, $obj->getEndpointPath());
+        $this->assertEquals(ApiProvider::ENDPOINT_PATH, $obj->getEndpointPath());
     }
 }
