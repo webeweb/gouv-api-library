@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Model;
+namespace WBW\Library\GouvAPI\Geo\Tests\Model;
 
-use WBW\Library\GeoAPI\Model\Departement;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Model\Departement;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 
 /**
  * Département test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Model
+ * @package WBW\Library\GouvAPI\Geo\Tests\Model
  */
 class DepartementTest extends AbstractTestCase {
 
