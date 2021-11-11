@@ -9,23 +9,23 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Provider;
+namespace WBW\Library\GouvAPI\Geo\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GeoAPI\Request\Departement\CommunesRequest;
-use WBW\Library\GeoAPI\Request\Departement\DepartementsRequest;
-use WBW\Library\GeoAPI\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Serializer\DecoupageAdministratifResponseDeserializer;
+use WBW\Library\GouvAPI\Geo\Request\Departement\CommunesRequest;
+use WBW\Library\GouvAPI\Geo\Request\Departement\DepartementsRequest;
+use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
+use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvAPI\Geo\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
- * Département provider.
+ * Département API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Provider
+ * @package WBW\Library\GouvAPI\Geo\Provider
  */
-class DepartementProvider extends DecoupageAdministratifProvider {
+class DepartementApiProvider extends ApiProvider {
 
     /**
      * Communes.
@@ -39,7 +39,7 @@ class DepartementProvider extends DecoupageAdministratifProvider {
 
         $rawResponse = $this->callApi($request, []);
 
-        return DecoupageAdministratifResponseDeserializer::deserializeCommunesResponse($rawResponse);
+        return ResponseDeserializer::deserializeCommunesResponse($rawResponse);
     }
 
     /**
@@ -54,6 +54,6 @@ class DepartementProvider extends DecoupageAdministratifProvider {
 
         $rawResponse = $this->callApi($request, []);
 
-        return DecoupageAdministratifResponseDeserializer::deserializeDepartementsResponse($rawResponse);
+        return ResponseDeserializer::deserializeDepartementsResponse($rawResponse);
     }
 }

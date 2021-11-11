@@ -9,23 +9,23 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Provider;
+namespace WBW\Library\GouvAPI\Geo\Tests\Provider;
 
 use Exception;
-use WBW\Library\GeoAPI\Provider\DepartementProvider;
-use WBW\Library\GeoAPI\Request\Departement\CommunesRequest;
-use WBW\Library\GeoAPI\Request\Departement\DepartementsRequest;
-use WBW\Library\GeoAPI\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Provider\DepartementApiProvider;
+use WBW\Library\GouvAPI\Geo\Request\Departement\CommunesRequest;
+use WBW\Library\GouvAPI\Geo\Request\Departement\DepartementsRequest;
+use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
+use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 
 /**
- * Département provider test.
+ * Département API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Provider
+ * @package WBW\Library\GouvAPI\Geo\Tests\Provider
  */
-class DepartementProviderTest extends AbstractTestCase {
+class DepartementApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the communes() method.
@@ -39,7 +39,7 @@ class DepartementProviderTest extends AbstractTestCase {
         $request = new CommunesRequest();
         $request->setCode("01");
 
-        $obj = new DepartementProvider($this->logger);
+        $obj = new DepartementApiProvider($this->logger);
 
         $res = $obj->communes($request);
         $this->assertInstanceOf(CommunesResponse::class, $res);
@@ -56,7 +56,7 @@ class DepartementProviderTest extends AbstractTestCase {
         // Set a Départements request mock.
         $request = new DepartementsRequest();
 
-        $obj = new DepartementProvider($this->logger);
+        $obj = new DepartementApiProvider($this->logger);
 
         $res = $obj->departements($request);
         $this->assertInstanceOf(DepartementsResponse::class, $res);
