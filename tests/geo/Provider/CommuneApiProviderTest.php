@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Provider;
+namespace WBW\Library\GouvAPI\Geo\Tests\Provider;
 
 use Exception;
-use WBW\Library\GeoAPI\Provider\CommuneProvider;
-use WBW\Library\GeoAPI\Request\Commune\CommunesRequest;
-use WBW\Library\GeoAPI\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Provider\CommuneApiProvider;
+use WBW\Library\GouvAPI\Geo\Request\Commune\CommunesRequest;
+use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 
 /**
- * Commune provider test.
+ * Commune API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Provider
+ * @package WBW\Library\GouvAPI\Geo\Tests\Provider
  */
-class CommuneProviderTest extends AbstractTestCase {
+class CommuneApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the communes() method.
@@ -36,7 +36,7 @@ class CommuneProviderTest extends AbstractTestCase {
         // Set a Communes request mock.
         $request = new CommunesRequest();
 
-        $obj = new CommuneProvider($this->logger);
+        $obj = new CommuneApiProvider($this->logger);
 
         $res = $obj->communes($request);
         $this->assertInstanceOf(CommunesResponse::class, $res);
@@ -54,7 +54,7 @@ class CommuneProviderTest extends AbstractTestCase {
         $request = new CommunesRequest();
         $request->setCode("75056");
 
-        $obj = new CommuneProvider($this->logger);
+        $obj = new CommuneApiProvider($this->logger);
 
         $res = $obj->communes($request);
         $this->assertInstanceOf(CommunesResponse::class, $res);

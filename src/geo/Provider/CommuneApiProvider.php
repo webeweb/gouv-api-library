@@ -9,21 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Provider;
+namespace WBW\Library\GouvAPI\Geo\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GeoAPI\Request\Commune\CommunesRequest;
-use WBW\Library\GeoAPI\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Serializer\DecoupageAdministratifResponseDeserializer;
+use WBW\Library\GouvAPI\Geo\Request\Commune\CommunesRequest;
+use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
+use WBW\Library\GouvAPI\Geo\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
- * Commune provider.
+ * Commune API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Provider
+ * @package WBW\Library\GouvAPI\Geo\Provider
  */
-class CommuneProvider extends DecoupageAdministratifProvider {
+class CommuneApiProvider extends ApiProvider {
 
     /**
      * Communes.
@@ -37,6 +37,6 @@ class CommuneProvider extends DecoupageAdministratifProvider {
 
         $rawResponse = $this->callApi($request, []);
 
-        return DecoupageAdministratifResponseDeserializer::deserializeCommunesResponse($rawResponse);
+        return ResponseDeserializer::deserializeCommunesResponse($rawResponse);
     }
 }
