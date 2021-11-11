@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Response\Adresse;
+namespace WBW\Library\GouvAPI\Adresse\Tests\Response;
 
-use WBW\Library\GeoAPI\Response\Adresse\AbstractCsvResponse;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
-use WBW\Library\GeoAPI\Tests\Fixtures\Response\Adresse\TestCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Response\AbstractCsvResponse;
+use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Adresse\Tests\Fixtures\Response\TestCsvResponse;
 
 /**
  * Abstract CSV response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Response\Adresse
+ * @package WBW\Library\GouvAPI\Adresse\Tests\Response
  */
 class AbstractCsvResponseTest extends AbstractTestCase {
 
