@@ -9,26 +9,26 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Provider;
+namespace WBW\Library\GouvAPI\Geo\Tests\Provider;
 
 use Exception;
-use WBW\Library\GeoAPI\Provider\RegionProvider;
-use WBW\Library\GeoAPI\Request\Region\CommunesRequest;
-use WBW\Library\GeoAPI\Request\Region\DepartementsRequest;
-use WBW\Library\GeoAPI\Request\Region\RegionsRequest;
-use WBW\Library\GeoAPI\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Response\RegionsResponse;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Provider\RegionApiProvider;
+use WBW\Library\GouvAPI\Geo\Request\Region\CommunesRequest;
+use WBW\Library\GouvAPI\Geo\Request\Region\DepartementsRequest;
+use WBW\Library\GouvAPI\Geo\Request\Region\RegionsRequest;
+use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
+use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvAPI\Geo\Response\RegionsResponse;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
- * Région provider test.
+ * Région API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Provider
+ * @package WBW\Library\GouvAPI\Geo\Tests\Provider
  */
-class RegionProviderTest extends AbstractTestCase {
+class RegionApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the communes() method.
@@ -42,7 +42,7 @@ class RegionProviderTest extends AbstractTestCase {
         $request = new CommunesRequest();
         $request->setCode("11");
 
-        $obj = new RegionProvider($this->logger);
+        $obj = new RegionApiProvider($this->logger);
 
         try {
 
@@ -68,7 +68,7 @@ class RegionProviderTest extends AbstractTestCase {
         $request = new DepartementsRequest();
         $request->setCode("11");
 
-        $obj = new RegionProvider($this->logger);
+        $obj = new RegionApiProvider($this->logger);
 
         $res = $obj->departements($request);
         $this->assertInstanceOf(DepartementsResponse::class, $res);
@@ -85,7 +85,7 @@ class RegionProviderTest extends AbstractTestCase {
         // Set a Régions request mock.
         $request = new RegionsRequest();
 
-        $obj = new RegionProvider($this->logger);
+        $obj = new RegionApiProvider($this->logger);
 
         $res = $obj->regions($request);
         $this->assertInstanceOf(RegionsResponse::class, $res);

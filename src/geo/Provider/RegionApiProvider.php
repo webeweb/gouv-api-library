@@ -9,25 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Provider;
+namespace WBW\Library\GouvAPI\Geo\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GeoAPI\Request\Region\CommunesRequest;
-use WBW\Library\GeoAPI\Request\Region\DepartementsRequest;
-use WBW\Library\GeoAPI\Request\Region\RegionsRequest;
-use WBW\Library\GeoAPI\Response\CommunesResponse;
-use WBW\Library\GeoAPI\Response\DepartementsResponse;
-use WBW\Library\GeoAPI\Response\RegionsResponse;
-use WBW\Library\GeoAPI\Serializer\DecoupageAdministratifResponseDeserializer;
+use WBW\Library\GouvAPI\Geo\Request\Region\CommunesRequest;
+use WBW\Library\GouvAPI\Geo\Request\Region\DepartementsRequest;
+use WBW\Library\GouvAPI\Geo\Request\Region\RegionsRequest;
+use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
+use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvAPI\Geo\Response\RegionsResponse;
+use WBW\Library\GouvAPI\Geo\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
- * Région provider.
+ * Région API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Provider
+ * @package WBW\Library\GouvAPI\Geo\Provider
  */
-class RegionProvider extends DecoupageAdministratifProvider {
+class RegionApiProvider extends ApiProvider {
 
     /**
      * Communes.
@@ -41,7 +41,7 @@ class RegionProvider extends DecoupageAdministratifProvider {
 
         $rawResponse = $this->callApi($request, []);
 
-        return DecoupageAdministratifResponseDeserializer::deserializeCommunesResponse($rawResponse);
+        return ResponseDeserializer::deserializeCommunesResponse($rawResponse);
     }
 
     /**
@@ -56,7 +56,7 @@ class RegionProvider extends DecoupageAdministratifProvider {
 
         $rawResponse = $this->callApi($request, []);
 
-        return DecoupageAdministratifResponseDeserializer::deserializeDepartementsResponse($rawResponse);
+        return ResponseDeserializer::deserializeDepartementsResponse($rawResponse);
     }
 
     /**
@@ -71,6 +71,6 @@ class RegionProvider extends DecoupageAdministratifProvider {
 
         $rawResponse = $this->callApi($request, []);
 
-        return DecoupageAdministratifResponseDeserializer::deserializeRegionsResponse($rawResponse);
+        return ResponseDeserializer::deserializeRegionsResponse($rawResponse);
     }
 }
