@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Fixtures\Model\Attribute;
+namespace WBW\Library\GouvAPI\Geo\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\GeoAPI\Model\Attribute\ArrayFieldsTrait;
+use WBW\Library\GouvAPI\Geo\Model\Attribute\ArrayFieldsTrait;
 
 /**
  * Test array fields trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Fixtures\Model\Attribute
+ * @package WBW\Library\GouvAPI\Geo\Tests\Fixtures\Model\Attribute
  */
 class TestArrayFieldsTrait {
 

@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Attribute;
+namespace WBW\Library\GouvAPI\Geo\Model\Attribute;
 
 /**
  * Array fields trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Attribute
+ * @package WBW\Library\GouvAPI\Geo\Model\Attribute
  */
 trait ArrayFieldsTrait {
 
@@ -30,7 +30,7 @@ trait ArrayFieldsTrait {
      * Add a field.
      *
      * @param string $field The field.
-     * @return self Returns tis instance.
+     * @return self Returns this instance.
      */
     public function addField(string $field): self {
         $this->fields[] = $field;
@@ -50,7 +50,7 @@ trait ArrayFieldsTrait {
      * Set the fields.
      *
      * @param string[] $fields The fields.
-     * @return self Returns tis instance.
+     * @return self Returns this instance.
      */
     protected function setFields(array $fields): self {
         $this->fields = $fields;
