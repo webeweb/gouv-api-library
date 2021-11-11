@@ -13,6 +13,7 @@ namespace WBW\Library\GouvAPI\Geo\Request\Region;
 
 use WBW\Library\GouvAPI\Geo\Model\Attribute\StringNomTrait;
 use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
+use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Régions request.
@@ -20,7 +21,7 @@ use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvAPI\Geo\Request\Region
  */
-class RegionsRequest extends AbstractRequest {
+class RegionsRequest extends AbstractRequest implements SubstituableRequestInterface {
 
     use StringNomTrait;
 
@@ -29,12 +30,21 @@ class RegionsRequest extends AbstractRequest {
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/regions";
+    const RESOURCE_PATH = "/regions:code";
 
     /**
      * {@inheritDoc}
      */
     public function getResourcePath(): string {
-        return $this->implodeResourcePath(self::RESOURCE_PATH);
+        return self::RESOURCE_PATH;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getSubstituables(): array {
+        return [
+            ":code" => null !== $this->getCode() ? "/{$this->getCode()}" : "",
+        ];
     }
 }

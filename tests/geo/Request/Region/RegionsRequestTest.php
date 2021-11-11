@@ -13,6 +13,7 @@ namespace WBW\Library\GouvAPI\Geo\Tests\Request\Region;
 
 use WBW\Library\GouvAPI\Geo\Request\Region\RegionsRequest;
 use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Régions request test.
@@ -23,15 +24,32 @@ use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 class RegionsRequestTest extends AbstractTestCase {
 
     /**
+     * Tests the getSubstituables() method.
+     *
+     * @return void
+     */
+    public function testGetSubstituables(): void {
+
+        $obj = new RegionsRequest();
+
+        $this->assertEquals([":code" => ""], $obj->getSubstituables());
+
+        $obj->setCode("code");
+        $this->assertEquals([":code" => "/code"], $obj->getSubstituables());
+    }
+
+    /**
      * Tests the __construct() method.
      *
      * @return void
      */
     public function test__construct(): void {
 
-        $this->assertEquals("/regions", RegionsRequest::RESOURCE_PATH);
+        $this->assertEquals("/regions:code", RegionsRequest::RESOURCE_PATH);
 
         $obj = new RegionsRequest();
+
+        $this->assertInstanceOf(SubstituableRequestInterface::class, $obj);
 
         $this->assertEquals(RegionsRequest::RESOURCE_PATH, $obj->getResourcePath());
 
