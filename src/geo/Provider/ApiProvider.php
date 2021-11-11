@@ -9,16 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Provider;
+namespace WBW\Library\GouvAPI\Geo\Provider;
+
+use WBW\Library\GouvAPI\Common\Provider\AbstractProvider;
 
 /**
- * Découpage administratif provider.
+ * API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Provider
+ * @package WBW\Library\GouvAPI\Geo\Provider
  * @abstract
  */
-abstract class DecoupageAdministratifProvider extends AbstractProvider {
+abstract class ApiProvider extends AbstractProvider {
 
     /**
      * Endpoint path.
