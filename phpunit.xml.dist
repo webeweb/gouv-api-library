@@ -13,7 +13,7 @@
          stopOnFailure="false">
     <filter>
         <whitelist>
-            <directory>./</directory>
+            <directory>./src</directory>
             <exclude>
                 <directory>dev</directory>
                 <directory>tests</directory>
