@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Attribute;
+namespace WBW\Library\GouvAPI\Geo\Model\Attribute;
 
 /**
  * String code département trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Attribute
+ * @package WBW\Library\GouvAPI\Geo\Model\Attribute
  */
 trait StringCodeDepartementTrait {
 
@@ -39,7 +39,7 @@ trait StringCodeDepartementTrait {
      * Set the code département.
      *
      * @param string|null $codeDepartement The code département.
-     * @return self Returns tis instance.
+     * @return self Returns this instance.
      */
     public function setCodeDepartement(?string $codeDepartement): self {
         $this->codeDepartement = $codeDepartement;
