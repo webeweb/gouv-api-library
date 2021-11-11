@@ -13,6 +13,7 @@ namespace WBW\Library\GouvAPI\Geo\Request\Departement;
 
 use WBW\Library\GouvAPI\Geo\Model\Attribute\StringGeometryTrait;
 use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
+use WBW\Library\Provider\API\SubstituableRequestInterface;
 use WBW\Library\Traits\Strings\StringFormatTrait;
 
 /**
@@ -21,7 +22,7 @@ use WBW\Library\Traits\Strings\StringFormatTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvAPI\Geo\Request\Departement
  */
-class CommunesRequest extends AbstractRequest {
+class CommunesRequest extends AbstractRequest implements SubstituableRequestInterface {
 
     use StringFormatTrait;
     use StringGeometryTrait;
@@ -31,12 +32,21 @@ class CommunesRequest extends AbstractRequest {
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/departements/%s/communes";
+    const RESOURCE_PATH = "/departements/:code/communes";
 
     /**
      * {@inheritDoc}
      */
     public function getResourcePath(): string {
-        return $this->sprintfResourcesPath(self::RESOURCE_PATH);
+        return self::RESOURCE_PATH;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getSubstituables(): array {
+        return [
+            ":code" => $this->getCode(),
+        ];
     }
 }
