@@ -9,17 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Tests\Response;
+namespace WBW\Library\GouvAPI\Geo\Tests\Response;
 
-use WBW\Library\GeoAPI\Model\Region;
-use WBW\Library\GeoAPI\Response\RegionsResponse;
-use WBW\Library\GeoAPI\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Geo\Model\Region;
+use WBW\Library\GouvAPI\Geo\Response\RegionsResponse;
+use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
 
 /**
  * Régions response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Tests\Response
+ * @package WBW\Library\GouvAPI\Geo\Tests\Response
  */
 class RegionsResponseTest extends AbstractTestCase {
 
