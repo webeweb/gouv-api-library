@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GeoAPI\Model\Attribute;
+namespace WBW\Library\GouvAPI\Geo\Model\Attribute;
 
 /**
  * String nom trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GeoAPI\Model\Attribute
+ * @package WBW\Library\GouvAPI\Geo\Model\Attribute
  */
 trait StringNomTrait {
 
@@ -39,7 +39,7 @@ trait StringNomTrait {
      * Set the nom.
      *
      * @param string|null $nom The nom.
-     * @return self Returns tis instance.
+     * @return self Returns this instance.
      */
     public function setNom(?string $nom): self {
         $this->nom = $nom;
