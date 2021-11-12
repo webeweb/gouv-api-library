@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-require __DIR__ . "/../../vendor/autoload.php";
+require __DIR__ . "/../../../vendor/autoload.php";
 
-use WBW\Library\GeoAPI\Provider\RegionProvider;
-use WBW\Library\GeoAPI\Request\Region\DepartementsRequest;
+use WBW\Library\GouvAPI\Geo\Provider\RegionApiProvider;
+use WBW\Library\GouvAPI\Geo\Request\Region\DepartementsRequest;
 
 // Create the API provider.
-$provider = new RegionProvider();
+$provider = new RegionApiProvider();
 
 // Create a Departements request.
 $request = new DepartementsRequest();
@@ -25,10 +25,12 @@ $request->setCode("11");
 $response = $provider->departements($request);
 
 // Handle the response.
+$format = "%-20s: %s\n";
+
 foreach ($response->getDepartements() as $current) {
 
-    echo "Nom: " . $current->getNom() . "\n";
-    echo "Code: " . $current->getCode() . "\n";
-    echo "CodeRegion: " . $current->getCodeRegion() . "\n";
-    echo "Score: " . $current->getScore() . "\n\n";
+    echo sprintf($format, "Nom", $current->getNom());
+    echo sprintf($format, "Code", $current->getCode());
+    echo sprintf($format, "Code region", $current->getCodeRegion());
+    echo sprintf($format, "Score", $current->getScore() . "\n");
 }
