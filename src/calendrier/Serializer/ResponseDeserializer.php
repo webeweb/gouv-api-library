@@ -29,7 +29,7 @@ class ResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return JoursFeriesResponse Returns the jours fériés response.
      */
-    public function deserializeJoursFeriesResponse(string $rawResponse): JoursFeriesResponse {
+    public static function deserializeJoursFeriesResponse(string $rawResponse): JoursFeriesResponse {
 
         $model = new JoursFeriesResponse();
         $model->setRawResponse($rawResponse);
