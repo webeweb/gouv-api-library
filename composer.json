@@ -42,6 +42,7 @@
     "autoload": {
         "psr-4": {
             "WBW\\Library\\GouvAPI\\Adresse\\": "src/adresse",
+            "WBW\\Library\\GouvAPI\\Calendrier\\": "src/calendrier",
             "WBW\\Library\\GouvAPI\\Common\\": "src/common",
             "WBW\\Library\\GouvAPI\\Geo\\": "src/geo"
         }
@@ -49,6 +50,7 @@
     "autoload-dev": {
         "psr-4": {
             "WBW\\Library\\GouvAPI\\Adresse\\Tests\\": "tests/adresse",
+            "WBW\\Library\\GouvAPI\\Calendrier\\Tests\\": "tests/calendrier",
             "WBW\\Library\\GouvAPI\\Common\\Tests\\": "tests/common",
             "WBW\\Library\\GouvAPI\\Geo\\Tests\\": "tests/geo"
         }
