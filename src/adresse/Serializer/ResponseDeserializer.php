@@ -117,7 +117,7 @@ class ResponseDeserializer {
      * @param string $rawResponse The raw response.
      * @return SearchCsvResponse Returns the search CSV response.
      */
-    public static function deserializeSearchCsvResponse(string $rawResponse) {
+    public static function deserializeSearchCsvResponse(string $rawResponse): SearchCsvResponse {
         return static::deserializeCsvResponse($rawResponse, new SearchCsvResponse());
     }
 

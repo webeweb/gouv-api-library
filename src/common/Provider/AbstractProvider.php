@@ -85,7 +85,7 @@ abstract class AbstractProvider extends BaseProvider {
             return $response->getBody()->getContents();
         } catch (Exception $ex) {
 
-            throw new ApiException(sprintf("Call API provider failed"), 500, $ex);
+            throw new ApiException("Call API provider failed", 500, $ex);
         }
     }
 
