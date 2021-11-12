@@ -15,6 +15,7 @@ Includes:
 
 - [API Adresse](https://adresse.data.gouv.fr/api-doc/adresse/)
 - [API Géo](https://api.gouv.fr/documentation/api-geo/)
+- [Jours fériés](https://api.gouv.fr/documentation/jours-feries/)
 
 Provides:
 
