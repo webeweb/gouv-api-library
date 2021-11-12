@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GouvAPI\Geo\Request\Region;
 
-use WBW\Library\GouvAPI\Geo\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvAPI\Common\Model\Attribute\StringNomTrait;
 use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 

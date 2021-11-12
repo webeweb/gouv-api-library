@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Model\Attribute;
+namespace WBW\Library\GouvAPI\Common\Tests\Model\Attribute;
 
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Geo\Tests\Fixtures\Model\Attribute\TestStringNomTrait;
+use WBW\Library\GouvAPI\Common\Tests\AbstractTestCase;
+use WBW\Library\GouvAPI\Common\Tests\Fixtures\Model\Attribute\TestStringNomTrait;
 
 /**
  * String nom trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Model\Attribute
+ * @package WBW\Library\GouvAPI\Common\Tests\Model\Attribute
  */
 class StringNomTraitTest extends AbstractTestCase {
 
