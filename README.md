@@ -13,6 +13,11 @@ Integrate Gouv API with your projects.
 
 Includes:
 
+- [API Adresse](https://adresse.data.gouv.fr/api-doc/adresse/)
+- [API Géo](https://api.gouv.fr/documentation/api-geo/)
+
+Provides:
+
 - [webeweb/geo-json-library](https://github.com/webeweb/geo-json-library)
 
 If you like this package, pay me a beer (or a coffee)
@@ -37,7 +42,7 @@ Composer documentation.
 
 ## Usage
 
-Read the [documentation](doc/index.md). You can also consult or execute sample
+Read the [documentation](doc/api-adresse.md). You can also consult or execute sample
 scripts into dev folder.
 
 ## Testing
