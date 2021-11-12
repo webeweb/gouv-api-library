@@ -6,11 +6,11 @@ The API Adresse is available [here](https://geo.api.gouv.fr/adresse)
 Search
 
 ```php
-use WBW\Library\GeoAPI\Provider\AdresseProvider;
-use WBW\Library\GeoAPI\Request\Adresse\SearchRequest;
+use WBW\Library\GouvPI\Adresse\Provider\ApiProvider;
+use WBW\Library\GouvPI\Adresse\Request\SearchRequest;
 
-// Create an Adresse provider.
-$provider = new AdresseProvider();
+// Create an API provider.
+$provider = new ApiProvider();
 
 // Create a Search request.
 $request = new SearchRequest("address");
@@ -27,11 +27,11 @@ $response = $provider->search($request);
 Reverse
 
 ```php
-use WBW\Library\GeoAPI\Provider\AdresseProvider;
-use WBW\Library\GeoAPI\Request\Adresse\ReverseRequest;
+use WBW\Library\GouvPI\Adresse\Provider\ApiProvider;
+use WBW\Library\GouvPI\Adresse\Request\ReverseRequest;
 
-// Create an Adresse provider.
-$provider = new AdresseProvider();
+// Create an API provider.
+$provider = new ApiProvider();
 
 // Create a Reverse request.
 $request = new ReverseRequest(49.897443, 2.290084);
@@ -48,11 +48,11 @@ $response = $provider->reverse($request);
 Search CSV
 
 ```php
-use WBW\Library\GeoAPI\Provider\AdresseProvider;
-use WBW\Library\GeoAPI\Request\Adresse\SearchCsvRequest;
+use WBW\Library\GouvPI\Adresse\Provider\ApiProvider;
+use WBW\Library\GouvPI\Adresse\Request\SearchCsvRequest;
 
-// Create an Adresse provider.
-$provider = new AdresseProvider();
+// Create an API provider.
+$provider = new ApiProvider();
 
 // Create a Search CSV request.
 $request = new SearchCsvRequest("/path/to/file.csv");
@@ -90,11 +90,11 @@ foreach($response->getAdresses() as $current) {
 Reverse CSV
 
 ```php
-use WBW\Library\GeoAPI\Provider\AdresseProvider;
-use WBW\Library\GeoAPI\Request\Adresse\ReverseCsvRequest;
+use WBW\Library\GouvPI\Adresse\Provider\ApiProvider;
+use WBW\Library\GouvPI\Adresse\Request\ReverseCsvRequest;
 
-// Create an Adresse provider.
-$provider = new AdresseProvider();
+// Create an API provider.
+$provider = new ApiProvider();
 
 // Create a Reverse CSV request.
 $request = new ReverseCsvRequest("/path/to/file.csv");
