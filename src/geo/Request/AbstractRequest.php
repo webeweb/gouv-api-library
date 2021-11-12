@@ -33,37 +33,4 @@ abstract class AbstractRequest extends BaseRequest {
     public function __construct() {
         $this->setFields([]);
     }
-
-    /**
-     * Implode a resource path.
-     *
-     * @param string $resourcePath The resource path.
-     * @return string Returns the resource path.
-     */
-    protected function implodeResourcePath(string $resourcePath): string {
-
-        if (null === $this->getCode()) {
-            return $resourcePath;
-        }
-
-        return implode("/", [
-            $resourcePath,
-            $this->getCode(),
-        ]);
-    }
-
-    /**
-     * Sprintf a resource path.
-     *
-     * @param string $resourcePath The resource path.
-     * @return string Returns the resource path.
-     */
-    protected function sprintfResourcesPath(string $resourcePath): string {
-
-        if (null === $this->getCode()) {
-            return $resourcePath;
-        }
-
-        return sprintf($resourcePath, $this->getCode());
-    }
 }
