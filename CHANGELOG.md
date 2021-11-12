@@ -4,6 +4,7 @@ CHANGELOG
 ### master
 
 - Add dev scripts
+- Improve code quality
 - Improve documentation
 - Improve unit tests
 - Reorganize library
