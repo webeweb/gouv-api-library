@@ -1,7 +1,5 @@
-DOCUMENTATION
-=============
-
-1) Adresse
+API Adresse
+===========
 
 The API Adresse is available [here](https://geo.api.gouv.fr/adresse)
 
