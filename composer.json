@@ -25,7 +25,7 @@
         "ext-json": "*",
         "guzzlehttp/guzzle": "^6.0|^7.0",
         "psr/log": "^1.0",
-        "webeweb/core-library": "^8.0",
+        "webeweb/core-library": "^8.18",
         "webeweb/geo-json-library": "^1.1"
     },
     "require-dev": {
@@ -44,6 +44,7 @@
             "WBW\\Library\\GouvAPI\\Adresse\\": "src/adresse",
             "WBW\\Library\\GouvAPI\\Calendrier\\": "src/calendrier",
             "WBW\\Library\\GouvAPI\\Common\\": "src/common",
+            "WBW\\Library\\GouvAPI\\Entreprise\\": "src/entreprise",
             "WBW\\Library\\GouvAPI\\Geo\\": "src/geo"
         }
     },
@@ -52,6 +53,7 @@
             "WBW\\Library\\GouvAPI\\Adresse\\Tests\\": "tests/adresse",
             "WBW\\Library\\GouvAPI\\Calendrier\\Tests\\": "tests/calendrier",
             "WBW\\Library\\GouvAPI\\Common\\Tests\\": "tests/common",
+            "WBW\\Library\\GouvAPI\\Entreprise\\Tests\\": "tests/entreprise",
             "WBW\\Library\\GouvAPI\\Geo\\Tests\\": "tests/geo"
         }
     },
