@@ -59,7 +59,7 @@ class EtablissementsResponse extends AbstractResponse {
      * Set the établissements.
      *
      * @param Etablissement[] $etablissements The établissements.
-     * @return EtablissementsResponse Returns this établssements response.
+     * @return EtablissementsResponse Returns this établissements response.
      */
     protected function setEtablissements(array $etablissements): EtablissementsResponse {
         $this->etablissements = $etablissements;
