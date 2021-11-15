@@ -249,6 +249,8 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals("N", $res->getCaractereEmployeur());
         $this->assertEquals("2021-08-03T02:28:43.257+02:00", $res->getCreatedAt());
         $this->assertEquals("2021-08-03T02:28:43.257+02:00", $res->getUpdatedAt());
+        $this->assertNotNull($res->getEtablissementSiege());
+        $this->assertEquals("FR59389915992", $res->getNumeroTvaIntra());
     }
 
     /**

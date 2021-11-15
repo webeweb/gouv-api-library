@@ -119,6 +119,13 @@ class UniteLegale {
     protected $economieSocialeSolidaire;
 
     /**
+     * Etablissement siège.
+     *
+     * @var Etablissement|null
+     */
+    protected $etablissementSiege;
+
+    /**
      * Identifiant association.
      *
      * @var string|null
@@ -138,6 +145,13 @@ class UniteLegale {
      * @var string|null
      */
     protected $nomUsage;
+
+    /**
+     * Numéro TVA intra.
+     *
+     * @var string|null
+     */
+    protected $numeroTvaIntra;
 
     /**
      * Prénom 1.
@@ -291,6 +305,15 @@ class UniteLegale {
     }
 
     /**
+     * Get the établissement siège.
+     *
+     * @return Etablissement|null Returns the établissement siège.
+     */
+    public function getEtablissementSiege(): ?Etablissement {
+        return $this->etablissementSiege;
+    }
+
+    /**
      * Get the identifiant association.
      *
      * @return string|null Returns the identifiant association.
@@ -315,6 +338,15 @@ class UniteLegale {
      */
     public function getNomUsage(): ?string {
         return $this->nomUsage;
+    }
+
+    /**
+     * Get the numéro TVA intra.
+     *
+     * @return string|null
+     */
+    public function getNumeroTvaIntra(): ?string {
+        return $this->numeroTvaIntra;
     }
 
     /**
@@ -498,6 +530,17 @@ class UniteLegale {
     }
 
     /**
+     * Set the établissement siège.
+     *
+     * @param Etablissement|null $etablissementSiege The établissement siège.
+     * @return UniteLegale Returns this unité légale.
+     */
+    public function setEtablissementSiege(?Etablissement $etablissementSiege): UniteLegale {
+        $this->etablissementSiege = $etablissementSiege;
+        return $this;
+    }
+
+    /**
      * Set the identifiant association.
      *
      * @param string|null $identifiantAssociation The identifiant association.
@@ -527,6 +570,17 @@ class UniteLegale {
      */
     public function setNomUsage(?string $nomUsage): UniteLegale {
         $this->nomUsage = $nomUsage;
+        return $this;
+    }
+
+    /**
+     * Set the numéro TVA intra.
+     *
+     * @param string|null $numeroTvaIntra The numéro TVA intra.
+     * @return UniteLegale Returns this unité légale.
+     */
+    public function setNumeroTvaIntra(?string $numeroTvaIntra): UniteLegale {
+        $this->numeroTvaIntra = $numeroTvaIntra;
         return $this;
     }
 

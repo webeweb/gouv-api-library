@@ -220,6 +220,8 @@ class ResponseDeserializer {
         $model->setCaractereEmployeur(ArrayHelper::get($data, "caractere_employeur"));
         $model->setCreatedAt(ArrayHelper::get($data, "created_at"));
         $model->setUpdatedAt(ArrayHelper::get($data, "updated_at"));
+        $model->setEtablissementSiege(static::deserializeEtablissement(ArrayHelper::get($data, "etablissement_siege", [])));
+        $model->setNumeroTvaIntra(ArrayHelper::get($data, "numero_tva_intra"));
 
         return $model;
     }

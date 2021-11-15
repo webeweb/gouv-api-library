@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvAPI\Entreprise\Tests\Model;
 
+use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
 use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
 use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
 
@@ -140,6 +141,22 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setEtablissementSiege() method.
+     *
+     * @return void
+     */
+    public function testSetEtablissementSiege(): void {
+
+        // Set an Etablissement mock.
+        $etablissementSiege = new Etablissement();
+
+        $obj = new UniteLegale();
+
+        $obj->setEtablissementSiege($etablissementSiege);
+        $this->assertSame($etablissementSiege, $obj->getEtablissementSiege());
+    }
+
+    /**
      * Tests the setIdentifiantAssociation() method.
      *
      * @return void
@@ -176,6 +193,19 @@ class UniteLegaleTest extends AbstractTestCase {
 
         $obj->setNomUsage("nomUsage");
         $this->assertEquals("nomUsage", $obj->getNomUsage());
+    }
+
+    /**
+     * Tests the setNumeroTvaIntra() method.
+     *
+     * @return void
+     */
+    public function testSetNumeroTvaIntra(): void {
+
+        $obj = new UniteLegale();
+
+        $obj->setNumeroTvaIntra("numeroTvaIntra");
+        $this->assertEquals("numeroTvaIntra", $obj->getNumeroTvaIntra());
     }
 
     /**
@@ -329,9 +359,11 @@ class UniteLegaleTest extends AbstractTestCase {
         $this->assertNull($obj->getDenominationUsuelle2());
         $this->assertNull($obj->getDenominationUsuelle3());
         $this->assertNull($obj->getEconomieSocialeSolidaire());
+        $this->assertNull($obj->getEtablissementSiege());
         $this->assertNull($obj->getIdentifiantAssociation());
         $this->assertNull($obj->getNicSiege());
         $this->assertNull($obj->getNomUsage());
+        $this->assertNull($obj->getNumeroTvaIntra());
         $this->assertNull($obj->getPrenom1());
         $this->assertNull($obj->getPrenom2());
         $this->assertNull($obj->getPrenom3());
