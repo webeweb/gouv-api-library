@@ -12,6 +12,7 @@
 namespace WBW\Library\GouvAPI\Entreprise\Tests\Serializer;
 
 use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
+use WBW\Library\GouvAPI\Entreprise\Model\Meta;
 use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
 use WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Serializer\TestResponseDeserializer;
 
@@ -98,5 +99,25 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals(230020577, $res->getUniteLegaleId());
         $this->assertEquals("2021-08-03T04:14:03.570+02:00", $res->getCreatedAt());
         $this->assertEquals("2021-08-03T04:14:03.570+02:00", $res->getUpdatedAt());
+    }
+
+    /**
+     * Tests the deserializeMeta() method.
+     *
+     * @return void
+     */
+    public function testDeserializeMeta(): void {
+
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/../Fixtures/Response/EtablissementsResponse.json");
+        $data = json_decode($json, true);
+
+        $res = TestResponseDeserializer::deserializeMeta($data["meta"]);
+        $this->assertInstanceOf(Meta::class, $res);
+
+        $this->assertEquals(33669792, $res->getTotalResults());
+        $this->assertEquals(20, $res->getPerPage());
+        $this->assertEquals(1683490, $res->getTotalPages());
+        $this->assertEquals(1, $res->getPage());
     }
 }

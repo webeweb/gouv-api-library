@@ -12,6 +12,7 @@
 namespace WBW\Library\GouvAPI\Entreprise\Serializer;
 
 use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
+use WBW\Library\GouvAPI\Entreprise\Model\Meta;
 use WBW\Library\Types\Helper\ArrayHelper;
 use WBW\Library\Types\Helper\BooleanHelper;
 
@@ -27,12 +28,15 @@ class ResponseDeserializer {
      * Deserializes an établisement.
      *
      * @param array $data The data.
-     * @return Etablissement Returns the établissement.
+     * @return Etablissement|null Returns the établissement.
      */
-    protected static function deserializeEtablissement(array $data): Etablissement {
+    protected static function deserializeEtablissement(array $data): ?Etablissement {
+
+        if (0 === count($data)) {
+            return null;
+        }
 
         $model = new Etablissement();
-
         $model->setId(ArrayHelper::get($data, "id"));
         $model->setSiren(ArrayHelper::get($data, "siren"));
         $model->setNic(ArrayHelper::get($data, "nic"));
@@ -94,6 +98,27 @@ class ResponseDeserializer {
         $model->setUniteLegaleId(ArrayHelper::get($data, "unite_legale_id"));
         $model->setCreatedAt(ArrayHelper::get($data, "created_at"));
         $model->setUpdatedAt(ArrayHelper::get($data, "updated_at"));
+
+        return $model;
+    }
+
+    /**
+     * Deserializes a meta.
+     *
+     * @param array $data The data.
+     * @return Meta|null Returns the meta.
+     */
+    protected static function deserializeMeta(array $data): ?Meta {
+
+        if (0 === count($data)) {
+            return null;
+        }
+
+        $model = new Meta();
+        $model->setTotalResults(ArrayHelper::get($data, "total_results"));
+        $model->setPerPage(ArrayHelper::get($data, "per_page"));
+        $model->setTotalPages(ArrayHelper::get($data, "total_pages"));
+        $model->setPage(ArrayHelper::get($data, "page"));
 
         return $model;
     }
