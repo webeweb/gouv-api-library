@@ -48,6 +48,8 @@ class AbstractResponseTest extends AbstractTestCase {
 
         $obj = new TestResponse();
 
+        $this->assertNull($obj->getMessage());
+
         $this->assertNull($obj->getMeta());
     }
 }

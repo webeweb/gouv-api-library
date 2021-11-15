@@ -13,6 +13,7 @@ namespace WBW\Library\GouvAPI\Entreprise\Response;
 
 use WBW\Library\GouvAPI\Common\Response\AbstractResponse as BaseResponse;
 use WBW\Library\GouvAPI\Entreprise\Model\Meta;
+use WBW\Library\Traits\Strings\StringMessageTrait;
 
 /**
  * Abstract response.
@@ -21,6 +22,8 @@ use WBW\Library\GouvAPI\Entreprise\Model\Meta;
  * @package WBW\Library\GouvAPI\Entreprise\Response
  */
 abstract class AbstractResponse extends BaseResponse {
+
+    use StringMessageTrait;
 
     /**
      * Meta.
