@@ -103,6 +103,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals(230020577, $res->getUniteLegaleId());
         $this->assertEquals("2021-08-03T04:14:03.570+02:00", $res->getCreatedAt());
         $this->assertEquals("2021-08-03T04:14:03.570+02:00", $res->getUpdatedAt());
+        $this->assertNotNull($res->getUniteLegale());
     }
 
     /**

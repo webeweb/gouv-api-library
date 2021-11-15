@@ -354,6 +354,13 @@ class Etablissement {
     protected $typeVoie2;
 
     /**
+     * Unité légale.
+     *
+     * @var UniteLegale|null
+     */
+    protected $uniteLegale;
+
+    /**
      * Unité légale id.
      *
      * @var int|null
@@ -743,6 +750,15 @@ class Etablissement {
      */
     public function getTypeVoie2(): ?string {
         return $this->typeVoie2;
+    }
+
+    /**
+     * Get the unité légale.
+     *
+     * @return UniteLegale|null Returns the unité légale.
+     */
+    public function getUniteLegale(): ?UniteLegale {
+        return $this->uniteLegale;
     }
 
     /**
@@ -1213,6 +1229,17 @@ class Etablissement {
      */
     public function setTypeVoie2(?string $typeVoie2): Etablissement {
         $this->typeVoie2 = $typeVoie2;
+        return $this;
+    }
+
+    /**
+     * Set the unité légale.
+     *
+     * @param UniteLegale|null $uniteLegale The unité légale.
+     * @return Etablissement Returns this établissement.
+     */
+    public function setUniteLegale(?UniteLegale $uniteLegale): Etablissement {
+        $this->uniteLegale = $uniteLegale;
         return $this;
     }
 

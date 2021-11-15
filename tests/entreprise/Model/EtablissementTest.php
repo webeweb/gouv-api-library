@@ -12,6 +12,7 @@
 namespace WBW\Library\GouvAPI\Entreprise\Tests\Model;
 
 use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
+use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
 use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
 
 /**
@@ -569,6 +570,22 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the setUniteLegale() method.
+     *
+     * @return void
+     */
+    public function testSetUniteLegale(): void {
+
+        // Set an Unité légale mock.
+        $uniteLegale = new UniteLegale();
+
+        $obj = new Etablissement();
+
+        $obj->setUniteLegale($uniteLegale);
+        $this->assertSame($uniteLegale, $obj->getUniteLegale());
+    }
+
+    /**
      * Tests the setUniteLegaleId() method.
      *
      * @return void
@@ -651,6 +668,7 @@ class EtablissementTest extends AbstractTestCase {
         $this->assertNull($obj->getNumeroVoie2());
         $this->assertNull($obj->getTypeVoie());
         $this->assertNull($obj->getTypeVoie2());
+        $this->assertNull($obj->getUniteLegale());
         $this->assertNull($obj->getUniteLegaleId());
     }
 }

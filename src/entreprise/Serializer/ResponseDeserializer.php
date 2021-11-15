@@ -102,6 +102,7 @@ class ResponseDeserializer {
         $model->setUniteLegaleId(ArrayHelper::get($data, "unite_legale_id"));
         $model->setCreatedAt(ArrayHelper::get($data, "created_at"));
         $model->setUpdatedAt(ArrayHelper::get($data, "updated_at"));
+        $model->setUniteLegale(static::deserializeUniteLegale(ArrayHelper::get($data, "unite_legale", [])));
 
         return $model;
     }
