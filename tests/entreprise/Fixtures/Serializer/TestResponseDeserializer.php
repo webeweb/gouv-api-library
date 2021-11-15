@@ -13,6 +13,7 @@ namespace WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Serializer;
 
 use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
 use WBW\Library\GouvAPI\Entreprise\Model\Meta;
+use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
 use WBW\Library\GouvAPI\Entreprise\Serializer\ResponseDeserializer;
 
 /**
@@ -35,5 +36,12 @@ class TestResponseDeserializer extends ResponseDeserializer {
      */
     public static function deserializeMeta(array $data): ?Meta {
         return parent::deserializeMeta($data);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public static function deserializeUniteLegale(array $data): ?UniteLegale {
+        return parent::deserializeUniteLegale($data);
     }
 }

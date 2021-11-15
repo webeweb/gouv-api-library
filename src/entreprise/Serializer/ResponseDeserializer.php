@@ -13,6 +13,7 @@ namespace WBW\Library\GouvAPI\Entreprise\Serializer;
 
 use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
 use WBW\Library\GouvAPI\Entreprise\Model\Meta;
+use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
 use WBW\Library\Types\Helper\ArrayHelper;
 use WBW\Library\Types\Helper\BooleanHelper;
 
@@ -119,6 +120,60 @@ class ResponseDeserializer {
         $model->setPerPage(ArrayHelper::get($data, "per_page"));
         $model->setTotalPages(ArrayHelper::get($data, "total_pages"));
         $model->setPage(ArrayHelper::get($data, "page"));
+
+        return $model;
+    }
+
+    /**
+     * Deserializes an unité légale.
+     *
+     * @param array $data The data.
+     * @return UniteLegale|null Returns the unité légale.
+     */
+    protected static function deserializeUniteLegale(array $data): ?UniteLegale {
+
+        if (0 === count($data)) {
+            return null;
+        }
+
+        $model = new UniteLegale();
+        $model->setId(ArrayHelper::get($data, "id"));
+        $model->setSiren(ArrayHelper::get($data, "siren"));
+        $model->setStatutDiffusion(ArrayHelper::get($data, "statut_diffusion"));
+        $model->setUnitePurgee(BooleanHelper::parseString(ArrayHelper::get($data, "unite_purgee")));
+        $model->setDateCreation(ArrayHelper::get($data, "date_creation"));
+        $model->setSigle(ArrayHelper::get($data, "sigle"));
+        $model->setSexe(ArrayHelper::get($data, "sexe"));
+        $model->setPrenom1(ArrayHelper::get($data, "prenom_1"));
+        $model->setPrenom2(ArrayHelper::get($data, "prenom_2"));
+        $model->setPrenom3(ArrayHelper::get($data, "prenom_3"));
+        $model->setPrenom4(ArrayHelper::get($data, "prenom_4"));
+        $model->setPrenomUsuel(ArrayHelper::get($data, "prenom_usuel"));
+        $model->setPseudonyme(ArrayHelper::get($data, "pseudonyme"));
+        $model->setIdentifiantAssociation(ArrayHelper::get($data, "identifiant_association"));
+        $model->setTrancheEffectifs(ArrayHelper::get($data, "tranche_effectifs"));
+        $model->setAnneeEffectifs(ArrayHelper::get($data, "annee_effectifs"));
+        $model->setDateDernierTraitement(ArrayHelper::get($data, "date_dernier_traitement"));
+        $model->setNombrePeriodes(ArrayHelper::get($data, "nombre_periodes"));
+        $model->setCategorieEntreprise(ArrayHelper::get($data, "categorie_entreprise"));
+        $model->setAnneeCategorieEntreprise(ArrayHelper::get($data, "annee_categorie_entreprise"));
+        $model->setDateFin(ArrayHelper::get($data, "date_fin"));
+        $model->setDateDebut(ArrayHelper::get($data, "date_debut"));
+        $model->setEtatAdministratif(ArrayHelper::get($data, "etat_administratif"));
+        $model->setNom(ArrayHelper::get($data, "nom"));
+        $model->setNomUsage(ArrayHelper::get($data, "nom_usage"));
+        $model->setDenomination(ArrayHelper::get($data, "denomination"));
+        $model->setDenominationUsuelle1(ArrayHelper::get($data, "denomination_usuelle_1"));
+        $model->setDenominationUsuelle2(ArrayHelper::get($data, "denomination_usuelle_2"));
+        $model->setDenominationUsuelle3(ArrayHelper::get($data, "denomination_usuelle_3"));
+        $model->setCategorieJuridique(ArrayHelper::get($data, "categorie_juridique"));
+        $model->setActivitePrincipale(ArrayHelper::get($data, "activite_principale"));
+        $model->setNomenclatureActivitePrincipale(ArrayHelper::get($data, "nomenclature_activite_principale"));
+        $model->setNicSiege(ArrayHelper::get($data, "nic_siege"));
+        $model->setEconomieSocialeSolidaire(BooleanHelper::parseString(ArrayHelper::get($data, "economie_sociale_solidaire")));
+        $model->setCaractereEmployeur(ArrayHelper::get($data, "caractere_employeur"));
+        $model->setCreatedAt(ArrayHelper::get($data, "created_at"));
+        $model->setUpdatedAt(ArrayHelper::get($data, "updated_at"));
 
         return $model;
     }

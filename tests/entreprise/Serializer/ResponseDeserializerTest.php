@@ -13,6 +13,7 @@ namespace WBW\Library\GouvAPI\Entreprise\Tests\Serializer;
 
 use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
 use WBW\Library\GouvAPI\Entreprise\Model\Meta;
+use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
 use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
 use WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Serializer\TestResponseDeserializer;
 
@@ -102,6 +103,17 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeEtablissement() method.
+     *
+     * @return void
+     */
+    public function testDeserializeEtablissementWithoutData(): void {
+
+        $res = TestResponseDeserializer::deserializeEtablissement([]);
+        $this->assertNull($res);
+    }
+
+    /**
      * Tests the deserializeMeta() method.
      *
      * @return void
@@ -119,5 +131,80 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $this->assertEquals(20, $res->getPerPage());
         $this->assertEquals(1683490, $res->getTotalPages());
         $this->assertEquals(1, $res->getPage());
+    }
+
+    /**
+     * Tests the deserializeMeta() method.
+     *
+     * @return void
+     */
+    public function testDeserializeMetaWithoutData(): void {
+
+        $res = TestResponseDeserializer::deserializeMeta([]);
+        $this->assertNull($res);
+    }
+
+    /**
+     * Tests the deserializeUniteLegale() method.
+     *
+     * @return void
+     */
+    public function testDeserializeUniteLegale(): void {
+
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/../Fixtures/Response/EtablissementsResponse.json");
+        $data = json_decode($json, true);
+
+        $res = TestResponseDeserializer::deserializeUniteLegale($data["etablissements"][19]["unite_legale"]);
+        $this->assertInstanceOf(UniteLegale::class, $res);
+
+        $this->assertEquals(231384032, $res->getId());
+        $this->assertEquals("389915992", $res->getSiren());
+        $this->assertEquals("O", $res->getStatutDiffusion());
+        $this->assertEquals(null, $res->getUnitePurgee());
+        $this->assertEquals("1993-01-01", $res->getDateCreation());
+        $this->assertEquals(null, $res->getSigle());
+        $this->assertEquals("M", $res->getSexe());
+        $this->assertEquals("MARCEL", $res->getPrenom1());
+        $this->assertEquals("MICHEL", $res->getPrenom2());
+        $this->assertEquals("CHARLES", $res->getPrenom3());
+        $this->assertEquals(null, $res->getPrenom4());
+        $this->assertEquals("MARCEL", $res->getPrenomUsuel());
+        $this->assertEquals(null, $res->getPseudonyme());
+        $this->assertEquals(null, $res->getIdentifiantAssociation());
+        $this->assertEquals("NN", $res->getTrancheEffectifs());
+        $this->assertEquals(null, $res->getAnneeEffectifs());
+        $this->assertEquals("2010-08-14T00:43:13", $res->getDateDernierTraitement());
+        $this->assertEquals("5", $res->getNombrePeriodes());
+        $this->assertEquals(null, $res->getCategorieEntreprise());
+        $this->assertEquals(null, $res->getAnneeCategorieEntreprise());
+        $this->assertEquals(null, $res->getDateFin());
+        $this->assertEquals("2008-12-31", $res->getDateDebut());
+        $this->assertEquals("C", $res->getEtatAdministratif());
+        $this->assertEquals("LESAULNIER", $res->getNom());
+        $this->assertEquals(null, $res->getNomUsage());
+        $this->assertEquals(null, $res->getDenomination());
+        $this->assertEquals("LE BISTROQUET", $res->getDenominationUsuelle1());
+        $this->assertEquals(null, $res->getDenominationUsuelle2());
+        $this->assertEquals(null, $res->getDenominationUsuelle3());
+        $this->assertEquals("1000", $res->getCategorieJuridique());
+        $this->assertEquals("56.10A", $res->getActivitePrincipale());
+        $this->assertEquals("NAFRev2", $res->getNomenclatureActivitePrincipale());
+        $this->assertEquals("00025", $res->getNicSiege());
+        $this->assertEquals(null, $res->getEconomieSocialeSolidaire());
+        $this->assertEquals("N", $res->getCaractereEmployeur());
+        $this->assertEquals("2021-08-03T02:28:43.257+02:00", $res->getCreatedAt());
+        $this->assertEquals("2021-08-03T02:28:43.257+02:00", $res->getUpdatedAt());
+    }
+
+    /**
+     * Tests the deserializeUniteLegale() method.
+     *
+     * @return void
+     */
+    public function testDeserializeUniteLegaleWithoutData(): void {
+
+        $res = TestResponseDeserializer::deserializeUniteLegale([]);
+        $this->assertNull($res);
     }
 }
