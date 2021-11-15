@@ -20,7 +20,7 @@ use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvAPI\Entreprise\Tests\Model
  */
-class EtablisssementTest extends AbstractTestCase {
+class EtablissementTest extends AbstractTestCase {
 
     /**
      * Tests the setActivitePrincipaleRegistreMetiers() method.
