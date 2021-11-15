@@ -14,6 +14,9 @@ namespace WBW\Library\GouvAPI\Entreprise\Tests\Serializer;
 use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
 use WBW\Library\GouvAPI\Entreprise\Model\Meta;
 use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
+use WBW\Library\GouvAPI\Entreprise\Response\EtablissementsResponse;
+use WBW\Library\GouvAPI\Entreprise\Response\UnitesLegalesResponse;
+use WBW\Library\GouvAPI\Entreprise\Serializer\ResponseDeserializer;
 use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
 use WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Serializer\TestResponseDeserializer;
 
@@ -114,6 +117,57 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
+     * Tests the deserializeEtablissementsResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeEtablissementsResponse(): void {
+
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/../Fixtures/Response/EtablissementsResponse.json");
+
+        $res = ResponseDeserializer::deserializeEtablissementsResponse($json);
+        $this->assertInstanceOf(EtablissementsResponse::class, $res);
+
+        $this->assertNotNull($res->getMeta());
+        $this->assertNull($res->getMessage());
+        $this->assertCount(20, $res->getEtablissements());
+    }
+
+    /**
+     * Tests the deserializeEtablissementsResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeEtablissementsResponseWithMalformedResponse(): void {
+
+        $res = ResponseDeserializer::deserializeEtablissementsResponse("rawResponse");
+        $this->assertInstanceOf(EtablissementsResponse::class, $res);
+
+        $this->assertNull($res->getMeta());
+        $this->assertNull($res->getMessage());
+        $this->assertCount(0, $res->getEtablissements());
+    }
+
+    /**
+     * Tests the deserializeEtablissementsResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeEtablissementsResponseWithSiret(): void {
+
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/../Fixtures/Response/EtablissementResponse.json");
+
+        $res = ResponseDeserializer::deserializeEtablissementsResponse($json);
+        $this->assertInstanceOf(EtablissementsResponse::class, $res);
+
+        $this->assertNull($res->getMeta());
+        $this->assertNull($res->getMessage());
+        $this->assertCount(1, $res->getEtablissements());
+    }
+
+    /**
      * Tests the deserializeMeta() method.
      *
      * @return void
@@ -206,5 +260,56 @@ class ResponseDeserializerTest extends AbstractTestCase {
 
         $res = TestResponseDeserializer::deserializeUniteLegale([]);
         $this->assertNull($res);
+    }
+
+    /**
+     * Tests the deserializeUnitesLegalesResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeUnitesLegalesResponse(): void {
+
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/../Fixtures/Response/UnitesLegalesResponse.json");
+
+        $res = ResponseDeserializer::deserializeUnitesLegalesResponse($json);
+        $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
+
+        $this->assertNotNull($res->getMeta());
+        $this->assertNull($res->getMessage());
+        $this->assertCount(20, $res->getUnitesLegales());
+    }
+
+    /**
+     * Tests the deserializeUnitesLegalesResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeUnitesLegalesResponseWithMalformedResponse(): void {
+
+        $res = ResponseDeserializer::deserializeUnitesLegalesResponse("rawResponse");
+        $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
+
+        $this->assertNull($res->getMeta());
+        $this->assertNull($res->getMessage());
+        $this->assertCount(0, $res->getUnitesLegales());
+    }
+
+    /**
+     * Tests the deserializeUnitesLegalesResponse() method.
+     *
+     * @return void
+     */
+    public function testDeserializeUnitesLegalesResponseWithSiren(): void {
+
+        // Set a JSON mock.
+        $json = file_get_contents(__DIR__ . "/../Fixtures/Response/UniteLegaleResponse.json");
+
+        $res = ResponseDeserializer::deserializeUnitesLegalesResponse($json);
+        $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
+
+        $this->assertNull($res->getMeta());
+        $this->assertNull($res->getMessage());
+        $this->assertCount(1, $res->getUnitesLegales());
     }
 }

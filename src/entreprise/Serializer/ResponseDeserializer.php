@@ -14,6 +14,9 @@ namespace WBW\Library\GouvAPI\Entreprise\Serializer;
 use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
 use WBW\Library\GouvAPI\Entreprise\Model\Meta;
 use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
+use WBW\Library\GouvAPI\Entreprise\Response\AbstractResponse;
+use WBW\Library\GouvAPI\Entreprise\Response\EtablissementsResponse;
+use WBW\Library\GouvAPI\Entreprise\Response\UnitesLegalesResponse;
 use WBW\Library\Types\Helper\ArrayHelper;
 use WBW\Library\Types\Helper\BooleanHelper;
 
@@ -104,6 +107,36 @@ class ResponseDeserializer {
     }
 
     /**
+     * Deserializes an établissements response.
+     *
+     * @param string $rawResponse The raw response.
+     * @return EtablissementsResponse Returns the établissements response.
+     */
+    public static function deserializeEtablissementsResponse(string $rawResponse): EtablissementsResponse {
+
+        $model = new EtablissementsResponse();
+        $model->setRawResponse($rawResponse);
+
+        $response = json_decode($rawResponse, true);
+        if (null === $response) {
+            return $model;
+        }
+
+        $data = ArrayHelper::get($response, "etablissements", []);
+        if (true === array_key_exists("etablissement", $response)) {
+            $data = [$response["etablissement"]];
+        }
+
+        foreach ($data as $current) {
+            $model->addEtablissement(static::deserializeEtablissement($current));
+        }
+
+        static::deserializeResponse($response, $model);
+
+        return $model;
+    }
+
+    /**
      * Deserializes a meta.
      *
      * @param array $data The data.
@@ -122,6 +155,19 @@ class ResponseDeserializer {
         $model->setPage(ArrayHelper::get($data, "page"));
 
         return $model;
+    }
+
+    /**
+     * Deserializes a response.
+     *
+     * @param array $data The data.
+     * @param AbstractResponse $model The response.
+     * @return void
+     */
+    protected static function deserializeResponse(array $data, AbstractResponse $model): void {
+
+        $model->setMessage(ArrayHelper::get($data, "message"));
+        $model->setMeta(static::deserializeMeta(ArrayHelper::get($data, "meta", [])));
     }
 
     /**
@@ -174,6 +220,36 @@ class ResponseDeserializer {
         $model->setCaractereEmployeur(ArrayHelper::get($data, "caractere_employeur"));
         $model->setCreatedAt(ArrayHelper::get($data, "created_at"));
         $model->setUpdatedAt(ArrayHelper::get($data, "updated_at"));
+
+        return $model;
+    }
+
+    /**
+     * Deserializes an unités légales response.
+     *
+     * @param string $rawResponse The raw response.
+     * @return UnitesLegalesResponse Returns the établissements response.
+     */
+    public static function deserializeUnitesLegalesResponse(string $rawResponse): UnitesLegalesResponse {
+
+        $model = new UnitesLegalesResponse();
+        $model->setRawResponse($rawResponse);
+
+        $response = json_decode($rawResponse, true);
+        if (null === $response) {
+            return $model;
+        }
+
+        $data = ArrayHelper::get($response, "unites_legales", []);
+        if (true === array_key_exists("unite_legale", $response)) {
+            $data = [$response["unite_legale"]];
+        }
+
+        foreach ($data as $current) {
+            $model->addUniteLegale(static::deserializeUniteLegale($current));
+        }
+
+        static::deserializeResponse($response, $model);
 
         return $model;
     }
