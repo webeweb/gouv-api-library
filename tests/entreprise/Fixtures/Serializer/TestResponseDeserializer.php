@@ -34,14 +34,14 @@ class TestResponseDeserializer extends ResponseDeserializer {
     /**
      * {@inheritDoc}
      */
-    public static function deserializeMeta(array $data): ?Meta {
+    public static function deserializeMeta(?array $data): ?Meta {
         return parent::deserializeMeta($data);
     }
 
     /**
      * {@inheritDoc}
      */
-    public static function deserializeUniteLegale(array $data): ?UniteLegale {
+    public static function deserializeUniteLegale(?array $data): ?UniteLegale {
         return parent::deserializeUniteLegale($data);
     }
 }

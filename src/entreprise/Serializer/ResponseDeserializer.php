@@ -140,10 +140,10 @@ class ResponseDeserializer {
     /**
      * Deserializes a meta.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return Meta|null Returns the meta.
      */
-    protected static function deserializeMeta(array $data): ?Meta {
+    protected static function deserializeMeta(?array $data): ?Meta {
 
         if (0 === count($data)) {
             return null;
@@ -174,10 +174,10 @@ class ResponseDeserializer {
     /**
      * Deserializes an unité légale.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return UniteLegale|null Returns the unité légale.
      */
-    protected static function deserializeUniteLegale(array $data): ?UniteLegale {
+    protected static function deserializeUniteLegale(?array $data): ?UniteLegale {
 
         if (0 === count($data)) {
             return null;
