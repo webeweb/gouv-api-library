@@ -27,7 +27,7 @@ class TestResponseDeserializer extends ResponseDeserializer {
     /**
      * {@inheritDoc}
      */
-    public static function deserializeEtablissement(array $data): ?Etablissement {
+    public static function deserializeEtablissement(?array $data): ?Etablissement {
         return parent::deserializeEtablissement($data);
     }
 

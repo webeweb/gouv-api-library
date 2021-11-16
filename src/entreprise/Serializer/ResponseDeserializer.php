@@ -31,10 +31,10 @@ class ResponseDeserializer {
     /**
      * Deserializes an établisement.
      *
-     * @param array $data The data.
+     * @param array|null $data The data.
      * @return Etablissement|null Returns the établissement.
      */
-    protected static function deserializeEtablissement(array $data): ?Etablissement {
+    protected static function deserializeEtablissement(?array $data): ?Etablissement {
 
         if (0 === count($data)) {
             return null;
