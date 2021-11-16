@@ -36,7 +36,7 @@ class ResponseDeserializer {
      */
     protected static function deserializeEtablissement(?array $data): ?Etablissement {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -145,7 +145,7 @@ class ResponseDeserializer {
      */
     protected static function deserializeMeta(?array $data): ?Meta {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
@@ -179,7 +179,7 @@ class ResponseDeserializer {
      */
     protected static function deserializeUniteLegale(?array $data): ?UniteLegale {
 
-        if (0 === count($data)) {
+        if (null === $data || 0 === count($data)) {
             return null;
         }
 
