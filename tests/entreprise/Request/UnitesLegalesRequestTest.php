@@ -45,7 +45,7 @@ class UnitesLegalesRequestTest extends AbstractTestCase {
      */
     public function test__construct(): void {
 
-        $this->assertEquals("/api/sirene/v:version/unites_legales:siren", UnitesLegalesRequest::RESOURCE_PATH);
+        $this->assertEquals("/api/sirene/v3/unites_legales:siren", UnitesLegalesRequest::RESOURCE_PATH);
 
         $obj = new UnitesLegalesRequest();
 

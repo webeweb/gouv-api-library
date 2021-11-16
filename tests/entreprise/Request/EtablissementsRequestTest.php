@@ -45,7 +45,7 @@ class EtablissementsRequestTest extends AbstractTestCase {
      */
     public function test__construct(): void {
 
-        $this->assertEquals("/api/sirene/v:version/etablissements:siret", EtablissementsRequest::RESOURCE_PATH);
+        $this->assertEquals("/api/sirene/v3/etablissements:siret", EtablissementsRequest::RESOURCE_PATH);
 
         $obj = new EtablissementsRequest();
 

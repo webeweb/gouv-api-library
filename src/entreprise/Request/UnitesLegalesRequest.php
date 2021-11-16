@@ -29,7 +29,7 @@ class UnitesLegalesRequest extends AbstractRequest implements SubstituableReques
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/api/sirene/v:version/unites_legales:siren";
+    const RESOURCE_PATH = "/api/sirene/v3/unites_legales:siren";
 
     /**
      * Constructor.

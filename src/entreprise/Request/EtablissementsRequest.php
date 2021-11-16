@@ -29,7 +29,7 @@ class EtablissementsRequest extends AbstractRequest implements SubstituableReque
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/api/sirene/v:version/etablissements:siret";
+    const RESOURCE_PATH = "/api/sirene/v3/etablissements:siret";
 
     /**
      * Constructor.
