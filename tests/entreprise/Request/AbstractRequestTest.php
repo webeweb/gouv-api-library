@@ -23,7 +23,7 @@ use WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Request\TestRequest;
 class AbstractRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the __coonstruct() method.
+     * Tests the __construct() method.
      *
      * @return void
      */
