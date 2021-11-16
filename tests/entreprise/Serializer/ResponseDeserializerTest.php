@@ -130,6 +130,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $res = ResponseDeserializer::deserializeEtablissementsResponse($json);
         $this->assertInstanceOf(EtablissementsResponse::class, $res);
 
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertNotNull($res->getMeta());
         $this->assertNull($res->getMessage());
         $this->assertCount(20, $res->getEtablissements());
@@ -142,11 +143,15 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeEtablissementsResponseWithMalformedResponse(): void {
 
-        $res = ResponseDeserializer::deserializeEtablissementsResponse("rawResponse");
+        // Set a JSON mock.
+        $json = "";
+
+        $res = ResponseDeserializer::deserializeEtablissementsResponse($json);
         $this->assertInstanceOf(EtablissementsResponse::class, $res);
 
-        $this->assertNull($res->getMeta());
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertNull($res->getMessage());
+        $this->assertNull($res->getMeta());
         $this->assertCount(0, $res->getEtablissements());
     }
 
@@ -163,8 +168,9 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $res = ResponseDeserializer::deserializeEtablissementsResponse($json);
         $this->assertInstanceOf(EtablissementsResponse::class, $res);
 
-        $this->assertNull($res->getMeta());
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertNull($res->getMessage());
+        $this->assertNull($res->getMeta());
         $this->assertCount(1, $res->getEtablissements());
     }
 
@@ -278,6 +284,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $res = ResponseDeserializer::deserializeUnitesLegalesResponse($json);
         $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
 
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertNotNull($res->getMeta());
         $this->assertNull($res->getMessage());
         $this->assertCount(20, $res->getUnitesLegales());
@@ -290,11 +297,15 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeUnitesLegalesResponseWithMalformedResponse(): void {
 
-        $res = ResponseDeserializer::deserializeUnitesLegalesResponse("rawResponse");
+        // Set a JSON mock.
+        $json = "";
+
+        $res = ResponseDeserializer::deserializeUnitesLegalesResponse($json);
         $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
 
-        $this->assertNull($res->getMeta());
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertNull($res->getMessage());
+        $this->assertNull($res->getMeta());
         $this->assertCount(0, $res->getUnitesLegales());
     }
 
@@ -311,8 +322,9 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $res = ResponseDeserializer::deserializeUnitesLegalesResponse($json);
         $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
 
-        $this->assertNull($res->getMeta());
+        $this->assertEquals($json, $res->getRawResponse());
         $this->assertNull($res->getMessage());
+        $this->assertNull($res->getMeta());
         $this->assertCount(1, $res->getUnitesLegales());
     }
 }
