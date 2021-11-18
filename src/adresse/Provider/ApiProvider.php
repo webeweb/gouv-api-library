@@ -12,7 +12,7 @@
 namespace WBW\Library\GouvAPI\Adresse\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GeoJSON\Model\FeatureCollection;
+use WBW\Library\GeoJson\Model\FeatureCollection;
 use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
 use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;
 use WBW\Library\GouvAPI\Adresse\Request\SearchCsvRequest;

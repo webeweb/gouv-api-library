@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GouvAPI\Geo\Serializer;
 
-use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
+use WBW\Library\GeoJson\Serializer\JsonDeserializer;
 use WBW\Library\GouvAPI\Geo\Model\Commune;
 use WBW\Library\GouvAPI\Geo\Model\Departement;
 use WBW\Library\GouvAPI\Geo\Model\Region;

@@ -11,8 +11,8 @@
 
 namespace WBW\Library\GouvAPI\Geo\Tests\Model;
 
-use WBW\Library\GeoJSON\Model\Geometry\Point;
-use WBW\Library\GeoJSON\Model\Geometry\Polygon;
+use WBW\Library\GeoJson\Model\Geometry\Point;
+use WBW\Library\GeoJson\Model\Geometry\Polygon;
 use WBW\Library\GouvAPI\Geo\Model\Commune;
 use WBW\Library\GouvAPI\Geo\Model\Departement;
 use WBW\Library\GouvAPI\Geo\Model\Region;

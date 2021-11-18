@@ -12,7 +12,7 @@
 namespace WBW\Library\GouvAPI\Adresse\Tests\Provider;
 
 use Exception;
-use WBW\Library\GeoJSON\Model\FeatureCollection;
+use WBW\Library\GeoJson\Model\FeatureCollection;
 use WBW\Library\GouvAPI\Adresse\Provider\ApiProvider;
 use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
 use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;

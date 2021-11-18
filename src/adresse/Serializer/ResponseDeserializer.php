@@ -11,8 +11,8 @@
 
 namespace WBW\Library\GouvAPI\Adresse\Serializer;
 
-use WBW\Library\GeoJSON\Model\FeatureCollection;
-use WBW\Library\GeoJSON\Serializer\JsonDeserializer;
+use WBW\Library\GeoJson\Model\FeatureCollection;
+use WBW\Library\GeoJson\Serializer\JsonDeserializer;
 use WBW\Library\GouvAPI\Adresse\Model\Adresse;
 use WBW\Library\GouvAPI\Adresse\Response\AbstractCsvResponse;
 use WBW\Library\GouvAPI\Adresse\Response\ReverseCsvResponse;

@@ -11,8 +11,8 @@
 
 namespace WBW\Library\GouvAPI\Geo\Model;
 
-use WBW\Library\GeoJSON\Model\Geometry\Point;
-use WBW\Library\GeoJSON\Model\Geometry\Polygon;
+use WBW\Library\GeoJson\Model\Geometry\Point;
+use WBW\Library\GeoJson\Model\Geometry\Polygon;
 use WBW\Library\GouvAPI\Common\Model\Attribute\StringNomTrait;
 use WBW\Library\GouvAPI\Geo\Model\Attribute\StringCodeDepartementTrait;
 use WBW\Library\GouvAPI\Geo\Model\Attribute\StringCodeRegionTrait;
