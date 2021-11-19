@@ -9,23 +9,23 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Model;
+namespace WBW\Library\GouvApi\Entreprise\Model;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\IntegerAnneeEffectifsTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\IntegerNombrePeriodesTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringActivitePrincipaleTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringCaractereEmployeurTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringCreatedAtTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringDateCreationTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringDateDebutTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringDateDernierTraitementTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringEtatAdministratifTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringNomenclatureActivitePrincipaleTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringSirenTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringSiretTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringStatutDiffusionTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringTrancheEffectifsTrait;
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringUpdatedAtTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\IntegerAnneeEffectifsTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\IntegerNombrePeriodesTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringActivitePrincipaleTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringCaractereEmployeurTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringCreatedAtTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringDateCreationTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringDateDebutTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringDateDernierTraitementTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringEtatAdministratifTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringNomenclatureActivitePrincipaleTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSirenTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSiretTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringStatutDiffusionTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringTrancheEffectifsTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringUpdatedAtTrait;
 use WBW\Library\Traits\Floats\FloatLatitudeTrait;
 use WBW\Library\Traits\Floats\FloatLongitudeTrait;
 use WBW\Library\Traits\Integers\IntegerIdTrait;
@@ -34,7 +34,7 @@ use WBW\Library\Traits\Integers\IntegerIdTrait;
  * Etablissement.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Model
+ * @package WBW\Library\GouvApi\Entreprise\Model
  */
 class Etablissement {
 

@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Model;
+namespace WBW\Library\GouvApi\Entreprise\Model;
 
 use WBW\Library\Traits\Integers\IntegerPageTrait;
 use WBW\Library\Traits\Integers\IntegerPerPageTrait;
@@ -18,7 +18,7 @@ use WBW\Library\Traits\Integers\IntegerPerPageTrait;
  * Meta.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Model
+ * @package WBW\Library\GouvApi\Entreprise\Model
  */
 class Meta {
 

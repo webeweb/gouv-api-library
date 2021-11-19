@@ -9,17 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Model\Attribute;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringEtatAdministratifTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringEtatAdministratifTrait;
 
 /**
  * Test string état administratif trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Model\Attribute
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
-class TestStringEtatAdministratifTrait {
+class TestStringEtatAdministratifTrait
+{
 
     use StringEtatAdministratifTrait;
 }

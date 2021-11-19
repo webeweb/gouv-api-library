@@ -11,8 +11,8 @@
 
 require __DIR__ . "/../../../vendor/autoload.php";
 
-use WBW\Library\GouvAPI\Geo\Provider\RegionApiProvider;
-use WBW\Library\GouvAPI\Geo\Request\Region\DepartementsRequest;
+use WBW\Library\GouvApi\Geo\Provider\RegionApiProvider;
+use WBW\Library\GouvApi\Geo\Request\Region\DepartementsRequest;
 
 // Create the API provider.
 $provider = new RegionApiProvider();

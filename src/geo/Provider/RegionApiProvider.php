@@ -9,25 +9,26 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Provider;
+namespace WBW\Library\GouvApi\Geo\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GouvAPI\Geo\Request\Region\CommunesRequest;
-use WBW\Library\GouvAPI\Geo\Request\Region\DepartementsRequest;
-use WBW\Library\GouvAPI\Geo\Request\Region\RegionsRequest;
-use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
-use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
-use WBW\Library\GouvAPI\Geo\Response\RegionsResponse;
-use WBW\Library\GouvAPI\Geo\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Geo\Request\Region\CommunesRequest;
+use WBW\Library\GouvApi\Geo\Request\Region\DepartementsRequest;
+use WBW\Library\GouvApi\Geo\Request\Region\RegionsRequest;
+use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
+use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvApi\Geo\Response\RegionsResponse;
+use WBW\Library\GouvApi\Geo\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * Région API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Provider
+ * @package WBW\Library\GouvApi\Geo\Provider
  */
-class RegionApiProvider extends ApiProvider {
+class RegionApiProvider extends ApiProvider
+{
 
     /**
      * Communes.

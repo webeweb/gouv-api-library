@@ -9,20 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Serializer;
+namespace WBW\Library\GouvApi\Entreprise\Serializer;
 
-use WBW\Library\GouvAPI\Entreprise\Request\AbstractRequest;
-use WBW\Library\GouvAPI\Entreprise\Request\EtablissementsRequest;
-use WBW\Library\GouvAPI\Entreprise\Request\UnitesLegalesRequest;
+use WBW\Library\GouvApi\Entreprise\Request\AbstractRequest;
+use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
+use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
 use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * Request serializer.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Serializer
+ * @package WBW\Library\GouvApi\Entreprise\Serializer
  */
-class RequestSerializer {
+class RequestSerializer
+{
 
     /**
      * Serializes an établissements request.

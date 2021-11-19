@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Response;
+namespace WBW\Library\GouvApi\Adresse\Response;
 
-use WBW\Library\GouvAPI\Adresse\Model\Adresse;
-use WBW\Library\GouvAPI\Common\Response\AbstractResponse;
+use WBW\Library\GouvApi\Adresse\Model\Adresse;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 
 /**
  * Adresses response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Response
+ * @package WBW\Library\GouvApi\Adresse\Response
  */
-class AdressesResponse extends AbstractResponse {
+class AdressesResponse extends AbstractResponse
+{
 
     /**
      * Adresses.

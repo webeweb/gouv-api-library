@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Common\Provider;
+namespace WBW\Library\GouvApi\Common\Provider;
 
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Log\LoggerInterface;
-use WBW\Library\GouvAPI\Common\Request\AbstractRequest;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\Provider\AbstractProvider as BaseProvider;
 use WBW\Library\Provider\Exception\ApiException;
 
@@ -23,7 +23,7 @@ use WBW\Library\Provider\Exception\ApiException;
  * Abstract provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Common\Provider
+ * @package WBW\Library\GouvApi\Common\Provider
  * @abstract
  */
 abstract class AbstractProvider extends BaseProvider {

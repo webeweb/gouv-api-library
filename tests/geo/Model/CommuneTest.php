@@ -9,22 +9,23 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Model;
+namespace WBW\Library\GouvApi\Geo\Tests\Model;
 
 use WBW\Library\GeoJson\Model\Geometry\Point;
 use WBW\Library\GeoJson\Model\Geometry\Polygon;
-use WBW\Library\GouvAPI\Geo\Model\Commune;
-use WBW\Library\GouvAPI\Geo\Model\Departement;
-use WBW\Library\GouvAPI\Geo\Model\Region;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Model\Commune;
+use WBW\Library\GouvApi\Geo\Model\Departement;
+use WBW\Library\GouvApi\Geo\Model\Region;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 
 /**
  * Commune test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Model
+ * @package WBW\Library\GouvApi\Geo\Tests\Model
  */
-class CommuneTest extends AbstractTestCase {
+class CommuneTest extends AbstractTestCase
+{
 
     /**
      * Tests the setCentre() method.

@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Request\Region;
+namespace WBW\Library\GouvApi\Geo\Request\Region;
 
-use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
+use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Départements request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Request\Region
+ * @package WBW\Library\GouvApi\Geo\Request\Region
  */
 class DepartementsRequest extends AbstractRequest implements SubstituableRequestInterface {
 

@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Serializer;
+namespace WBW\Library\GouvApi\Adresse\Serializer;
 
-use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
-use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;
-use WBW\Library\GouvAPI\Adresse\Request\SearchCsvRequest;
-use WBW\Library\GouvAPI\Adresse\Request\SearchRequest;
+use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
+use WBW\Library\GouvApi\Adresse\Request\ReverseRequest;
+use WBW\Library\GouvApi\Adresse\Request\SearchCsvRequest;
+use WBW\Library\GouvApi\Adresse\Request\SearchRequest;
 use WBW\Library\Types\Helper\ArrayHelper;
 use WBW\Library\Types\Helper\IntegerHelper;
 
@@ -22,9 +22,10 @@ use WBW\Library\Types\Helper\IntegerHelper;
  * Request serializer.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Serializer
+ * @package WBW\Library\GouvApi\Adresse\Serializer
  */
-class RequestSerializer {
+class RequestSerializer
+{
 
     /**
      * Serialize a reverse CSV request.

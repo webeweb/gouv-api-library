@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Tests\Serializer;
+namespace WBW\Library\GouvApi\Calendrier\Tests\Serializer;
 
-use WBW\Library\GouvAPI\Calendrier\Response\JoursFeriesResponse;
-use WBW\Library\GouvAPI\Calendrier\Serializer\ResponseDeserializer;
-use WBW\Library\GouvAPI\Calendrier\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
+use WBW\Library\GouvApi\Calendrier\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 
 /**
  * Response deserializer test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Tests\Serializer
+ * @package WBW\Library\GouvApi\Calendrier\Tests\Serializer
  */
-class ResponseDeserializerTest extends AbstractTestCase {
+class ResponseDeserializerTest extends AbstractTestCase
+{
 
     /**
      * Tests the deserializeJoursFeriesResponse() method.

@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Model;
+namespace WBW\Library\GouvApi\Geo\Model;
 
-use WBW\Library\GouvAPI\Common\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
 use WBW\Library\Traits\Floats\FloatScoreTrait;
 use WBW\Library\Traits\Strings\StringCodeTrait;
 
@@ -19,7 +19,7 @@ use WBW\Library\Traits\Strings\StringCodeTrait;
  * Région.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Model
+ * @package WBW\Library\GouvApi\Geo\Model
  */
 class Region {
 

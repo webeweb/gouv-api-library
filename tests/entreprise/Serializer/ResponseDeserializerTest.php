@@ -9,24 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Serializer;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Serializer;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
-use WBW\Library\GouvAPI\Entreprise\Model\Meta;
-use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
-use WBW\Library\GouvAPI\Entreprise\Response\EtablissementsResponse;
-use WBW\Library\GouvAPI\Entreprise\Response\UnitesLegalesResponse;
-use WBW\Library\GouvAPI\Entreprise\Serializer\ResponseDeserializer;
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Serializer\TestResponseDeserializer;
+use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
+use WBW\Library\GouvApi\Entreprise\Model\Meta;
+use WBW\Library\GouvApi\Entreprise\Model\UniteLegale;
+use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
+use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
+use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Serializer\TestResponseDeserializer;
 
 /**
  * Response deserializer test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Serializer
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Serializer
  */
-class ResponseDeserializerTest extends AbstractTestCase {
+class ResponseDeserializerTest extends AbstractTestCase
+{
 
     /**
      * Tests the deserializeEtablissement() method.

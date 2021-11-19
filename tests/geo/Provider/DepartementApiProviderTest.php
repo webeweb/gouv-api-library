@@ -9,23 +9,24 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Provider;
+namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
 use Exception;
-use WBW\Library\GouvAPI\Geo\Provider\DepartementApiProvider;
-use WBW\Library\GouvAPI\Geo\Request\Departement\CommunesRequest;
-use WBW\Library\GouvAPI\Geo\Request\Departement\DepartementsRequest;
-use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
-use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Provider\DepartementApiProvider;
+use WBW\Library\GouvApi\Geo\Request\Departement\CommunesRequest;
+use WBW\Library\GouvApi\Geo\Request\Departement\DepartementsRequest;
+use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
+use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 
 /**
  * Département API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Provider
+ * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
-class DepartementApiProviderTest extends AbstractTestCase {
+class DepartementApiProviderTest extends AbstractTestCase
+{
 
     /**
      * Tests the communes() method.

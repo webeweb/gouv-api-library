@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Model;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Model;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
-use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
+use WBW\Library\GouvApi\Entreprise\Model\UniteLegale;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 
 /**
  * Etablisssement test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Model
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Model
  */
-class EtablissementTest extends AbstractTestCase {
+class EtablissementTest extends AbstractTestCase
+{
 
     /**
      * Tests the setActivitePrincipaleRegistreMetiers() method.

@@ -9,26 +9,27 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Provider;
+namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
 use Exception;
-use WBW\Library\GouvAPI\Geo\Provider\RegionApiProvider;
-use WBW\Library\GouvAPI\Geo\Request\Region\CommunesRequest;
-use WBW\Library\GouvAPI\Geo\Request\Region\DepartementsRequest;
-use WBW\Library\GouvAPI\Geo\Request\Region\RegionsRequest;
-use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
-use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
-use WBW\Library\GouvAPI\Geo\Response\RegionsResponse;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Provider\RegionApiProvider;
+use WBW\Library\GouvApi\Geo\Request\Region\CommunesRequest;
+use WBW\Library\GouvApi\Geo\Request\Region\DepartementsRequest;
+use WBW\Library\GouvApi\Geo\Request\Region\RegionsRequest;
+use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
+use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvApi\Geo\Response\RegionsResponse;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * Région API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Provider
+ * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
-class RegionApiProviderTest extends AbstractTestCase {
+class RegionApiProviderTest extends AbstractTestCase
+{
 
     /**
      * Tests the communes() method.

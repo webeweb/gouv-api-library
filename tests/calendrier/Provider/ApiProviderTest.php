@@ -9,21 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Tests\Provider;
+namespace WBW\Library\GouvApi\Calendrier\Tests\Provider;
 
 use Exception;
-use WBW\Library\GouvAPI\Calendrier\Provider\ApiProvider;
-use WBW\Library\GouvAPI\Calendrier\Request\JoursFeriesRequest;
-use WBW\Library\GouvAPI\Calendrier\Response\JoursFeriesResponse;
-use WBW\Library\GouvAPI\Calendrier\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Calendrier\Provider\ApiProvider;
+use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
+use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
+use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 
 /**
  * API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Tests\Provider
+ * @package WBW\Library\GouvApi\Calendrier\Tests\Provider
  */
-class ApiProviderTest extends AbstractTestCase {
+class ApiProviderTest extends AbstractTestCase
+{
 
     /**
      * Tests the joursFeries() method.

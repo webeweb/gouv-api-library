@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Tests\Model;
+namespace WBW\Library\GouvApi\Calendrier\Tests\Model;
 
-use WBW\Library\GouvAPI\Calendrier\Model\ZoneInterface;
-use WBW\Library\GouvAPI\Calendrier\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
+use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 
 /**
  * Zone interface test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Tests\Model
+ * @package WBW\Library\GouvApi\Calendrier\Tests\Model
  */
-class ZoneInterfaceTest extends AbstractTestCase {
+class ZoneInterfaceTest extends AbstractTestCase
+{
 
     /**
      * Tests the __construct() method.

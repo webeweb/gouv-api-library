@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Request;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
-use WBW\Library\GouvAPI\Entreprise\Request\EtablissementsRequest;
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Etablissements request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Request
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Request
  */
-class EtablissementsRequestTest extends AbstractTestCase {
+class EtablissementsRequestTest extends AbstractTestCase
+{
 
     /**
      * Tests the getSubstituables() method.

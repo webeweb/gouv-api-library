@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Provider;
+namespace WBW\Library\GouvApi\Entreprise\Provider;
 
-use WBW\Library\GouvAPI\Common\Provider\AbstractProvider as BaseProvider;
+use WBW\Library\GouvApi\Common\Provider\AbstractProvider as BaseProvider;
 
 /**
  * Abstract Provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Provider
+ * @package WBW\Library\GouvApi\Entreprise\Provider
  * @abstract
  */
 abstract class AbstractProvider extends BaseProvider {

@@ -9,17 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Tests\Fixtures\Request;
+namespace WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request;
 
-use WBW\Library\GouvAPI\Adresse\Request\AbstractCsvRequest;
+use WBW\Library\GouvApi\Adresse\Request\AbstractCsvRequest;
 
 /**
  * Test CSV request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Tests\Fixtures\Request
+ * @package WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request
  */
-class TestCsvRequest extends AbstractCsvRequest {
+class TestCsvRequest extends AbstractCsvRequest
+{
 
     /**
      * {@inheritDoc}

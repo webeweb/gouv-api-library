@@ -9,17 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Common\Tests\Fixtures\Provider;
+namespace WBW\Library\GouvApi\Common\Tests\Fixtures\Provider;
 
-use WBW\Library\GouvAPI\Common\Provider\AbstractProvider;
+use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 
 /**
  * Test provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Common\Tests\Fixtures\Provider
+ * @package WBW\Library\GouvApi\Common\Tests\Fixtures\Provider
  */
-class TestProvider extends AbstractProvider {
+class TestProvider extends AbstractProvider
+{
 
     /**
      * {@inheritDoc}

@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Tests\Response;
+namespace WBW\Library\GouvApi\Adresse\Tests\Response;
 
-use WBW\Library\GouvAPI\Adresse\Response\AbstractCsvResponse;
-use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Adresse\Tests\Fixtures\Response\TestCsvResponse;
+use WBW\Library\GouvApi\Adresse\Response\AbstractCsvResponse;
+use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Adresse\Tests\Fixtures\Response\TestCsvResponse;
 
 /**
  * Abstract CSV response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Tests\Response
+ * @package WBW\Library\GouvApi\Adresse\Tests\Response
  */
-class AbstractCsvResponseTest extends AbstractTestCase {
+class AbstractCsvResponseTest extends AbstractTestCase
+{
 
     /**
      * Tests the enumResultColumns() method.

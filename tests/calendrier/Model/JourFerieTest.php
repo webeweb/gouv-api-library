@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Tests\Model;
+namespace WBW\Library\GouvApi\Calendrier\Tests\Model;
 
-use WBW\Library\GouvAPI\Calendrier\Model\JourFerie;
-use WBW\Library\GouvAPI\Calendrier\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Calendrier\Model\JourFerie;
+use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 
 /**
  * Jour férié test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Tests\Model
+ * @package WBW\Library\GouvApi\Calendrier\Tests\Model
  */
-class JourFerieTest extends AbstractTestCase {
+class JourFerieTest extends AbstractTestCase
+{
 
     /**
      * Tests the __construct() method.

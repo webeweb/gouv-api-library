@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Provider;
+namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
-use WBW\Library\GouvAPI\Geo\Provider\ApiProvider;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Geo\Tests\Fixtures\Provider\TestApiProvider;
+use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Tests\Fixtures\Provider\TestApiProvider;
 
 /**
  * Découpage administratif provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Provider
+ * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
-class ApiProviderTest extends AbstractTestCase {
+class ApiProviderTest extends AbstractTestCase
+{
 
     /**
      * Tests the __construct() method.

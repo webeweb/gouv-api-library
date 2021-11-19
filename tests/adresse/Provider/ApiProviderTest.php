@@ -9,26 +9,27 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Tests\Provider;
+namespace WBW\Library\GouvApi\Adresse\Tests\Provider;
 
 use Exception;
 use WBW\Library\GeoJson\Model\FeatureCollection;
-use WBW\Library\GouvAPI\Adresse\Provider\ApiProvider;
-use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
-use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;
-use WBW\Library\GouvAPI\Adresse\Request\SearchCsvRequest;
-use WBW\Library\GouvAPI\Adresse\Request\SearchRequest;
-use WBW\Library\GouvAPI\Adresse\Response\ReverseCsvResponse;
-use WBW\Library\GouvAPI\Adresse\Response\SearchCsvResponse;
-use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Adresse\Provider\ApiProvider;
+use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
+use WBW\Library\GouvApi\Adresse\Request\ReverseRequest;
+use WBW\Library\GouvApi\Adresse\Request\SearchCsvRequest;
+use WBW\Library\GouvApi\Adresse\Request\SearchRequest;
+use WBW\Library\GouvApi\Adresse\Response\ReverseCsvResponse;
+use WBW\Library\GouvApi\Adresse\Response\SearchCsvResponse;
+use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 
 /**
  * API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Tests\Provider
+ * @package WBW\Library\GouvApi\Adresse\Tests\Provider
  */
-class ApiProviderTest extends AbstractTestCase {
+class ApiProviderTest extends AbstractTestCase
+{
 
     /**
      * Tests the reverse() method.

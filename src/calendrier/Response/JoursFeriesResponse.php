@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Response;
+namespace WBW\Library\GouvApi\Calendrier\Response;
 
-use WBW\Library\GouvAPI\Calendrier\Model\JourFerie;
-use WBW\Library\GouvAPI\Common\Response\AbstractResponse;
+use WBW\Library\GouvApi\Calendrier\Model\JourFerie;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 
 /**
  * Jours fériés response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Response
+ * @package WBW\Library\GouvApi\Calendrier\Response
  */
-class JoursFeriesResponse extends AbstractResponse {
+class JoursFeriesResponse extends AbstractResponse
+{
 
     /**
      * Jours fériés.

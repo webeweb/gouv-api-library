@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Model\Attribute;
+namespace WBW\Library\GouvApi\Geo\Model\Attribute;
 
 /**
  * String code région trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Model\Attribute
+ * @package WBW\Library\GouvApi\Geo\Model\Attribute
  */
-trait StringCodeRegionTrait {
+trait StringCodeRegionTrait
+{
 
     /**
      * Code région.

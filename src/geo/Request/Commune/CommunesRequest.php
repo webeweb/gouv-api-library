@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Request\Commune;
+namespace WBW\Library\GouvApi\Geo\Request\Commune;
 
-use WBW\Library\GouvAPI\Geo\Model\Attribute\StringGeometryTrait;
-use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
+use WBW\Library\GouvApi\Geo\Model\Attribute\StringGeometryTrait;
+use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 use WBW\Library\Traits\Strings\StringFormatTrait;
 
@@ -20,9 +20,10 @@ use WBW\Library\Traits\Strings\StringFormatTrait;
  * Communes request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Request\Commune
+ * @package WBW\Library\GouvApi\Geo\Request\Commune
  */
-class CommunesRequest extends AbstractRequest implements SubstituableRequestInterface {
+class CommunesRequest extends AbstractRequest implements SubstituableRequestInterface
+{
 
     use StringFormatTrait;
     use StringGeometryTrait;

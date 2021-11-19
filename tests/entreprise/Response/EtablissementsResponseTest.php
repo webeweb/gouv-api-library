@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Response;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Response;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
-use WBW\Library\GouvAPI\Entreprise\Response\EtablissementsResponse;
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
+use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 
 /**
  * Etablissements response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Response
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Response
  */
-class EtablissementsResponseTest extends AbstractTestCase {
+class EtablissementsResponseTest extends AbstractTestCase
+{
 
     /**
      * Tests the addEtablissement() method.

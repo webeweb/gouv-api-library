@@ -9,21 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Provider;
+namespace WBW\Library\GouvApi\Calendrier\Provider;
 
-use WBW\Library\GouvAPI\Calendrier\Request\JoursFeriesRequest;
-use WBW\Library\GouvAPI\Calendrier\Response\JoursFeriesResponse;
-use WBW\Library\GouvAPI\Calendrier\Serializer\ResponseDeserializer;
-use WBW\Library\GouvAPI\Common\Provider\AbstractProvider;
+use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
+use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
+use WBW\Library\GouvApi\Calendrier\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API Provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Provider
+ * @package WBW\Library\GouvApi\Calendrier\Provider
  */
-class ApiProvider extends AbstractProvider {
+class ApiProvider extends AbstractProvider
+{
 
     /**
      * Endpoint path.

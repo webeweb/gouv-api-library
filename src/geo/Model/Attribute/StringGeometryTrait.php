@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Model\Attribute;
+namespace WBW\Library\GouvApi\Geo\Model\Attribute;
 
 /**
  * String geometry trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Model\Attribute
+ * @package WBW\Library\GouvApi\Geo\Model\Attribute
  */
-trait StringGeometryTrait {
+trait StringGeometryTrait
+{
 
     /**
      * Geometry.

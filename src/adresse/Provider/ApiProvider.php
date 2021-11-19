@@ -9,19 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Provider;
+namespace WBW\Library\GouvApi\Adresse\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\GeoJson\Model\FeatureCollection;
-use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
-use WBW\Library\GouvAPI\Adresse\Request\ReverseRequest;
-use WBW\Library\GouvAPI\Adresse\Request\SearchCsvRequest;
-use WBW\Library\GouvAPI\Adresse\Request\SearchRequest;
-use WBW\Library\GouvAPI\Adresse\Response\ReverseCsvResponse;
-use WBW\Library\GouvAPI\Adresse\Response\SearchCsvResponse;
-use WBW\Library\GouvAPI\Adresse\Serializer\RequestSerializer;
-use WBW\Library\GouvAPI\Adresse\Serializer\ResponseDeserializer;
-use WBW\Library\GouvAPI\Common\Provider\AbstractProvider;
+use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
+use WBW\Library\GouvApi\Adresse\Request\ReverseRequest;
+use WBW\Library\GouvApi\Adresse\Request\SearchCsvRequest;
+use WBW\Library\GouvApi\Adresse\Request\SearchRequest;
+use WBW\Library\GouvApi\Adresse\Response\ReverseCsvResponse;
+use WBW\Library\GouvApi\Adresse\Response\SearchCsvResponse;
+use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
+use WBW\Library\GouvApi\Adresse\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 use WBW\Library\Provider\Exception\ApiException;
 use WBW\Library\Types\Helper\ArrayHelper;
 
@@ -29,9 +29,10 @@ use WBW\Library\Types\Helper\ArrayHelper;
  * API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Provider
+ * @package WBW\Library\GouvApi\Adresse\Provider
  */
-class ApiProvider extends AbstractProvider {
+class ApiProvider extends AbstractProvider
+{
 
     /**
      * Endpoint path.

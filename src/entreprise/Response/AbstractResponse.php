@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Response;
+namespace WBW\Library\GouvApi\Entreprise\Response;
 
-use WBW\Library\GouvAPI\Common\Response\AbstractResponse as BaseResponse;
-use WBW\Library\GouvAPI\Entreprise\Model\Meta;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse as BaseResponse;
+use WBW\Library\GouvApi\Entreprise\Model\Meta;
 use WBW\Library\Traits\Strings\StringMessageTrait;
 
 /**
  * Abstract response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Response
+ * @package WBW\Library\GouvApi\Entreprise\Response
  */
-abstract class AbstractResponse extends BaseResponse {
+abstract class AbstractResponse extends BaseResponse
+{
 
     use StringMessageTrait;
 

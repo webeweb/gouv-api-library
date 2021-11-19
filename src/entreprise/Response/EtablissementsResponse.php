@@ -9,17 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Response;
+namespace WBW\Library\GouvApi\Entreprise\Response;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
+use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
 
 /**
  * Etablissements response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Response
+ * @package WBW\Library\GouvApi\Entreprise\Response
  */
-class EtablissementsResponse extends AbstractResponse {
+class EtablissementsResponse extends AbstractResponse
+{
 
     /**
      * Etablissements.

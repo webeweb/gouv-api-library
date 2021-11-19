@@ -9,17 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Common\Tests\Fixtures\Model\Attribute;
+namespace WBW\Library\GouvApi\Common\Tests\Fixtures\Model\Attribute;
 
-use WBW\Library\GouvAPI\Common\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
 
 /**
  * Test string nom trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Common\Tests\Fixtures\Model\Attribute
+ * @package WBW\Library\GouvApi\Common\Tests\Fixtures\Model\Attribute
  */
-class TestStringNomTrait {
+class TestStringNomTrait
+{
 
     use StringNomTrait;
 }

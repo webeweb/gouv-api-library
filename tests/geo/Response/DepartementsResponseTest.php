@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Response;
+namespace WBW\Library\GouvApi\Geo\Tests\Response;
 
-use WBW\Library\GouvAPI\Geo\Model\Departement;
-use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Model\Departement;
+use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 
 /**
  * Départements response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Response
+ * @package WBW\Library\GouvApi\Geo\Tests\Response
  */
-class DepartementsResponseTest extends AbstractTestCase {
+class DepartementsResponseTest extends AbstractTestCase
+{
 
     /**
      * Tests the addDepartement() method.

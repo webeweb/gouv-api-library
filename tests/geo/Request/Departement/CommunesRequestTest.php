@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Request\Departement;
+namespace WBW\Library\GouvApi\Geo\Tests\Request\Departement;
 
-use WBW\Library\GouvAPI\Geo\Request\Departement\CommunesRequest;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Request\Departement\CommunesRequest;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Communes request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Request\Departement
+ * @package WBW\Library\GouvApi\Geo\Tests\Request\Departement
  */
-class CommunesRequestTest extends AbstractTestCase {
+class CommunesRequestTest extends AbstractTestCase
+{
 
     /**
      * Tests the getSubstituables() method.

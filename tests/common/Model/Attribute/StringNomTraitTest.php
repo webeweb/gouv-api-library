@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Common\Tests\Model\Attribute;
+namespace WBW\Library\GouvApi\Common\Tests\Model\Attribute;
 
-use WBW\Library\GouvAPI\Common\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Common\Tests\Fixtures\Model\Attribute\TestStringNomTrait;
+use WBW\Library\GouvApi\Common\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Common\Tests\Fixtures\Model\Attribute\TestStringNomTrait;
 
 /**
  * String nom trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Common\Tests\Model\Attribute
+ * @package WBW\Library\GouvApi\Common\Tests\Model\Attribute
  */
-class StringNomTraitTest extends AbstractTestCase {
+class StringNomTraitTest extends AbstractTestCase
+{
 
     /**
      * Tests the setNom() method.

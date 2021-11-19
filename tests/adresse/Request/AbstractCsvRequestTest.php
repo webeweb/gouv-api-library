@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Tests\Request;
+namespace WBW\Library\GouvApi\Adresse\Tests\Request;
 
-use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Adresse\Tests\Fixtures\Request\TestCsvRequest;
+use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request\TestCsvRequest;
 
 /**
  * Abstract CSV request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Tests\Request
+ * @package WBW\Library\GouvApi\Adresse\Tests\Request
  */
-class AbstractCsvRequestTest extends AbstractTestCase {
+class AbstractCsvRequestTest extends AbstractTestCase
+{
 
     /**
      * Tests the __construct() method.

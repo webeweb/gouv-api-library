@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Tests\Model;
+namespace WBW\Library\GouvApi\Adresse\Tests\Model;
 
-use WBW\Library\GouvAPI\Adresse\Model\Adresse;
-use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Adresse\Model\Adresse;
+use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 
 /**
  * Adresse test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Tests\Model
+ * @package WBW\Library\GouvApi\Adresse\Tests\Model
  */
-class AdresseTest extends AbstractTestCase {
+class AdresseTest extends AbstractTestCase
+{
 
     /**
      * Tests the addColumn() method.

@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Tests\Response;
+namespace WBW\Library\GouvApi\Calendrier\Tests\Response;
 
-use WBW\Library\GouvAPI\Calendrier\Model\JourFerie;
-use WBW\Library\GouvAPI\Calendrier\Response\JoursFeriesResponse;
-use WBW\Library\GouvAPI\Calendrier\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Calendrier\Model\JourFerie;
+use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
+use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 
 /**
  * Jours fériés response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Tests\Response
+ * @package WBW\Library\GouvApi\Calendrier\Tests\Response
  */
-class JoursFeriesResponseTest extends AbstractTestCase {
+class JoursFeriesResponseTest extends AbstractTestCase
+{
 
     /**
      * Tests the addJourFerie() method.

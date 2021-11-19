@@ -11,8 +11,8 @@
 
 require __DIR__ . "/../../vendor/autoload.php";
 
-use WBW\Library\GouvAPI\Calendrier\Provider\ApiProvider;
-use WBW\Library\GouvAPI\Calendrier\Request\JoursFeriesRequest;
+use WBW\Library\GouvApi\Calendrier\Provider\ApiProvider;
+use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 
 // Create the API provider.
 $provider = new ApiProvider();

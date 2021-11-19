@@ -9,20 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Serializer;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Serializer;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
-use WBW\Library\GouvAPI\Entreprise\Model\Meta;
-use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
-use WBW\Library\GouvAPI\Entreprise\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
+use WBW\Library\GouvApi\Entreprise\Model\Meta;
+use WBW\Library\GouvApi\Entreprise\Model\UniteLegale;
+use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
 
 /**
  * Test response deserializer.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Serializer
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Serializer
  */
-class TestResponseDeserializer extends ResponseDeserializer {
+class TestResponseDeserializer extends ResponseDeserializer
+{
 
     /**
      * {@inheritDoc}

@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Model\Attribute;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute;
 
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Model\Attribute\TestStringStatutDiffusionTrait;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringStatutDiffusionTrait;
 
 /**
  * String statut diffusion trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Model\Attribute
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringStatutDiffusionTraitTest extends AbstractTestCase {
+class StringStatutDiffusionTraitTest extends AbstractTestCase
+{
 
     /**
      * Tests the setStatutDiffusion() method.

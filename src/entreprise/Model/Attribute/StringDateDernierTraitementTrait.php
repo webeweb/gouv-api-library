@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Model\Attribute;
+namespace WBW\Library\GouvApi\Entreprise\Model\Attribute;
 
 /**
  * String date dernier traitement trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Model\Attribute
+ * @package WBW\Library\GouvApi\Entreprise\Model\Attribute
  */
-trait StringDateDernierTraitementTrait {
+trait StringDateDernierTraitementTrait
+{
 
     /**
      * Date dernier traitement.

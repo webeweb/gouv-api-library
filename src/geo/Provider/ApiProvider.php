@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Provider;
+namespace WBW\Library\GouvApi\Geo\Provider;
 
-use WBW\Library\GouvAPI\Common\Provider\AbstractProvider;
+use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 
 /**
  * API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Provider
+ * @package WBW\Library\GouvApi\Geo\Provider
  * @abstract
  */
 abstract class ApiProvider extends AbstractProvider {

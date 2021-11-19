@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Request;
+namespace WBW\Library\GouvApi\Entreprise\Request;
 
-use WBW\Library\GouvAPI\Common\Request\AbstractRequest as BaseRequest;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest as BaseRequest;
 use WBW\Library\Traits\Integers\IntegerPageTrait;
 use WBW\Library\Traits\Integers\IntegerPerPageTrait;
 
@@ -19,7 +19,7 @@ use WBW\Library\Traits\Integers\IntegerPerPageTrait;
  * Abstract request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Request
+ * @package WBW\Library\GouvApi\Entreprise\Request
  */
 abstract class AbstractRequest extends BaseRequest {
 

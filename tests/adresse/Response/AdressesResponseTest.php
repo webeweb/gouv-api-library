@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Tests\Response;
+namespace WBW\Library\GouvApi\Adresse\Tests\Response;
 
-use WBW\Library\GouvAPI\Adresse\Model\Adresse;
-use WBW\Library\GouvAPI\Adresse\Response\AdressesResponse;
-use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Adresse\Model\Adresse;
+use WBW\Library\GouvApi\Adresse\Response\AdressesResponse;
+use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 
 /**
  * Adresses response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Tests\Response
+ * @package WBW\Library\GouvApi\Adresse\Tests\Response
  */
-class AdressesResponseTest extends AbstractTestCase {
+class AdressesResponseTest extends AbstractTestCase
+{
 
     /**
      * Tests the addAdresse() method.

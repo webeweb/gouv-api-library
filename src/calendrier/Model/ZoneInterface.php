@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Model;
+namespace WBW\Library\GouvApi\Calendrier\Model;
 
 /**
  * Zone interface.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Model
+ * @package WBW\Library\GouvApi\Calendrier\Model
  */
-interface ZoneInterface {
+interface ZoneInterface
+{
 
     /**
      * Zone "Alsace Moselle".

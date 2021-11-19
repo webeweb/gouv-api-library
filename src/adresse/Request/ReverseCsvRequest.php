@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Request;
+namespace WBW\Library\GouvApi\Adresse\Request;
 
 /**
  * Reverse CSV request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Request
+ * @package WBW\Library\GouvApi\Adresse\Request
  */
-class ReverseCsvRequest extends AbstractCsvRequest {
+class ReverseCsvRequest extends AbstractCsvRequest
+{
 
     /**
      * Resource path.

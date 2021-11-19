@@ -9,23 +9,24 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Provider;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Provider;
 
 use Exception;
-use WBW\Library\GouvAPI\Entreprise\Provider\APIv3Provider;
-use WBW\Library\GouvAPI\Entreprise\Request\EtablissementsRequest;
-use WBW\Library\GouvAPI\Entreprise\Request\UnitesLegalesRequest;
-use WBW\Library\GouvAPI\Entreprise\Response\EtablissementsResponse;
-use WBW\Library\GouvAPI\Entreprise\Response\UnitesLegalesResponse;
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Provider\APIv3Provider;
+use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
+use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
+use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
+use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 
 /**
  * API v3 provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Provider
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Provider
  */
-class APIv3ProviderTest extends AbstractTestCase {
+class APIv3ProviderTest extends AbstractTestCase
+{
 
     /**
      * Tests the etablissements() method.

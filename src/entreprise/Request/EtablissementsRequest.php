@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Request;
+namespace WBW\Library\GouvApi\Entreprise\Request;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Attribute\StringSiretTrait;
+use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSiretTrait;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Etablissements request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Request
+ * @package WBW\Library\GouvApi\Entreprise\Request
  */
 class EtablissementsRequest extends AbstractRequest implements SubstituableRequestInterface {
 

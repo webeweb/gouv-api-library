@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Model\Attribute;
+namespace WBW\Library\GouvApi\Entreprise\Model\Attribute;
 
 /**
  * String updated at trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Model\Attribute
+ * @package WBW\Library\GouvApi\Entreprise\Model\Attribute
  */
-trait StringUpdatedAtTrait {
+trait StringUpdatedAtTrait
+{
 
     /**
      * Updated at.

@@ -9,17 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Fixtures\Request;
+namespace WBW\Library\GouvApi\Geo\Tests\Fixtures\Request;
 
-use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
+use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
 
 /**
  * Test request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Fixtures\Request
+ * @package WBW\Library\GouvApi\Geo\Tests\Fixtures\Request
  */
-class TestRequest extends AbstractRequest {
+class TestRequest extends AbstractRequest
+{
 
     /**
      * {@inheritDoc}

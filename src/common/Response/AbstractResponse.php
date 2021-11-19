@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Common\Response;
+namespace WBW\Library\GouvApi\Common\Response;
 
 use WBW\Library\Provider\Response\AbstractResponse as BaseResponse;
 
@@ -17,7 +17,7 @@ use WBW\Library\Provider\Response\AbstractResponse as BaseResponse;
  * Abstract response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Common\Response
+ * @package WBW\Library\GouvApi\Common\Response
  * @abstract
  */
 abstract class AbstractResponse extends BaseResponse {

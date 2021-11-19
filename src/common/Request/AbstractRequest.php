@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Common\Request;
+namespace WBW\Library\GouvApi\Common\Request;
 
 use WBW\Library\Provider\Request\AbstractRequest as BaseRequest;
 
@@ -17,7 +17,7 @@ use WBW\Library\Provider\Request\AbstractRequest as BaseRequest;
  * Abstract request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Common\Request
+ * @package WBW\Library\GouvApi\Common\Request
  * @abstract
  */
 abstract class AbstractRequest extends BaseRequest {

@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Response;
+namespace WBW\Library\GouvApi\Geo\Response;
 
-use WBW\Library\GouvAPI\Common\Response\AbstractResponse;
-use WBW\Library\GouvAPI\Geo\Model\Departement;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
+use WBW\Library\GouvApi\Geo\Model\Departement;
 
 /**
  * Départements response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Response
+ * @package WBW\Library\GouvApi\Geo\Response
  */
-class DepartementsResponse extends AbstractResponse {
+class DepartementsResponse extends AbstractResponse
+{
 
     /**
      * Départements.

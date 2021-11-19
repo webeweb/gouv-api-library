@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Tests\Request;
+namespace WBW\Library\GouvApi\Calendrier\Tests\Request;
 
-use WBW\Library\GouvAPI\Calendrier\Request\JoursFeriesRequest;
-use WBW\Library\GouvAPI\Calendrier\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
+use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Jours fériés request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Tests\Request
+ * @package WBW\Library\GouvApi\Calendrier\Tests\Request
  */
-class JoursFeriesRequestTest extends AbstractTestCase {
+class JoursFeriesRequestTest extends AbstractTestCase
+{
 
     /**
      * Tests the getSubstituables() method.

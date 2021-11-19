@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Model;
+namespace WBW\Library\GouvApi\Calendrier\Model;
 
-use WBW\Library\GouvAPI\Common\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
 use WBW\Library\Traits\DateTimes\DateTimeDateTrait;
 
 /**
  * Jour férié.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Model
+ * @package WBW\Library\GouvApi\Calendrier\Model
  */
 class JourFerie {
 

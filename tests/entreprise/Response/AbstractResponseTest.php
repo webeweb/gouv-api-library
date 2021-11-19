@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Response;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Response;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Meta;
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Response\TestResponse;
+use WBW\Library\GouvApi\Entreprise\Model\Meta;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Response\TestResponse;
 
 /**
  * Abstract response test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Response
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Response
  */
-class AbstractResponseTest extends AbstractTestCase {
+class AbstractResponseTest extends AbstractTestCase
+{
 
     /**
      * Tests the setMeta() method.

@@ -9,16 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Response;
+namespace WBW\Library\GouvApi\Adresse\Response;
 
 /**
  * Abstract CVS response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Response
+ * @package WBW\Library\GouvApi\Adresse\Response
  * @abstract
  */
-abstract class AbstractCsvResponse extends AdressesResponse {
+abstract class AbstractCsvResponse extends AdressesResponse
+{
 
     /**
      * Result "city".

@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Request\Region;
+namespace WBW\Library\GouvApi\Geo\Request\Region;
 
-use WBW\Library\GouvAPI\Common\Model\Attribute\StringNomTrait;
-use WBW\Library\GouvAPI\Geo\Request\AbstractRequest;
+use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Régions request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Request\Region
+ * @package WBW\Library\GouvApi\Geo\Request\Region
  */
-class RegionsRequest extends AbstractRequest implements SubstituableRequestInterface {
+class RegionsRequest extends AbstractRequest implements SubstituableRequestInterface
+{
 
     use StringNomTrait;
 

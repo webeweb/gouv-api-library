@@ -9,14 +9,14 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Serializer;
+namespace WBW\Library\GouvApi\Entreprise\Serializer;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Etablissement;
-use WBW\Library\GouvAPI\Entreprise\Model\Meta;
-use WBW\Library\GouvAPI\Entreprise\Model\UniteLegale;
-use WBW\Library\GouvAPI\Entreprise\Response\AbstractResponse;
-use WBW\Library\GouvAPI\Entreprise\Response\EtablissementsResponse;
-use WBW\Library\GouvAPI\Entreprise\Response\UnitesLegalesResponse;
+use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
+use WBW\Library\GouvApi\Entreprise\Model\Meta;
+use WBW\Library\GouvApi\Entreprise\Model\UniteLegale;
+use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
+use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
+use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
 use WBW\Library\Types\Helper\ArrayHelper;
 use WBW\Library\Types\Helper\BooleanHelper;
 
@@ -24,9 +24,10 @@ use WBW\Library\Types\Helper\BooleanHelper;
  * Response deserializer.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Serializer
+ * @package WBW\Library\GouvApi\Entreprise\Serializer
  */
-class ResponseDeserializer {
+class ResponseDeserializer
+{
 
     /**
      * Deserializes an établisement.

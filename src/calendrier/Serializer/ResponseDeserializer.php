@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Serializer;
+namespace WBW\Library\GouvApi\Calendrier\Serializer;
 
 use DateTime;
-use WBW\Library\GouvAPI\Calendrier\Model\JourFerie;
-use WBW\Library\GouvAPI\Calendrier\Response\JoursFeriesResponse;
+use WBW\Library\GouvApi\Calendrier\Model\JourFerie;
+use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
 
 /**
  * Response deserializer.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Serializer
+ * @package WBW\Library\GouvApi\Calendrier\Serializer
  */
-class ResponseDeserializer {
+class ResponseDeserializer
+{
 
     /**
      * Deserializes a jours fériés response.

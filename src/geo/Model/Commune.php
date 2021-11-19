@@ -9,13 +9,13 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Model;
+namespace WBW\Library\GouvApi\Geo\Model;
 
 use WBW\Library\GeoJson\Model\Geometry\Point;
 use WBW\Library\GeoJson\Model\Geometry\Polygon;
-use WBW\Library\GouvAPI\Common\Model\Attribute\StringNomTrait;
-use WBW\Library\GouvAPI\Geo\Model\Attribute\StringCodeDepartementTrait;
-use WBW\Library\GouvAPI\Geo\Model\Attribute\StringCodeRegionTrait;
+use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvApi\Geo\Model\Attribute\StringCodeDepartementTrait;
+use WBW\Library\GouvApi\Geo\Model\Attribute\StringCodeRegionTrait;
 use WBW\Library\Traits\Floats\FloatScoreTrait;
 use WBW\Library\Traits\Strings\StringCodeTrait;
 
@@ -23,9 +23,10 @@ use WBW\Library\Traits\Strings\StringCodeTrait;
  * Commune.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Model
+ * @package WBW\Library\GouvApi\Geo\Model
  */
-class Commune {
+class Commune
+{
 
     use FloatScoreTrait;
     use StringCodeDepartementTrait;

@@ -9,17 +9,18 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Request;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Request;
 
-use WBW\Library\GouvAPI\Entreprise\Request\AbstractRequest;
+use WBW\Library\GouvApi\Entreprise\Request\AbstractRequest;
 
 /**
  * Test request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Request
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Request
  */
-class TestRequest extends AbstractRequest {
+class TestRequest extends AbstractRequest
+{
 
     /**
      * {@inheritDoc}

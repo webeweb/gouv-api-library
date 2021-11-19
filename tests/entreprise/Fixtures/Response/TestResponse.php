@@ -9,16 +9,17 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Response;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Response;
 
-use WBW\Library\GouvAPI\Entreprise\Response\AbstractResponse;
+use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
 
 /**
  * Test response.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Response
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Response
  */
-class TestResponse extends AbstractResponse {
+class TestResponse extends AbstractResponse
+{
 
 }

@@ -9,20 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Request;
+namespace WBW\Library\GouvApi\Geo\Request;
 
-use WBW\Library\GouvAPI\Common\Request\AbstractRequest as BaseRequest;
-use WBW\Library\GouvAPI\Geo\Model\Attribute\ArrayFieldsTrait;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest as BaseRequest;
+use WBW\Library\GouvApi\Geo\Model\Attribute\ArrayFieldsTrait;
 use WBW\Library\Traits\Strings\StringCodeTrait;
 
 /**
  * Abstract request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Request
+ * @package WBW\Library\GouvApi\Geo\Request
  * @abstract
  */
-abstract class AbstractRequest extends BaseRequest {
+abstract class AbstractRequest extends BaseRequest
+{
 
     use ArrayFieldsTrait;
     use StringCodeTrait;

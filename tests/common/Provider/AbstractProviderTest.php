@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Common\Tests\Provider;
+namespace WBW\Library\GouvApi\Common\Tests\Provider;
 
-use WBW\Library\GouvAPI\Common\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Common\Tests\Fixtures\Provider\TestProvider;
+use WBW\Library\GouvApi\Common\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Common\Tests\Fixtures\Provider\TestProvider;
 
 /**
  * Abstract provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Common\Tests\Provider
+ * @package WBW\Library\GouvApi\Common\Tests\Provider
  */
-class AbstractProviderTest extends AbstractTestCase {
+class AbstractProviderTest extends AbstractTestCase
+{
 
     /**
      * Tests the __construct() method.

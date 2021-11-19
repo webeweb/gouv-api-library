@@ -1,15 +1,20 @@
 {
     "name": "webeweb/gouv-api-library",
     "type": "library",
-    "description": "Integrate Geo API with your projects",
+    "description": "Integrate Gouv API with your projects",
     "keywords": [
         "adresse",
         "api",
+        "calendrier",
         "commune",
+        "decoupage administratif",
         "departement",
+        "entreprise",
         "library",
+        "jour feries",
         "geo",
         "region",
+        "sirene",
         "webeweb"
     ],
     "homepage": "https://github.com/webeweb/gouv-api-library",
@@ -41,20 +46,20 @@
     },
     "autoload": {
         "psr-4": {
-            "WBW\\Library\\GouvAPI\\Adresse\\": "src/adresse",
-            "WBW\\Library\\GouvAPI\\Calendrier\\": "src/calendrier",
-            "WBW\\Library\\GouvAPI\\Common\\": "src/common",
-            "WBW\\Library\\GouvAPI\\Entreprise\\": "src/entreprise",
-            "WBW\\Library\\GouvAPI\\Geo\\": "src/geo"
+            "WBW\\Library\\GouvApi\\Adresse\\": "src/adresse",
+            "WBW\\Library\\GouvApi\\Calendrier\\": "src/calendrier",
+            "WBW\\Library\\GouvApi\\Common\\": "src/common",
+            "WBW\\Library\\GouvApi\\Entreprise\\": "src/entreprise",
+            "WBW\\Library\\GouvApi\\Geo\\": "src/geo"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WBW\\Library\\GouvAPI\\Adresse\\Tests\\": "tests/adresse",
-            "WBW\\Library\\GouvAPI\\Calendrier\\Tests\\": "tests/calendrier",
-            "WBW\\Library\\GouvAPI\\Common\\Tests\\": "tests/common",
-            "WBW\\Library\\GouvAPI\\Entreprise\\Tests\\": "tests/entreprise",
-            "WBW\\Library\\GouvAPI\\Geo\\Tests\\": "tests/geo"
+            "WBW\\Library\\GouvApi\\Adresse\\Tests\\": "tests/adresse",
+            "WBW\\Library\\GouvApi\\Calendrier\\Tests\\": "tests/calendrier",
+            "WBW\\Library\\GouvApi\\Common\\Tests\\": "tests/common",
+            "WBW\\Library\\GouvApi\\Entreprise\\Tests\\": "tests/entreprise",
+            "WBW\\Library\\GouvApi\\Geo\\Tests\\": "tests/geo"
         }
     },
     "support": {

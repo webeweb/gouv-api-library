@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Calendrier\Request;
+namespace WBW\Library\GouvApi\Calendrier\Request;
 
-use WBW\Library\GouvAPI\Calendrier\Model\ZoneInterface;
-use WBW\Library\GouvAPI\Common\Request\AbstractRequest;
+use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Jours fériés request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Calendrier\Request
+ * @package WBW\Library\GouvApi\Calendrier\Request
  */
-class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestInterface, ZoneInterface {
+class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestInterface, ZoneInterface
+{
 
     /**
      * Resource path.

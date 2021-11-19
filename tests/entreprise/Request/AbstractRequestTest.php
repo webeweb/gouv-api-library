@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Request;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Entreprise\Tests\Fixtures\Request\TestRequest;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Request\TestRequest;
 
 /**
  * Abstract request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Request
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Request
  */
-class AbstractRequestTest extends AbstractTestCase {
+class AbstractRequestTest extends AbstractTestCase
+{
 
     /**
      * Tests the __construct() method.

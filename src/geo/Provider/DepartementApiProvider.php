@@ -9,23 +9,24 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Provider;
+namespace WBW\Library\GouvApi\Geo\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GouvAPI\Geo\Request\Departement\CommunesRequest;
-use WBW\Library\GouvAPI\Geo\Request\Departement\DepartementsRequest;
-use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
-use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
-use WBW\Library\GouvAPI\Geo\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Geo\Request\Departement\CommunesRequest;
+use WBW\Library\GouvApi\Geo\Request\Departement\DepartementsRequest;
+use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
+use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvApi\Geo\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * Département API provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Provider
+ * @package WBW\Library\GouvApi\Geo\Provider
  */
-class DepartementApiProvider extends ApiProvider {
+class DepartementApiProvider extends ApiProvider
+{
 
     /**
      * Communes.

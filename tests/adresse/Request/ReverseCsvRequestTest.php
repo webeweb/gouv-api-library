@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Tests\Request;
+namespace WBW\Library\GouvApi\Adresse\Tests\Request;
 
-use WBW\Library\GouvAPI\Adresse\Request\ReverseCsvRequest;
-use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
+use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 
 /**
  * Reverse CSV request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Tests\Request
+ * @package WBW\Library\GouvApi\Adresse\Tests\Request
  */
-class ReverseCsvRequestTest extends AbstractTestCase {
+class ReverseCsvRequestTest extends AbstractTestCase
+{
 
     /**
      * Tests the __construct() method.

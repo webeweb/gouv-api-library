@@ -9,16 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Request;
+namespace WBW\Library\GouvApi\Adresse\Request;
 
-use WBW\Library\GouvAPI\Common\Request\AbstractRequest;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\Traits\Strings\StringDataTrait;
 
 /**
  * Abstract CSV request.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Request
+ * @package WBW\Library\GouvApi\Adresse\Request
  * @abstract
  */
 abstract class AbstractCsvRequest extends AbstractRequest {

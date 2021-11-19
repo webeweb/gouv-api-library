@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Model;
+namespace WBW\Library\GouvApi\Geo\Tests\Model;
 
-use WBW\Library\GouvAPI\Geo\Model\Region;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Model\Region;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 
 /**
  * Région test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Model
+ * @package WBW\Library\GouvApi\Geo\Tests\Model
  */
-class RegionTest extends AbstractTestCase {
+class RegionTest extends AbstractTestCase
+{
 
     /**
      * Tests the __construct() method.

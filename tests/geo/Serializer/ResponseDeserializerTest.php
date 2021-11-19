@@ -9,21 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Serializer;
+namespace WBW\Library\GouvApi\Geo\Tests\Serializer;
 
-use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
-use WBW\Library\GouvAPI\Geo\Response\DepartementsResponse;
-use WBW\Library\GouvAPI\Geo\Response\RegionsResponse;
-use WBW\Library\GouvAPI\Geo\Serializer\ResponseDeserializer;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
+use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
+use WBW\Library\GouvApi\Geo\Response\RegionsResponse;
+use WBW\Library\GouvApi\Geo\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 
 /**
  * Response deserializer test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Serializer
+ * @package WBW\Library\GouvApi\Geo\Tests\Serializer
  */
-class ResponseDeserializerTest extends AbstractTestCase {
+class ResponseDeserializerTest extends AbstractTestCase
+{
 
     /**
      * Tests the deserializeCommunesResponse() method.

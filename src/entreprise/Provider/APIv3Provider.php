@@ -9,24 +9,25 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Provider;
+namespace WBW\Library\GouvApi\Entreprise\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GouvAPI\Entreprise\Request\EtablissementsRequest;
-use WBW\Library\GouvAPI\Entreprise\Request\UnitesLegalesRequest;
-use WBW\Library\GouvAPI\Entreprise\Response\EtablissementsResponse;
-use WBW\Library\GouvAPI\Entreprise\Response\UnitesLegalesResponse;
-use WBW\Library\GouvAPI\Entreprise\Serializer\RequestSerializer;
-use WBW\Library\GouvAPI\Entreprise\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
+use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
+use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
+use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
+use WBW\Library\GouvApi\Entreprise\Serializer\RequestSerializer;
+use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API v3 provider.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Provider
+ * @package WBW\Library\GouvApi\Entreprise\Provider
  */
-class APIv3Provider extends AbstractProvider {
+class APIv3Provider extends AbstractProvider
+{
 
     /**
      * Etablissements.

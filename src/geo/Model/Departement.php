@@ -9,10 +9,10 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Model;
+namespace WBW\Library\GouvApi\Geo\Model;
 
-use WBW\Library\GouvAPI\Common\Model\Attribute\StringNomTrait;
-use WBW\Library\GouvAPI\Geo\Model\Attribute\StringCodeRegionTrait;
+use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvApi\Geo\Model\Attribute\StringCodeRegionTrait;
 use WBW\Library\Traits\Floats\FloatScoreTrait;
 use WBW\Library\Traits\Strings\StringCodeTrait;
 
@@ -20,9 +20,10 @@ use WBW\Library\Traits\Strings\StringCodeTrait;
  * Département.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Model
+ * @package WBW\Library\GouvApi\Geo\Model
  */
-class Departement {
+class Departement
+{
 
     use FloatScoreTrait;
     use StringCodeRegionTrait;

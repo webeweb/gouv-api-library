@@ -9,21 +9,22 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Provider;
+namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
 use Exception;
-use WBW\Library\GouvAPI\Geo\Provider\CommuneApiProvider;
-use WBW\Library\GouvAPI\Geo\Request\Commune\CommunesRequest;
-use WBW\Library\GouvAPI\Geo\Response\CommunesResponse;
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Provider\CommuneApiProvider;
+use WBW\Library\GouvApi\Geo\Request\Commune\CommunesRequest;
+use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 
 /**
  * Commune API provider test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Provider
+ * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
-class CommuneApiProviderTest extends AbstractTestCase {
+class CommuneApiProviderTest extends AbstractTestCase
+{
 
     /**
      * Tests the communes() method.

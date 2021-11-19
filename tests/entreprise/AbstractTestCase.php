@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests;
+namespace WBW\Library\GouvApi\Entreprise\Tests;
 
 use PHPUnit\Framework\TestCase;
 use Psr\Log\LoggerInterface;
@@ -18,7 +18,7 @@ use Psr\Log\LoggerInterface;
  * Abstract test case.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests
+ * @package WBW\Library\GouvApi\Entreprise\Tests
  * @abstract
  */
 abstract class AbstractTestCase extends TestCase {

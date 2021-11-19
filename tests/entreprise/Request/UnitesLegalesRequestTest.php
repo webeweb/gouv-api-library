@@ -9,19 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Request;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
-use WBW\Library\GouvAPI\Entreprise\Request\UnitesLegalesRequest;
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 use WBW\Library\Provider\API\SubstituableRequestInterface;
 
 /**
  * Unités légales request test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Request
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Request
  */
-class UnitesLegalesRequestTest extends AbstractTestCase {
+class UnitesLegalesRequestTest extends AbstractTestCase
+{
 
     /**
      * Tests the getSubstituables() method.

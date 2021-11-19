@@ -9,15 +9,16 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Common\Model\Attribute;
+namespace WBW\Library\GouvApi\Common\Model\Attribute;
 
 /**
  * String nom trait.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Common\Model\Attribute
+ * @package WBW\Library\GouvApi\Common\Model\Attribute
  */
-trait StringNomTrait {
+trait StringNomTrait
+{
 
     /**
      * Nom.

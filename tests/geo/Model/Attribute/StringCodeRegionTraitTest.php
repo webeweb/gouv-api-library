@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Geo\Tests\Model\Attribute;
+namespace WBW\Library\GouvApi\Geo\Tests\Model\Attribute;
 
-use WBW\Library\GouvAPI\Geo\Tests\AbstractTestCase;
-use WBW\Library\GouvAPI\Geo\Tests\Fixtures\Model\Attribute\TestStringCodeRegionTrait;
+use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute\TestStringCodeRegionTrait;
 
 /**
  * String code région trait test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Geo\Tests\Model\Attribute
+ * @package WBW\Library\GouvApi\Geo\Tests\Model\Attribute
  */
-class StringCodeRegionTraitTest extends AbstractTestCase {
+class StringCodeRegionTraitTest extends AbstractTestCase
+{
 
     /**
      * Tests the setCodeRegion() method.

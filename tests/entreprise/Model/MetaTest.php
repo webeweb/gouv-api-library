@@ -9,18 +9,19 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Entreprise\Tests\Model;
+namespace WBW\Library\GouvApi\Entreprise\Tests\Model;
 
-use WBW\Library\GouvAPI\Entreprise\Model\Meta;
-use WBW\Library\GouvAPI\Entreprise\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Entreprise\Model\Meta;
+use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 
 /**
  * Meta test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Entreprise\Tests\Model
+ * @package WBW\Library\GouvApi\Entreprise\Tests\Model
  */
-class MetaTest extends AbstractTestCase {
+class MetaTest extends AbstractTestCase
+{
 
     /**
      * Tests the setTotalPages() method.

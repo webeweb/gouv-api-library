@@ -9,20 +9,21 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvAPI\Adresse\Tests\Serializer;
+namespace WBW\Library\GouvApi\Adresse\Tests\Serializer;
 
-use WBW\Library\GouvAPI\Adresse\Response\ReverseCsvResponse;
-use WBW\Library\GouvAPI\Adresse\Response\SearchCsvResponse;
-use WBW\Library\GouvAPI\Adresse\Serializer\ResponseDeserializer;
-use WBW\Library\GouvAPI\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Adresse\Response\ReverseCsvResponse;
+use WBW\Library\GouvApi\Adresse\Response\SearchCsvResponse;
+use WBW\Library\GouvApi\Adresse\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 
 /**
  * Response deserializer test.
  *
  * @author webeweb <https://github.com/webeweb/>
- * @package WBW\Library\GouvAPI\Adresse\Tests\Serializer
+ * @package WBW\Library\GouvApi\Adresse\Tests\Serializer
  */
-class ResponseDeserializerTest extends AbstractTestCase {
+class ResponseDeserializerTest extends AbstractTestCase
+{
 
     /**
      * Tests the deserializeReverseCsvResponse() method.
