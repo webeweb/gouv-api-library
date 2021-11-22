@@ -34,10 +34,10 @@ class EtablissementsRequest extends AbstractRequest implements SubstituableReque
     /**
      * Constructor.
      *
-     * @param string|null $siren The SIRET.
+     * @param string|null $siret The SIRET.
      */
-    public function __construct(string $siren = null) {
-        $this->setSiret($siren);
+    public function __construct(string $siret = null) {
+        $this->setSiret($siret);
     }
 
     /**
