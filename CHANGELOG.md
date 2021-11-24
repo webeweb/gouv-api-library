@@ -3,6 +3,8 @@ CHANGELOG
 
 ### master
 
+- Add API Sirene
+- Add Jours fériés
 - Add dev scripts
 - Improve code quality
 - Improve documentation
