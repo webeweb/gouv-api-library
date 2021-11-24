@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringDate
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringDateDebutTraitTest extends AbstractTestCase
-{
+class StringDateDebutTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setDateDebut() method.

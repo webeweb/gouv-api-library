@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Tests\Model
  */
-class AdresseTest extends AbstractTestCase
-{
+class AdresseTest extends AbstractTestCase {
 
     /**
      * Tests the addColumn() method.

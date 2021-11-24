@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Calendrier\Provider;
 
+use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
 use WBW\Library\GouvApi\Calendrier\Serializer\ResponseDeserializer;
@@ -23,8 +24,7 @@ use WBW\Library\Provider\Exception\ApiException;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Calendrier\Provider
  */
-class ApiProvider extends AbstractProvider
-{
+class ApiProvider extends AbstractProvider {
 
     /**
      * Endpoint path.

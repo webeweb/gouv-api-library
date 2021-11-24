@@ -18,8 +18,7 @@ namespace WBW\Library\GouvApi\Adresse\Response;
  * @package WBW\Library\GouvApi\Adresse\Response
  * @abstract
  */
-abstract class AbstractCsvResponse extends AdressesResponse
-{
+abstract class AbstractCsvResponse extends AdressesResponse {
 
     /**
      * Result "city".

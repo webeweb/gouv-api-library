@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Adresse\Request\AbstractCsvRequest;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request
  */
-class TestCsvRequest extends AbstractCsvRequest
-{
+class TestCsvRequest extends AbstractCsvRequest {
 
     /**
      * {@inheritDoc}

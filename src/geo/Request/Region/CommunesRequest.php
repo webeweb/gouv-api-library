@@ -22,8 +22,7 @@ use WBW\Library\Traits\Strings\StringFormatTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Request\Region
  */
-class CommunesRequest extends AbstractRequest implements SubstituableRequestInterface
-{
+class CommunesRequest extends AbstractRequest implements SubstituableRequestInterface {
 
     use StringFormatTrait;
     use StringGeometryTrait;

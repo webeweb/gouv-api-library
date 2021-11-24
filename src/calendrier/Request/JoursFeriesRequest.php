@@ -21,8 +21,7 @@ use WBW\Library\Provider\API\SubstituableRequestInterface;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Calendrier\Request
  */
-class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestInterface, ZoneInterface
-{
+class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestInterface, ZoneInterface {
 
     /**
      * Resource path.

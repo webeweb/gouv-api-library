@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Tests\Response
  */
-class AdressesResponseTest extends AbstractTestCase
-{
+class AdressesResponseTest extends AbstractTestCase {
 
     /**
      * Tests the addAdresse() method.

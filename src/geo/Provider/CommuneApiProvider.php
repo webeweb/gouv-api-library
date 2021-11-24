@@ -23,8 +23,7 @@ use WBW\Library\Provider\Exception\ApiException;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Provider
  */
-class CommuneApiProvider extends ApiProvider
-{
+class CommuneApiProvider extends ApiProvider {
 
     /**
      * Communes.

@@ -17,8 +17,7 @@ namespace WBW\Library\GouvApi\Entreprise\Model\Attribute;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Model\Attribute
  */
-trait StringActivitePrincipaleTrait
-{
+trait StringActivitePrincipaleTrait {
 
     /**
      * Activité principale.

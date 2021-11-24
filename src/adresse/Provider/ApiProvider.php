@@ -31,8 +31,7 @@ use WBW\Library\Types\Helper\ArrayHelper;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Provider
  */
-class ApiProvider extends AbstractProvider
-{
+class ApiProvider extends AbstractProvider {
 
     /**
      * Endpoint path.

@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Geo\Model\Attribute\ArrayFieldsTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute
  */
-class TestArrayFieldsTrait
-{
+class TestArrayFieldsTrait {
 
     use ArrayFieldsTrait;
 

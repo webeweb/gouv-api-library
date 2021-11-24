@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringUpda
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringUpdatedAtTraitTest extends AbstractTestCase
-{
+class StringUpdatedAtTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setUpdatedAt() method.

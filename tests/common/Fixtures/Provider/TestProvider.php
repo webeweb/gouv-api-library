@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Common\Tests\Fixtures\Provider
  */
-class TestProvider extends AbstractProvider
-{
+class TestProvider extends AbstractProvider {
 
     /**
      * {@inheritDoc}

@@ -21,8 +21,7 @@ use WBW\Library\Provider\API\SubstituableRequestInterface;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Request\Departement
  */
-class DepartementsRequestTest extends AbstractTestCase
-{
+class DepartementsRequestTest extends AbstractTestCase {
 
     /**
      * Tests the getSubstituables() method.

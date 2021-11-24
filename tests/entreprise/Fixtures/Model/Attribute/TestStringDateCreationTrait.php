@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringDateCreationTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
-class TestStringDateCreationTrait
-{
+class TestStringDateCreationTrait {
 
     use StringDateCreationTrait;
 }

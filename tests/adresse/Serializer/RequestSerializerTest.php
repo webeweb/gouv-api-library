@@ -24,8 +24,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Tests\Serializer
  */
-class RequestSerializerTest extends AbstractTestCase
-{
+class RequestSerializerTest extends AbstractTestCase {
 
     /**
      * Tests the serializeReverseCsvRequest() method.

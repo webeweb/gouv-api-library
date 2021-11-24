@@ -24,8 +24,7 @@ use WBW\Library\Types\Helper\IntegerHelper;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Serializer
  */
-class RequestSerializer
-{
+class RequestSerializer {
 
     /**
      * Serialize a reverse CSV request.

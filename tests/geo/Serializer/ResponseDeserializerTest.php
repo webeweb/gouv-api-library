@@ -23,8 +23,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Serializer
  */
-class ResponseDeserializerTest extends AbstractTestCase
-{
+class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
      * Tests the deserializeCommunesResponse() method.

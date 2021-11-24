@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Adresse\Tests\Fixtures\Response\TestCsvResponse;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Tests\Response
  */
-class AbstractCsvResponseTest extends AbstractTestCase
-{
+class AbstractCsvResponseTest extends AbstractTestCase {
 
     /**
      * Tests the enumResultColumns() method.

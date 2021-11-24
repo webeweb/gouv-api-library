@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute\TestArrayFieldsTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Model\Attribute
  */
-class ArrayFieldsTraitTest extends AbstractTestCase
-{
+class ArrayFieldsTraitTest extends AbstractTestCase {
 
     /**
      * Tests the aadField() method.

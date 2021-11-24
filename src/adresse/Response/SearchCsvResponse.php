@@ -17,7 +17,6 @@ namespace WBW\Library\GouvApi\Adresse\Response;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Response
  */
-class SearchCsvResponse extends AbstractCsvResponse
-{
+class SearchCsvResponse extends AbstractCsvResponse {
 
 }

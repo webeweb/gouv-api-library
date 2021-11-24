@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Geo\Model\Attribute\StringGeometryTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute
  */
-class TestStringGeometryTrait
-{
+class TestStringGeometryTrait {
 
     use StringGeometryTrait;
 }

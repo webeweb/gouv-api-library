@@ -17,8 +17,7 @@ namespace WBW\Library\GouvApi\Geo\Model\Attribute;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Model\Attribute
  */
-trait ArrayFieldsTrait
-{
+trait ArrayFieldsTrait {
 
     /**
      * Fields

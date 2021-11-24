@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringActivitePrincipaleTrait
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
-class TestStringActivitePrincipaleTrait
-{
+class TestStringActivitePrincipaleTrait {
 
     use StringActivitePrincipaleTrait;
 }

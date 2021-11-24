@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringTran
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringTrancheEffectifsTraitTest extends AbstractTestCase
-{
+class StringTrancheEffectifsTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setTrancheEffectifs() method.

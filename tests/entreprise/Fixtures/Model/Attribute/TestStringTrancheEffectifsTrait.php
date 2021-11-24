@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringTrancheEffectifsTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
-class TestStringTrancheEffectifsTrait
-{
+class TestStringTrancheEffectifsTrait {
 
     use StringTrancheEffectifsTrait;
 }

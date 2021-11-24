@@ -19,7 +19,6 @@ use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Response
  */
-class TestResponse extends AbstractResponse
-{
+class TestResponse extends AbstractResponse {
 
 }

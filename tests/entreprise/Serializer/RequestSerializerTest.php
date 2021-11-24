@@ -22,8 +22,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Serializer
  */
-class RequestSerializerTest extends AbstractTestCase
-{
+class RequestSerializerTest extends AbstractTestCase {
 
     /**
      * Tests the serializeEtablissementsRequest() method.

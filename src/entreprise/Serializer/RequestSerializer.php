@@ -22,8 +22,7 @@ use WBW\Library\Types\Helper\ArrayHelper;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Serializer
  */
-class RequestSerializer
-{
+class RequestSerializer {
 
     /**
      * Serializes an établissements request.

@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Response
  */
-class EtablissementsResponseTest extends AbstractTestCase
-{
+class EtablissementsResponseTest extends AbstractTestCase {
 
     /**
      * Tests the addEtablissement() method.

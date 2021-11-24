@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model
  */
-class UniteLegaleTest extends AbstractTestCase
-{
+class UniteLegaleTest extends AbstractTestCase {
 
     /**
      * Tests the setAnneeCategorieEntreprise() method.

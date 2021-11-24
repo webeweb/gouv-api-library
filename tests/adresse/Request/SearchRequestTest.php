@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Tests\Request
  */
-class SearchRequestTest extends AbstractTestCase
-{
+class SearchRequestTest extends AbstractTestCase {
 
     /**
      * Tests the enumTypes() method.

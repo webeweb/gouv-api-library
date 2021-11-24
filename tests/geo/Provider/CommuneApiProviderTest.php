@@ -23,8 +23,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
-class CommuneApiProviderTest extends AbstractTestCase
-{
+class CommuneApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the communes() method.

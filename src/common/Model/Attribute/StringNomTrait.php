@@ -17,8 +17,7 @@ namespace WBW\Library\GouvApi\Common\Model\Attribute;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Common\Model\Attribute
  */
-trait StringNomTrait
-{
+trait StringNomTrait {
 
     /**
      * Nom.

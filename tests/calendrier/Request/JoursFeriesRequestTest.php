@@ -21,8 +21,7 @@ use WBW\Library\Provider\API\SubstituableRequestInterface;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Calendrier\Tests\Request
  */
-class JoursFeriesRequestTest extends AbstractTestCase
-{
+class JoursFeriesRequestTest extends AbstractTestCase {
 
     /**
      * Tests the getSubstituables() method.

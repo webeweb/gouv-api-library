@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute\TestStringGeometryTra
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Model\Attribute
  */
-class StringGeometryTraitTest extends AbstractTestCase
-{
+class StringGeometryTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setGeometry() method.

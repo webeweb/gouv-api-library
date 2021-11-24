@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request\TestCsvRequest;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Tests\Request
  */
-class AbstractCsvRequestTest extends AbstractTestCase
-{
+class AbstractCsvRequestTest extends AbstractTestCase {
 
     /**
      * Tests the __construct() method.

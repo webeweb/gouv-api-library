@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute\TestStringCodeRegionT
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Model\Attribute
  */
-class StringCodeRegionTraitTest extends AbstractTestCase
-{
+class StringCodeRegionTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setCodeRegion() method.

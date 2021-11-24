@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Common\Tests\Fixtures\Provider\TestProvider;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Common\Tests\Provider
  */
-class AbstractProviderTest extends AbstractTestCase
-{
+class AbstractProviderTest extends AbstractTestCase {
 
     /**
      * Tests the __construct() method.

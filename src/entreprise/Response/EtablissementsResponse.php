@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Response
  */
-class EtablissementsResponse extends AbstractResponse
-{
+class EtablissementsResponse extends AbstractResponse {
 
     /**
      * Etablissements.
@@ -33,6 +32,8 @@ class EtablissementsResponse extends AbstractResponse
      * Constructor.
      */
     public function __construct() {
+        parent::__construct();
+
         $this->setEtablissements([]);
     }
 

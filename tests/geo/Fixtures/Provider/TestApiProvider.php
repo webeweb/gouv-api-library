@@ -19,7 +19,6 @@ use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Fixtures\Provider
  */
-class TestApiProvider extends ApiProvider
-{
+class TestApiProvider extends ApiProvider {
 
 }

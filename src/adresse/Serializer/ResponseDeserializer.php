@@ -24,8 +24,7 @@ use WBW\Library\GouvApi\Adresse\Response\SearchCsvResponse;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Serializer
  */
-class ResponseDeserializer
-{
+class ResponseDeserializer {
 
     /**
      * Deserialize an adresse.

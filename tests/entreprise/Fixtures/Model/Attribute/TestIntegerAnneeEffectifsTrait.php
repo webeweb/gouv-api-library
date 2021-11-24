@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\IntegerAnneeEffectifsTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
-class TestIntegerAnneeEffectifsTrait
-{
+class TestIntegerAnneeEffectifsTrait {
 
     use IntegerAnneeEffectifsTrait;
 }

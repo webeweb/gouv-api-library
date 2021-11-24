@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Request\AbstractRequest;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Request
  */
-class TestRequest extends AbstractRequest
-{
+class TestRequest extends AbstractRequest {
 
     /**
      * {@inheritDoc}

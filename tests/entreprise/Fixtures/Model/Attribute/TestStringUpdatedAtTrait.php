@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringUpdatedAtTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
-class TestStringUpdatedAtTrait
-{
+class TestStringUpdatedAtTrait {
 
     use StringUpdatedAtTrait;
 }

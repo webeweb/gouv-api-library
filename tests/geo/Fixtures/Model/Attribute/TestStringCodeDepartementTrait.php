@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Geo\Model\Attribute\StringCodeDepartementTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute
  */
-class TestStringCodeDepartementTrait
-{
+class TestStringCodeDepartementTrait {
 
     use StringCodeDepartementTrait;
 }

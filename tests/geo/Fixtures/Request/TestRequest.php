@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Fixtures\Request
  */
-class TestRequest extends AbstractRequest
-{
+class TestRequest extends AbstractRequest {
 
     /**
      * {@inheritDoc}

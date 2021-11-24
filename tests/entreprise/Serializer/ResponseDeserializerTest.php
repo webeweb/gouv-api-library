@@ -26,8 +26,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Serializer\TestResponseDeseria
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Serializer
  */
-class ResponseDeserializerTest extends AbstractTestCase
-{
+class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
      * Tests the deserializeEtablissement() method.

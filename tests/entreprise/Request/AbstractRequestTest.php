@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Request\TestRequest;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Request
  */
-class AbstractRequestTest extends AbstractTestCase
-{
+class AbstractRequestTest extends AbstractTestCase {
 
     /**
      * Tests the __construct() method.

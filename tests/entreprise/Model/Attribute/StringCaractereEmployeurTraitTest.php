@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringCara
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringCaractereEmployeurTraitTest extends AbstractTestCase
-{
+class StringCaractereEmployeurTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setCaractereEmployeur() method.

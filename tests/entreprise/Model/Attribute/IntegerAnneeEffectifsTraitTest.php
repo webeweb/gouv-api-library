@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestIntegerAnn
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class IntegerAnneeEffectifsTraitTest extends AbstractTestCase
-{
+class IntegerAnneeEffectifsTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setAnneeEffectifs() method.

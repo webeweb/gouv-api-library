@@ -30,6 +30,6 @@ abstract class AbstractRequest extends BaseRequest {
      * Constructor.
      */
     public function __construct() {
-        // NOTHING TO DO
+        parent::__construct();
     }
 }

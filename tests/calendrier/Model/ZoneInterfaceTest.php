@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Calendrier\Tests\Model
  */
-class ZoneInterfaceTest extends AbstractTestCase
-{
+class ZoneInterfaceTest extends AbstractTestCase {
 
     /**
      * Tests the __construct() method.

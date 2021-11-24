@@ -34,8 +34,7 @@ use WBW\Library\Traits\Integers\IntegerIdTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Model
  */
-class UniteLegale
-{
+class UniteLegale {
 
     use IntegerIdTrait {
         setId as public;

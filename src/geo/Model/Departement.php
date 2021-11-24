@@ -22,8 +22,7 @@ use WBW\Library\Traits\Strings\StringCodeTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Model
  */
-class Departement
-{
+class Departement {
 
     use FloatScoreTrait;
     use StringCodeRegionTrait;

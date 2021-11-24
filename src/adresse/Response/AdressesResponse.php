@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Common\Response\AbstractResponse;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Response
  */
-class AdressesResponse extends AbstractResponse
-{
+class AdressesResponse extends AbstractResponse {
 
     /**
      * Adresses.

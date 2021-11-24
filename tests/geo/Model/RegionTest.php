@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Model
  */
-class RegionTest extends AbstractTestCase
-{
+class RegionTest extends AbstractTestCase {
 
     /**
      * Tests the __construct() method.

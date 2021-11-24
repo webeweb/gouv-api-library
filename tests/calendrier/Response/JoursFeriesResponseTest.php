@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Calendrier\Tests\Response
  */
-class JoursFeriesResponseTest extends AbstractTestCase
-{
+class JoursFeriesResponseTest extends AbstractTestCase {
 
     /**
      * Tests the addJourFerie() method.

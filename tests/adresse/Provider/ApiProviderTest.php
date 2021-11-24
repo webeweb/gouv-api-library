@@ -28,8 +28,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Tests\Provider
  */
-class ApiProviderTest extends AbstractTestCase
-{
+class ApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the reverse() method.

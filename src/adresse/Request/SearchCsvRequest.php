@@ -17,8 +17,7 @@ namespace WBW\Library\GouvApi\Adresse\Request;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Adresse\Request
  */
-class SearchCsvRequest extends AbstractCsvRequest
-{
+class SearchCsvRequest extends AbstractCsvRequest {
 
     /**
      * Resource path.

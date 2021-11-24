@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Provider\TestApiProvider;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
-class ApiProviderTest extends AbstractTestCase
-{
+class ApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the __construct() method.

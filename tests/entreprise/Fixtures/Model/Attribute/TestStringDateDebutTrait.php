@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringDateDebutTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
-class TestStringDateDebutTrait
-{
+class TestStringDateDebutTrait {
 
     use StringDateDebutTrait;
 }

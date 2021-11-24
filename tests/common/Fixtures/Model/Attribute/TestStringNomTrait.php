@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Common\Tests\Fixtures\Model\Attribute
  */
-class TestStringNomTrait
-{
+class TestStringNomTrait {
 
     use StringNomTrait;
 }

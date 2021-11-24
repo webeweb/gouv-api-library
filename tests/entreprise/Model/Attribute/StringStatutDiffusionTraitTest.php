@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringStat
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringStatutDiffusionTraitTest extends AbstractTestCase
-{
+class StringStatutDiffusionTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setStatutDiffusion() method.

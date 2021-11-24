@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Geo\Model\Departement;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Response
  */
-class DepartementsResponse extends AbstractResponse
-{
+class DepartementsResponse extends AbstractResponse {
 
     /**
      * Départements.

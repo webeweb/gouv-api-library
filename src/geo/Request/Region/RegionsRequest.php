@@ -21,8 +21,7 @@ use WBW\Library\Provider\API\SubstituableRequestInterface;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Request\Region
  */
-class RegionsRequest extends AbstractRequest implements SubstituableRequestInterface
-{
+class RegionsRequest extends AbstractRequest implements SubstituableRequestInterface {
 
     use StringNomTrait;
 

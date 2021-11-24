@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringEtat
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringEtatAdministratifTraitTest extends AbstractTestCase
-{
+class StringEtatAdministratifTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setEtatAdministratif() method.

@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Geo\Model\Region;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Response
  */
-class RegionsResponse extends AbstractResponse
-{
+class RegionsResponse extends AbstractResponse {
 
     /**
      * Régions.

@@ -24,8 +24,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Model
  */
-class CommuneTest extends AbstractTestCase
-{
+class CommuneTest extends AbstractTestCase {
 
     /**
      * Tests the setCentre() method.

@@ -21,8 +21,7 @@ use WBW\Library\Provider\API\SubstituableRequestInterface;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Request
  */
-class EtablissementsRequestTest extends AbstractTestCase
-{
+class EtablissementsRequestTest extends AbstractTestCase {
 
     /**
      * Tests the getSubstituables() method.

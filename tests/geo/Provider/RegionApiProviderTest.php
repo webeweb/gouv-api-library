@@ -28,8 +28,7 @@ use WBW\Library\Provider\Exception\ApiException;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
-class RegionApiProviderTest extends AbstractTestCase
-{
+class RegionApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the communes() method.

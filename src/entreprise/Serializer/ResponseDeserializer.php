@@ -26,8 +26,7 @@ use WBW\Library\Types\Helper\BooleanHelper;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Serializer
  */
-class ResponseDeserializer
-{
+class ResponseDeserializer {
 
     /**
      * Deserializes an établisement.

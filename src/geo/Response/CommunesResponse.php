@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Geo\Model\Commune;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Response
  */
-class CommunesResponse extends AbstractResponse
-{
+class CommunesResponse extends AbstractResponse {
 
     /**
      * Communes.

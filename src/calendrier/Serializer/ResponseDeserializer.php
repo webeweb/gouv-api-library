@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Calendrier\Serializer
  */
-class ResponseDeserializer
-{
+class ResponseDeserializer {
 
     /**
      * Deserializes a jours fériés response.

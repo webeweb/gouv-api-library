@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Common\Tests\Fixtures\Model\Attribute\TestStringNomTrait
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Common\Tests\Model\Attribute
  */
-class StringNomTraitTest extends AbstractTestCase
-{
+class StringNomTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setNom() method.

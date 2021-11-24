@@ -21,8 +21,7 @@ use WBW\Library\Traits\Strings\StringMessageTrait;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Response
  */
-abstract class AbstractResponse extends BaseResponse
-{
+abstract class AbstractResponse extends BaseResponse {
 
     use StringMessageTrait;
 

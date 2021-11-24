@@ -19,8 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringCaractereEmployeurTrait
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
-class TestStringCaractereEmployeurTrait
-{
+class TestStringCaractereEmployeurTrait {
 
     use StringCaractereEmployeurTrait;
 }

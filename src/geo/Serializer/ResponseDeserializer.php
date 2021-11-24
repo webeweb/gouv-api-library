@@ -26,8 +26,7 @@ use WBW\Library\Types\Helper\ArrayHelper;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Serializer
  */
-class ResponseDeserializer extends JsonDeserializer
-{
+class ResponseDeserializer extends JsonDeserializer {
 
     /**
      * Deserializes a commune.

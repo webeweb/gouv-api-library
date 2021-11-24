@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringCrea
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringCreatedAtTraitTest extends AbstractTestCase
-{
+class StringCreatedAtTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setCreatedAt() method.

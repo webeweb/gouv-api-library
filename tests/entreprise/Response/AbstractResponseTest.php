@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Response\TestResponse;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Response
  */
-class AbstractResponseTest extends AbstractTestCase
-{
+class AbstractResponseTest extends AbstractTestCase {
 
     /**
      * Tests the setMeta() method.

@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Response
  */
-class RegionsResponseTest extends AbstractTestCase
-{
+class RegionsResponseTest extends AbstractTestCase {
 
     /**
      * Tests the addRegion() method.

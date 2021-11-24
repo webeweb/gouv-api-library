@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringActi
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringActivitePrincipaleTraitTest extends AbstractTestCase
-{
+class StringActivitePrincipaleTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setActivitePrincipale() method.

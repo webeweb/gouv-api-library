@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringSire
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class StringSiretTraitTest extends AbstractTestCase
-{
+class StringSiretTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setSiret() method.

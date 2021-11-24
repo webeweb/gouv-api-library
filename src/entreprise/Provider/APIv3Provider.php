@@ -26,8 +26,7 @@ use WBW\Library\Provider\Exception\ApiException;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Provider
  */
-class APIv3Provider extends AbstractProvider
-{
+class APIv3Provider extends AbstractProvider {
 
     /**
      * Etablissements.

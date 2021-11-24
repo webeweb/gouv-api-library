@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute\TestStringCodeDeparte
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Geo\Tests\Model\Attribute
  */
-class StringCodeDepartementTraitTest extends AbstractTestCase
-{
+class StringCodeDepartementTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setCodeDepartement() method.

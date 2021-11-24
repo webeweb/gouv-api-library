@@ -20,8 +20,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestIntegerNom
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
-class IntegerNombrePeriodesTraitTest extends AbstractTestCase
-{
+class IntegerNombrePeriodesTraitTest extends AbstractTestCase {
 
     /**
      * Tests the setNombrePeriodes() method.

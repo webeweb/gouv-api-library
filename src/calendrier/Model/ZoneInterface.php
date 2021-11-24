@@ -17,8 +17,7 @@ namespace WBW\Library\GouvApi\Calendrier\Model;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Calendrier\Model
  */
-interface ZoneInterface
-{
+interface ZoneInterface {
 
     /**
      * Zone "Alsace Moselle".

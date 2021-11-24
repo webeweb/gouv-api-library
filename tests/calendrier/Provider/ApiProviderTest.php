@@ -23,8 +23,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Calendrier\Tests\Provider
  */
-class ApiProviderTest extends AbstractTestCase
-{
+class ApiProviderTest extends AbstractTestCase {
 
     /**
      * Tests the joursFeries() method.

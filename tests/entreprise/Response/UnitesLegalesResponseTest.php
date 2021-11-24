@@ -21,8 +21,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
  * @author webeweb <https://github.com/webeweb/>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Response
  */
-class UnitesLegalesResponseTest extends AbstractTestCase
-{
+class UnitesLegalesResponseTest extends AbstractTestCase {
 
     /**
      * Tests the addUniteLegale() method.

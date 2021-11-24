@@ -22,8 +22,7 @@ use WBW\Library\Traits\Strings\StringCodeTrait;
  * @package WBW\Library\GouvApi\Geo\Request
  * @abstract
  */
-abstract class AbstractRequest extends BaseRequest
-{
+abstract class AbstractRequest extends BaseRequest {
 
     use ArrayFieldsTrait;
     use StringCodeTrait;
