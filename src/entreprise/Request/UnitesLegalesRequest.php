@@ -37,6 +37,8 @@ class UnitesLegalesRequest extends AbstractRequest implements SubstituableReques
      * @param string|null $siren The SIREN.
      */
     public function __construct(string $siren = null) {
+        parent::__construct();
+
         $this->setSiren($siren);
     }
 

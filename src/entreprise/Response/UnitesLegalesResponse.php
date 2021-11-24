@@ -32,6 +32,8 @@ class UnitesLegalesResponse extends AbstractResponse {
      * Constructor.
      */
     public function __construct() {
+        parent::__construct();
+
         $this->setUnitesLegales([]);
     }
 
