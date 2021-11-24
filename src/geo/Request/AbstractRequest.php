@@ -33,6 +33,7 @@ abstract class AbstractRequest extends BaseRequest
      */
     public function __construct() {
         parent::__construct();
+
         $this->setFields([]);
     }
 }
