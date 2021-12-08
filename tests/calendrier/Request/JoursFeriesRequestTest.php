@@ -13,7 +13,7 @@ namespace WBW\Library\GouvApi\Calendrier\Tests\Request;
 
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
-use WBW\Library\Provider\API\SubstituableRequestInterface;
+use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Jours fériés request test.

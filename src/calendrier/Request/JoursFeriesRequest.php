@@ -13,7 +13,7 @@ namespace WBW\Library\GouvApi\Calendrier\Request;
 
 use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
-use WBW\Library\Provider\API\SubstituableRequestInterface;
+use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Jours fériés request.

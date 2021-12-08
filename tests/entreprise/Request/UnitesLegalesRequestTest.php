@@ -13,7 +13,7 @@ namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
 use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
 use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
-use WBW\Library\Provider\API\SubstituableRequestInterface;
+use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Unités légales request test.

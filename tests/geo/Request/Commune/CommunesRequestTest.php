@@ -13,7 +13,7 @@ namespace WBW\Library\GouvApi\Geo\Tests\Request\Commune;
 
 use WBW\Library\GouvApi\Geo\Request\Commune\CommunesRequest;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
-use WBW\Library\Provider\API\SubstituableRequestInterface;
+use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Communes request test.

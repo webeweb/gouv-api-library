@@ -12,7 +12,7 @@
 namespace WBW\Library\GouvApi\Entreprise\Request;
 
 use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSirenTrait;
-use WBW\Library\Provider\API\SubstituableRequestInterface;
+use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Unités légales request.

@@ -12,7 +12,7 @@
 namespace WBW\Library\GouvApi\Geo\Request\Departement;
 
 use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
-use WBW\Library\Provider\API\SubstituableRequestInterface;
+use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Départements request.

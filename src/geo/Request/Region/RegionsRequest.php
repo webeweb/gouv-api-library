@@ -13,7 +13,7 @@ namespace WBW\Library\GouvApi\Geo\Request\Region;
 
 use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
 use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
-use WBW\Library\Provider\API\SubstituableRequestInterface;
+use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Régions request.

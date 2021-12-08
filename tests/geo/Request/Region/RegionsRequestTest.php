@@ -13,7 +13,7 @@ namespace WBW\Library\GouvApi\Geo\Tests\Request\Region;
 
 use WBW\Library\GouvApi\Geo\Request\Region\RegionsRequest;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
-use WBW\Library\Provider\API\SubstituableRequestInterface;
+use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Régions request test.
