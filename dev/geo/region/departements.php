@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-require __DIR__ . "/../../../vendor/autoload.php";
+require_once __DIR__ . "/../../../vendor/autoload.php";
 
 use WBW\Library\GouvApi\Geo\Provider\RegionApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Region\DepartementsRequest;
