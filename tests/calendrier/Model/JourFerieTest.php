@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 class JourFerieTest extends AbstractTestCase {
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

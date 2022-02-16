@@ -29,7 +29,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Serializer\TestResponseDeseria
 class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
-     * Tests the deserializeEtablissement() method.
+     * Tests deserializeEtablissement()
      *
      * @return void
      */
@@ -107,7 +107,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeEtablissement() method.
+     * Tests deserializeEtablissement()
      *
      * @return void
      */
@@ -118,7 +118,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeEtablissementsResponse() method.
+     * Tests deserializeEtablissementsResponse()
      *
      * @return void
      */
@@ -137,7 +137,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeEtablissementsResponse() method.
+     * Tests deserializeEtablissementsResponse()
      *
      * @return void
      */
@@ -156,7 +156,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeEtablissementsResponse() method.
+     * Tests deserializeEtablissementsResponse()
      *
      * @return void
      */
@@ -175,7 +175,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeMeta() method.
+     * Tests deserializeMeta()
      *
      * @return void
      */
@@ -195,7 +195,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeMeta() method.
+     * Tests deserializeMeta()
      *
      * @return void
      */
@@ -206,7 +206,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeUniteLegale() method.
+     * Tests deserializeUniteLegale()
      *
      * @return void
      */
@@ -261,7 +261,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeUniteLegale() method.
+     * Tests deserializeUniteLegale()
      *
      * @return void
      */
@@ -272,7 +272,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeUnitesLegalesResponse() method.
+     * Tests deserializeUnitesLegalesResponse()
      *
      * @return void
      */
@@ -291,7 +291,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeUnitesLegalesResponse() method.
+     * Tests deserializeUnitesLegalesResponse()
      *
      * @return void
      */
@@ -310,7 +310,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeUnitesLegalesResponse() method.
+     * Tests deserializeUnitesLegalesResponse()
      *
      * @return void
      */

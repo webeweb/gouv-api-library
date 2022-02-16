@@ -27,7 +27,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 class CommuneTest extends AbstractTestCase {
 
     /**
-     * Tests the setCentre() method.
+     * Tests setCentre()
      *
      * @return void
      */
@@ -43,7 +43,7 @@ class CommuneTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodesPostaux() method.
+     * Tests setCodesPostaux()
      *
      * @return void
      */
@@ -56,7 +56,7 @@ class CommuneTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setContour() method.
+     * Tests setContour()
      *
      * @return void
      */
@@ -72,7 +72,7 @@ class CommuneTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDepartement() method.
+     * Tests setDepartement()
      *
      * @return void
      */
@@ -88,7 +88,7 @@ class CommuneTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPopulation() method.
+     * Tests setPopulation()
      *
      * @return void
      */
@@ -101,7 +101,7 @@ class CommuneTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setRegion() method.
+     * Tests setRegion()
      *
      * @return void
      */
@@ -117,7 +117,7 @@ class CommuneTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setSurface() method.
+     * Tests setSurface()
      *
      * @return void
      */
@@ -130,7 +130,7 @@ class CommuneTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

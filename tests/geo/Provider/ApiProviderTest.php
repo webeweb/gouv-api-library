@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Provider\TestApiProvider;
 class ApiProviderTest extends AbstractTestCase {
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

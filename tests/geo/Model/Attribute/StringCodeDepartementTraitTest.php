@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute\TestStringCodeDeparte
 class StringCodeDepartementTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setCodeDepartement() method.
+     * Tests setCodeDepartement()
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringActi
 class StringActivitePrincipaleTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setActivitePrincipale() method.
+     * Tests setActivitePrincipale()
      *
      * @return void
      */

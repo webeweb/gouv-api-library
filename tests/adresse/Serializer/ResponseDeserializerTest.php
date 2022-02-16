@@ -25,7 +25,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
-     * Tests the deserializeReverseCsvResponse() method.
+     * Tests deserializeReverseCsvResponse()
      *
      * @return void
      */
@@ -125,7 +125,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeSearchCsvResponse() method.
+     * Tests deserializeSearchCsvResponse()
      *
      * @return void
      */
@@ -237,7 +237,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeSearchCsvResponse() method.
+     * Tests deserializeSearchCsvResponse()
      *
      * @return void
      */
@@ -250,7 +250,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeSearchCsvResponse() method.
+     * Tests deserializeSearchCsvResponse()
      *
      * @return void
      */

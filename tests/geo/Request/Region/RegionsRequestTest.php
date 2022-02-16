@@ -24,7 +24,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 class RegionsRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the getSubstituables() method.
+     * Tests getSubstituables()
      *
      * @return void
      */
@@ -39,7 +39,7 @@ class RegionsRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

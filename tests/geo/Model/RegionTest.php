@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 class RegionTest extends AbstractTestCase {
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

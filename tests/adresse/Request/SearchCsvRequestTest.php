@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 class SearchCsvRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the addColumn() method.
+     * Tests addColumn()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class SearchCsvRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the addResultColumn() method.
+     * Tests addResultColumn()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class SearchCsvRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

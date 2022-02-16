@@ -26,7 +26,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 class ApiProviderTest extends AbstractTestCase {
 
     /**
-     * Tests the joursFeries() method.
+     * Tests joursFeries()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -46,7 +46,7 @@ class ApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

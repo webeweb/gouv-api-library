@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute\TestArrayFieldsTrait;
 class ArrayFieldsTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the aadField() method.
+     * Tests aadField()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class ArrayFieldsTraitTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

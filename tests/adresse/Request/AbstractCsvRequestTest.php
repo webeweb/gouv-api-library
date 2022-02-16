@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request\TestCsvRequest;
 class AbstractCsvRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

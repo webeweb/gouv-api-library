@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
-     * Tests the deserializeJoursFeriesResponse() method.
+     * Tests deserializeJoursFeriesResponse()
      *
      * @return void
      */
@@ -43,7 +43,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeJoursFeriesResponse() method.
+     * Tests deserializeJoursFeriesResponse()
      *
      * @return void
      */

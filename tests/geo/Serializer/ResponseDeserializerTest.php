@@ -26,7 +26,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
-     * Tests the deserializeCommunesResponse() method.
+     * Tests deserializeCommunesResponse()
      *
      * @return void
      */
@@ -55,7 +55,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeCommunesResponse() method.
+     * Tests deserializeCommunesResponse()
      *
      * @return void
      */
@@ -72,7 +72,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeCommunesResponse() method.
+     * Tests deserializeCommunesResponse()
      *
      * @return void
      */
@@ -102,7 +102,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeDepartementsResponse() method.
+     * Tests deserializeDepartementsResponse()
      *
      * @return void
      */
@@ -124,7 +124,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeDepartementsResponse() method.
+     * Tests deserializeDepartementsResponse()
      *
      * @return void
      */
@@ -141,7 +141,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeRegionsResponse() method.
+     * Tests deserializeRegionsResponse()
      *
      * @return void
      */
@@ -162,7 +162,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the deserializeRegionsResponse() method.
+     * Tests deserializeRegionsResponse()
      *
      * @return void
      */

@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 class ReverseRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

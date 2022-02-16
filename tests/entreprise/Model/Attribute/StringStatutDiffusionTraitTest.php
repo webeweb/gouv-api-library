@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringStat
 class StringStatutDiffusionTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setStatutDiffusion() method.
+     * Tests setStatutDiffusion()
      *
      * @return void
      */

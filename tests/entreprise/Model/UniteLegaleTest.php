@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class UniteLegaleTest extends AbstractTestCase {
 
     /**
-     * Tests the setAnneeCategorieEntreprise() method.
+     * Tests setAnneeCategorieEntreprise()
      *
      * @return void
      */
@@ -37,7 +37,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCategorieEntreprise() method.
+     * Tests setCategorieEntreprise()
      *
      * @return void
      */
@@ -50,7 +50,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCategorieJuridique() method.
+     * Tests setCategorieJuridique()
      *
      * @return void
      */
@@ -63,7 +63,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDateFin() method.
+     * Tests setDateFin()
      *
      * @return void
      */
@@ -76,7 +76,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDenomination() method.
+     * Tests setDenomination()
      *
      * @return void
      */
@@ -89,7 +89,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDenominationUsuelle1() method.
+     * Tests setDenominationUsuelle1()
      *
      * @return void
      */
@@ -102,7 +102,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDenominationUsuelle2() method.
+     * Tests setDenominationUsuelle2()
      *
      * @return void
      */
@@ -115,7 +115,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDenominationUsuelle3() method.
+     * Tests setDenominationUsuelle3()
      *
      * @return void
      */
@@ -128,7 +128,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEconomieSocialeSolidaire() method.
+     * Tests setEconomieSocialeSolidaire()
      *
      * @return void
      */
@@ -141,7 +141,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEtablissementSiege() method.
+     * Tests setEtablissementSiege()
      *
      * @return void
      */
@@ -157,7 +157,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setIdentifiantAssociation() method.
+     * Tests setIdentifiantAssociation()
      *
      * @return void
      */
@@ -170,7 +170,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNicSiege() method.
+     * Tests setNicSiege()
      *
      * @return void
      */
@@ -183,7 +183,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNomUsage() method.
+     * Tests setNomUsage()
      *
      * @return void
      */
@@ -196,7 +196,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNumeroTvaIntra() method.
+     * Tests setNumeroTvaIntra()
      *
      * @return void
      */
@@ -209,7 +209,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPrenom1() method.
+     * Tests setPrenom1()
      *
      * @return void
      */
@@ -222,7 +222,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPrenom2() method.
+     * Tests setPrenom2()
      *
      * @return void
      */
@@ -235,7 +235,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPrenom3() method.
+     * Tests setPrenom3()
      *
      * @return void
      */
@@ -248,7 +248,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPrenom4() method.
+     * Tests setPrenom4()
      *
      * @return void
      */
@@ -261,7 +261,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPrenomUsuel() method.
+     * Tests setPrenomUsuel()
      *
      * @return void
      */
@@ -274,7 +274,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setPseudonyme() method.
+     * Tests setPseudonyme()
      *
      * @return void
      */
@@ -287,7 +287,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setSexe() method.
+     * Tests setSexe()
      *
      * @return void
      */
@@ -300,7 +300,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setSigle() method.
+     * Tests setSigle()
      *
      * @return void
      */
@@ -313,7 +313,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setUnitePurgee() method.
+     * Tests setUnitePurgee()
      *
      * @return void
      */
@@ -326,7 +326,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

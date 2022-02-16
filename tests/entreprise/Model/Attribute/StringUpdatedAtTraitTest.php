@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringUpda
 class StringUpdatedAtTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setUpdatedAt() method.
+     * Tests setUpdatedAt()
      *
      * @return void
      */

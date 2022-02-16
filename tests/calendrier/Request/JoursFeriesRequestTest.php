@@ -24,7 +24,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 class JoursFeriesRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the getSubstituables() method.
+     * Tests getSubstituables()
      *
      * @return void
      */
@@ -42,7 +42,7 @@ class JoursFeriesRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setAnnee() method.
+     * Tests setAnnee()
      *
      * @return void
      */
@@ -55,7 +55,7 @@ class JoursFeriesRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setZone() method.
+     * Tests setZone()
      *
      * @return void
      */
@@ -68,7 +68,7 @@ class JoursFeriesRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

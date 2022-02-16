@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Common\Tests\Fixtures\Model\Attribute\TestStringNomTrait
 class StringNomTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setNom() method.
+     * Tests setNom()
      *
      * @return void
      */

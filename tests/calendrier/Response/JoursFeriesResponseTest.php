@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 class JoursFeriesResponseTest extends AbstractTestCase {
 
     /**
-     * Tests the addJourFerie() method.
+     * Tests addJourFerie()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class JoursFeriesResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

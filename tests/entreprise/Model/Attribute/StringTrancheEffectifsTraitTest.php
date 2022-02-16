@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringTran
 class StringTrancheEffectifsTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setTrancheEffectifs() method.
+     * Tests setTrancheEffectifs()
      *
      * @return void
      */

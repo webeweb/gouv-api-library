@@ -28,7 +28,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class APIv3ProviderTest extends AbstractTestCase {
 
     /**
-     * Tests the etablissements() method.
+     * Tests etablissements()
      *
      * @throws Exception Throws an exception if an error occurs.
      */
@@ -46,7 +46,7 @@ class APIv3ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the etablissements() method.
+     * Tests etablissements()
      *
      * @throws Exception Throws an exception if an error occurs.
      */
@@ -62,7 +62,7 @@ class APIv3ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the unitesLegales() method.
+     * Tests unitesLegales()
      *
      * @throws Exception Throws an exception if an error occurs.
      */
@@ -80,7 +80,7 @@ class APIv3ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the unitesLegales() method.
+     * Tests unitesLegales()
      *
      * @throws Exception Throws an exception if an error occurs.
      */
@@ -96,7 +96,7 @@ class APIv3ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

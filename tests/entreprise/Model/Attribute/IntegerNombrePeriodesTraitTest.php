@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestIntegerNom
 class IntegerNombrePeriodesTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setNombrePeriodes() method.
+     * Tests setNombrePeriodes()
      *
      * @return void
      */

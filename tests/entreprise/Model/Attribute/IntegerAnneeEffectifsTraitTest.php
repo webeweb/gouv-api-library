@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestIntegerAnn
 class IntegerAnneeEffectifsTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setAnneeEffectifs() method.
+     * Tests setAnneeEffectifs()
      *
      * @return void
      */

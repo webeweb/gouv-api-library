@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class EtablissementsResponseTest extends AbstractTestCase {
 
     /**
-     * Tests the addEtablissement() method.
+     * Tests addEtablissement()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class EtablissementsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

@@ -31,7 +31,7 @@ use WBW\Library\Provider\Exception\ApiException;
 class RegionApiProviderTest extends AbstractTestCase {
 
     /**
-     * Tests the communes() method.
+     * Tests communes()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -57,7 +57,7 @@ class RegionApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the departements() method.
+     * Tests departements()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.
@@ -75,7 +75,7 @@ class RegionApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the regions() method.
+     * Tests regions()
      *
      * @return void
      * @throws Exception Throws an exception if an error occurs.

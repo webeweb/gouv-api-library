@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 class SearchRequestTest extends AbstractTestCase {
 
     /**
-     * Tests the enumTypes() method.
+     * Tests enumTypes()
      *
      * @return void
      */
@@ -39,7 +39,7 @@ class SearchRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setAutocomplete() method.
+     * Tests setAutocomplete()
      *
      * @return void
      */
@@ -52,7 +52,7 @@ class SearchRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLimit() method.
+     * Tests setLimit()
      *
      * @return void
      */
@@ -65,7 +65,7 @@ class SearchRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

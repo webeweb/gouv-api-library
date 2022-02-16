@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class EtablissementTest extends AbstractTestCase {
 
     /**
-     * Tests the setActivitePrincipaleRegistreMetiers() method.
+     * Tests setActivitePrincipaleRegistreMetiers()
      *
      * @return void
      */
@@ -37,7 +37,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodeCedex() method.
+     * Tests setCodeCedex()
      *
      * @return void
      */
@@ -50,7 +50,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodeCedex2() method.
+     * Tests setCodeCedex2()
      *
      * @return void
      */
@@ -63,7 +63,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodeCommune() method.
+     * Tests setCodeCommune()
      *
      * @return void
      */
@@ -76,7 +76,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodeCommune2() method.
+     * Tests setCodeCommune2()
      *
      * @return void
      */
@@ -89,7 +89,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodePaysEtranger() method.
+     * Tests setCodePaysEtranger()
      *
      * @return void
      */
@@ -102,7 +102,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodePaysEtranger2() method.
+     * Tests setCodePaysEtranger2()
      *
      * @return void
      */
@@ -115,7 +115,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodePostal() method.
+     * Tests setCodePostal()
      *
      * @return void
      */
@@ -128,7 +128,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setCodePostal2() method.
+     * Tests setCodePostal2()
      *
      * @return void
      */
@@ -141,7 +141,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setComplementAdresse() method.
+     * Tests setComplementAdresse()
      *
      * @return void
      */
@@ -154,7 +154,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setComplementAdresse2() method.
+     * Tests setComplementAdresse2()
      *
      * @return void
      */
@@ -167,7 +167,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDenominationUsuelle() method.
+     * Tests setDenominationUsuelle()
      *
      * @return void
      */
@@ -180,7 +180,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDistributionSpeciale() method.
+     * Tests setDistributionSpeciale()
      *
      * @return void
      */
@@ -193,7 +193,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setDistributionSpeciale2() method.
+     * Tests setDistributionSpeciale2()
      *
      * @return void
      */
@@ -206,7 +206,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEnseigne1() method.
+     * Tests setEnseigne1()
      *
      * @return void
      */
@@ -219,7 +219,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEnseigne2() method.
+     * Tests setEnseigne2()
      *
      * @return void
      */
@@ -232,7 +232,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEnseigne3() method.
+     * Tests setEnseigne3()
      *
      * @return void
      */
@@ -245,7 +245,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setEtablissementSiege() method.
+     * Tests setEtablissementSiege()
      *
      * @return void
      */
@@ -258,7 +258,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setGeoAdresse() method.
+     * Tests setGeoAdresse()
      *
      * @return void
      */
@@ -271,7 +271,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setGeoId() method.
+     * Tests setGeoId()
      *
      * @return void
      */
@@ -284,7 +284,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setGeoL4() method.
+     * Tests setGeoL4()
      *
      * @return void
      */
@@ -297,7 +297,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setGeoL5() method.
+     * Tests setGeoL5()
      *
      * @return void
      */
@@ -310,7 +310,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setGeoLigne() method.
+     * Tests setGeoLigne()
      *
      * @return void
      */
@@ -323,7 +323,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setGeoScore() method.
+     * Tests setGeoScore()
      *
      * @return void
      */
@@ -336,7 +336,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setGeoType() method.
+     * Tests setGeoType()
      *
      * @return void
      */
@@ -349,7 +349,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setIndiceRepetition() method.
+     * Tests setIndiceRepetition()
      *
      * @return void
      */
@@ -362,7 +362,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setIndiceRepetition2() method.
+     * Tests setIndiceRepetition2()
      *
      * @return void
      */
@@ -375,7 +375,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleCedex() method.
+     * Tests setLibelleCedex()
      *
      * @return void
      */
@@ -388,7 +388,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleCedex2() method.
+     * Tests setLibelleCedex2()
      *
      * @return void
      */
@@ -401,7 +401,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleCommune() method.
+     * Tests setLibelleCommune()
      *
      * @return void
      */
@@ -414,7 +414,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleCommune2() method.
+     * Tests setLibelleCommune2()
      *
      * @return void
      */
@@ -427,7 +427,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleCommuneEtranger() method.
+     * Tests setLibelleCommuneEtranger()
      *
      * @return void
      */
@@ -440,7 +440,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleCommuneEtranger2() method.
+     * Tests setLibelleCommuneEtranger2()
      *
      * @return void
      */
@@ -453,7 +453,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibellePaysEtranger() method.
+     * Tests setLibellePaysEtranger()
      *
      * @return void
      */
@@ -466,7 +466,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibellePaysEtranger2() method.
+     * Tests setLibellePaysEtranger2()
      *
      * @return void
      */
@@ -479,7 +479,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleVoie() method.
+     * Tests setLibelleVoie()
      *
      * @return void
      */
@@ -492,7 +492,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setLibelleVoie2() method.
+     * Tests setLibelleVoie2()
      *
      * @return void
      */
@@ -505,7 +505,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNic() method.
+     * Tests setNic()
      *
      * @return void
      */
@@ -518,7 +518,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNumeroVoie() method.
+     * Tests setNumeroVoie()
      *
      * @return void
      */
@@ -531,7 +531,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setNumeroVoie2() method.
+     * Tests setNumeroVoie2()
      *
      * @return void
      */
@@ -544,7 +544,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setTypeVoie() method.
+     * Tests setTypeVoie()
      *
      * @return void
      */
@@ -557,7 +557,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setTypeVoie2() method.
+     * Tests setTypeVoie2()
      *
      * @return void
      */
@@ -570,7 +570,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setUniteLegale() method.
+     * Tests setUniteLegale()
      *
      * @return void
      */
@@ -586,7 +586,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setUniteLegaleId() method.
+     * Tests setUniteLegaleId()
      *
      * @return void
      */
@@ -599,7 +599,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */

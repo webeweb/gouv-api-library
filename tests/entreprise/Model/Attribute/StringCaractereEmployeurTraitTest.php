@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringCara
 class StringCaractereEmployeurTraitTest extends AbstractTestCase {
 
     /**
-     * Tests the setCaractereEmployeur() method.
+     * Tests setCaractereEmployeur()
      *
      * @return void
      */

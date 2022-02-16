@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class MetaTest extends AbstractTestCase {
 
     /**
-     * Tests the setTotalPages() method.
+     * Tests setTotalPages()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class MetaTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the setTotalResults() method.
+     * Tests setTotalResults()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class MetaTest extends AbstractTestCase {
     }
 
     /**
-     * Tests the __construct() method.
+     * Tests __construct()
      *
      * @return void
      */
