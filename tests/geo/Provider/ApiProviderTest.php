@@ -18,7 +18,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Provider\TestApiProvider;
 /**
  * Découpage administratif provider test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
 class ApiProviderTest extends AbstractTestCase {

@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute\TestArrayFieldsTrait;
 /**
  * Array fields trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Model\Attribute
  */
 class ArrayFieldsTraitTest extends AbstractTestCase {

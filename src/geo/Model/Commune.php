@@ -22,7 +22,7 @@ use WBW\Library\Traits\Strings\StringCodeTrait;
 /**
  * Commune.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Model
  */
 class Commune {

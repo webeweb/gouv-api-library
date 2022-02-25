@@ -14,7 +14,7 @@ namespace WBW\Library\GouvApi\Entreprise\Model\Attribute;
 /**
  * String statut diffusion trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Model\Attribute
  */
 trait StringStatutDiffusionTrait {

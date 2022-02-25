@@ -18,7 +18,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 /**
  * Jours fériés request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Calendrier\Request
  */
 class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestInterface, ZoneInterface {

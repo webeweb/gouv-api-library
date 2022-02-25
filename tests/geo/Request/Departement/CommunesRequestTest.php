@@ -18,7 +18,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 /**
  * Communes request test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Request\Departement
  */
 class CommunesRequestTest extends AbstractTestCase {

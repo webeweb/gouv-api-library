@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringEtatAdministratifTrait;
 /**
  * Test string état administratif trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
 class TestStringEtatAdministratifTrait {

@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 /**
  * Reverse request test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Adresse\Tests\Request
  */
 class ReverseRequestTest extends AbstractTestCase {

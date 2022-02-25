@@ -18,7 +18,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 /**
  * Response deserializer test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Calendrier\Tests\Serializer
  */
 class ResponseDeserializerTest extends AbstractTestCase {

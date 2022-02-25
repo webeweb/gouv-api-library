@@ -18,7 +18,7 @@ use WBW\Library\Traits\Strings\StringMessageTrait;
 /**
  * Abstract response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Response
  */
 abstract class AbstractResponse extends BaseResponse {

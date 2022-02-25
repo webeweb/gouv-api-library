@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 /**
  * Adresse test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Adresse\Tests\Model
  */
 class AdresseTest extends AbstractTestCase {

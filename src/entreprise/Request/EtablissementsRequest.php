@@ -17,7 +17,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 /**
  * Etablissements request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Request
  */
 class EtablissementsRequest extends AbstractRequest implements SubstituableRequestInterface {

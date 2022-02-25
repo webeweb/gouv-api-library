@@ -19,7 +19,7 @@ use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
 /**
  * Test response deserializer.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Serializer
  */
 class TestResponseDeserializer extends ResponseDeserializer {

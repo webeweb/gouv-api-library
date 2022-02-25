@@ -21,7 +21,7 @@ use WBW\Library\Provider\Exception\ApiException;
 /**
  * API Provider.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Calendrier\Provider
  */
 class ApiProvider extends AbstractProvider {

@@ -19,7 +19,7 @@ use WBW\Library\Traits\Strings\StringTypeTrait;
 /**
  * Adresse.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Adresse\Model
  */
 class Adresse {

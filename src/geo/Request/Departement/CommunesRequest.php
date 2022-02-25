@@ -19,7 +19,7 @@ use WBW\Library\Traits\Strings\StringFormatTrait;
 /**
  * Communes request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Request\Departement
  */
 class CommunesRequest extends AbstractRequest implements SubstituableRequestInterface {

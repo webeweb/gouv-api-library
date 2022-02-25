@@ -14,7 +14,7 @@ namespace WBW\Library\GouvApi\Adresse\Response;
 /**
  * Abstract CVS response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Adresse\Response
  * @abstract
  */

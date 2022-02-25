@@ -14,7 +14,7 @@ namespace WBW\Library\GouvApi\Geo\Model\Attribute;
 /**
  * String code département trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Model\Attribute
  */
 trait StringCodeDepartementTrait {

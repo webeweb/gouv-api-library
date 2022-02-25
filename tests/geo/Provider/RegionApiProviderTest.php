@@ -25,7 +25,7 @@ use WBW\Library\Provider\Exception\ApiException;
 /**
  * Région API provider test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
 class RegionApiProviderTest extends AbstractTestCase {

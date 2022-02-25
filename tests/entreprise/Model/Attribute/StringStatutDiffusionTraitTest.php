@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringStat
 /**
  * String statut diffusion trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
 class StringStatutDiffusionTraitTest extends AbstractTestCase {

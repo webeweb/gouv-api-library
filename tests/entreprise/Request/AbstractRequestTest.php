@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Request\TestRequest;
 /**
  * Abstract request test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Request
  */
 class AbstractRequestTest extends AbstractTestCase {

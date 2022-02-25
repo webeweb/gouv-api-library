@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringCrea
 /**
  * String created at trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
 class StringCreatedAtTraitTest extends AbstractTestCase {

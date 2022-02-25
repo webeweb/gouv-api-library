@@ -19,7 +19,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 /**
  * Response deserializer test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Adresse\Tests\Serializer
  */
 class ResponseDeserializerTest extends AbstractTestCase {

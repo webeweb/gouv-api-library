@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
 /**
  * Test request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Fixtures\Request
  */
 class TestRequest extends AbstractRequest {

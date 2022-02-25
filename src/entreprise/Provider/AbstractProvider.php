@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Common\Provider\AbstractProvider as BaseProvider;
 /**
  * Abstract Provider.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Provider
  * @abstract
  */

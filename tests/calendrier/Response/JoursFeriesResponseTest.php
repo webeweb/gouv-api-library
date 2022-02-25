@@ -18,7 +18,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 /**
  * Jours fériés response test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Calendrier\Tests\Response
  */
 class JoursFeriesResponseTest extends AbstractTestCase {

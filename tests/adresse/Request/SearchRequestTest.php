@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 /**
  * Search request test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Adresse\Tests\Request
  */
 class SearchRequestTest extends AbstractTestCase {

@@ -17,7 +17,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 /**
  * Départements request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Request\Region
  */
 class DepartementsRequest extends AbstractRequest implements SubstituableRequestInterface {

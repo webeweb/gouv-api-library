@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute\TestStringSire
 /**
  * String SIRET trait test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Model\Attribute
  */
 class StringSiretTraitTest extends AbstractTestCase {

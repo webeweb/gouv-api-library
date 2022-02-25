@@ -22,7 +22,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 /**
  * Département API provider test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Provider
  */
 class DepartementApiProviderTest extends AbstractTestCase {

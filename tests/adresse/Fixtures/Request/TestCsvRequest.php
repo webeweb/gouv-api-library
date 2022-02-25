@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Adresse\Request\AbstractCsvRequest;
 /**
  * Test CSV request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request
  */
 class TestCsvRequest extends AbstractCsvRequest {

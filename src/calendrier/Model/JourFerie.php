@@ -17,7 +17,7 @@ use WBW\Library\Traits\DateTimes\DateTimeDateTrait;
 /**
  * Jour férié.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Calendrier\Model
  */
 class JourFerie {

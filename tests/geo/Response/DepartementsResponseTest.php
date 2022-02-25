@@ -18,7 +18,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 /**
  * Départements response test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Response
  */
 class DepartementsResponseTest extends AbstractTestCase {

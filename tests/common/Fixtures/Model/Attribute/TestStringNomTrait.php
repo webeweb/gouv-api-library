@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
 /**
  * Test string nom trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Common\Tests\Fixtures\Model\Attribute
  */
 class TestStringNomTrait {

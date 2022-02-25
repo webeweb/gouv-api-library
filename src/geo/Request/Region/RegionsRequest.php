@@ -18,7 +18,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 /**
  * Régions request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Request\Region
  */
 class RegionsRequest extends AbstractRequest implements SubstituableRequestInterface {

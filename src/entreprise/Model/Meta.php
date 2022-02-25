@@ -17,7 +17,7 @@ use WBW\Library\Traits\Integers\IntegerPerPageTrait;
 /**
  * Meta.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Model
  */
 class Meta {

@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 /**
  * API provider.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Provider
  * @abstract
  */

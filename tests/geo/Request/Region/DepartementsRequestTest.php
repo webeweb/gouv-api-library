@@ -18,7 +18,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 /**
  * Départements request test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Request\Region
  */
 class DepartementsRequestTest extends AbstractTestCase {

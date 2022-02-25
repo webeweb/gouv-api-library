@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Geo\Model\Attribute\StringCodeRegionTrait;
 /**
  * Test string code région trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Tests\Fixtures\Model\Attribute
  */
 class TestStringCodeRegionTrait {

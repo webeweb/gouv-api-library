@@ -31,7 +31,7 @@ use WBW\Library\Traits\Integers\IntegerIdTrait;
 /**
  * Unité légale.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Model
  */
 class UniteLegale {

@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Common\Tests\Fixtures\Provider\TestProvider;
 /**
  * Abstract provider test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Common\Tests\Provider
  */
 class AbstractProviderTest extends AbstractTestCase {

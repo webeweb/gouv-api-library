@@ -28,7 +28,7 @@ use WBW\Library\Types\Helper\ArrayHelper;
 /**
  * API provider.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Adresse\Provider
  */
 class ApiProvider extends AbstractProvider {

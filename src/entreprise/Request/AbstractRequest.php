@@ -18,7 +18,7 @@ use WBW\Library\Traits\Integers\IntegerPerPageTrait;
 /**
  * Abstract request.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Request
  */
 abstract class AbstractRequest extends BaseRequest {

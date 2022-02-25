@@ -33,7 +33,7 @@ use WBW\Library\Traits\Integers\IntegerIdTrait;
 /**
  * Etablissement.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Model
  */
 class Etablissement {

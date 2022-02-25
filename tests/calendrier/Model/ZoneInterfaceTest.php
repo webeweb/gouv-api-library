@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 /**
  * Zone interface test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Calendrier\Tests\Model
  */
 class ZoneInterfaceTest extends AbstractTestCase {

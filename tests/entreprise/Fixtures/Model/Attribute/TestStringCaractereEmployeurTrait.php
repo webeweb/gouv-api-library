@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringCaractereEmployeurTrait
 /**
  * Test string caractère employeur trait.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Model\Attribute
  */
 class TestStringCaractereEmployeurTrait {

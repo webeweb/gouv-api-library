@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Geo\Model\Region;
 /**
  * Régions response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Response
  */
 class RegionsResponse extends AbstractResponse {

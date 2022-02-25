@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Entreprise\Model\UniteLegale;
 /**
  * Unités légales response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Response
  */
 class UnitesLegalesResponse extends AbstractResponse {

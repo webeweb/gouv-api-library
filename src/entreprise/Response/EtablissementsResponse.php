@@ -16,7 +16,7 @@ use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
 /**
  * Etablissements response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Response
  */
 class EtablissementsResponse extends AbstractResponse {

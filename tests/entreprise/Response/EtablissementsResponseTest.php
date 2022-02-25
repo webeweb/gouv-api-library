@@ -18,7 +18,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 /**
  * Etablissements response test.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Tests\Response
  */
 class EtablissementsResponseTest extends AbstractTestCase {

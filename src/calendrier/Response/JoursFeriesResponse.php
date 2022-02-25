@@ -17,7 +17,7 @@ use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 /**
  * Jours fériés response.
  *
- * @author webeweb <https://github.com/webeweb/>
+ * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Calendrier\Response
  */
 class JoursFeriesResponse extends AbstractResponse {
