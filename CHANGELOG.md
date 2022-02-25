@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+### master
+
+- Improve PHPDoc
+
 ### [1.1.0](https://github.com/webeweb/gouv-api-library/tree/v1.1.0) (2021-12-08)
 
 - Improve dev scripts
