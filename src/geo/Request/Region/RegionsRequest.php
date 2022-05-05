@@ -33,7 +33,7 @@ class RegionsRequest extends AbstractRequest implements SubstituableRequestInter
     const RESOURCE_PATH = "/regions:code";
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;

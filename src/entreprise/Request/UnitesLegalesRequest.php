@@ -43,7 +43,7 @@ class UnitesLegalesRequest extends AbstractRequest implements SubstituableReques
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;

@@ -31,7 +31,7 @@ abstract class AbstractTestCase extends TestCase {
     protected $logger;
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected function setUp(): void {
         parent::setUp();

@@ -63,7 +63,7 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;

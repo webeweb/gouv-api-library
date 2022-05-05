@@ -84,7 +84,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;

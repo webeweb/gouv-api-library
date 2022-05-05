@@ -30,7 +30,7 @@ abstract class ApiProvider extends AbstractProvider {
     const ENDPOINT_PATH = "https://geo.api.gouv.fr";
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getEndpointPath(): string {
         return self::ENDPOINT_PATH;

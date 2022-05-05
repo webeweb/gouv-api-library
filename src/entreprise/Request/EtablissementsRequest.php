@@ -43,7 +43,7 @@ class EtablissementsRequest extends AbstractRequest implements SubstituableReque
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;

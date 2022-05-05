@@ -63,7 +63,7 @@ class ApiProvider extends AbstractProvider {
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getEndpointPath(): string {
         return self::ENDPOINT_PATH;

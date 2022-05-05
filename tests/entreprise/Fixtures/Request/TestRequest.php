@@ -22,7 +22,7 @@ use WBW\Library\GouvApi\Entreprise\Request\AbstractRequest;
 class TestRequest extends AbstractRequest {
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return "";

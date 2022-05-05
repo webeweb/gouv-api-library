@@ -22,7 +22,7 @@ use WBW\Library\GouvApi\Adresse\Request\AbstractCsvRequest;
 class TestCsvRequest extends AbstractCsvRequest {
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return "";

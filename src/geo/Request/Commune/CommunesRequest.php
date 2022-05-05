@@ -35,7 +35,7 @@ class CommunesRequest extends AbstractRequest implements SubstituableRequestInte
     const RESOURCE_PATH = "/communes:code";
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
