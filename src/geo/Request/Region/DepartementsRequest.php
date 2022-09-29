@@ -40,6 +40,7 @@ class DepartementsRequest extends AbstractRequest implements SubstituableRequest
      * {@inheritdoc}
      */
     public function getSubstituables(): array {
+
         return [
             ":code" => $this->getCode(),
         ];

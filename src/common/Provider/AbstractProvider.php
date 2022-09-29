@@ -43,6 +43,7 @@ abstract class AbstractProvider extends BaseProvider {
      * @return array Returns the configuration.
      */
     private function buildConfiguration(): array {
+
         return [
             "base_uri"    => $this->getEndpointPath() . "/",
             "debug"       => $this->getDebug(),

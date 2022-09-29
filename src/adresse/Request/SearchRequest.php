@@ -110,6 +110,7 @@ class SearchRequest extends AbstractRequest {
      * @return string[] Returns the types.
      */
     public static function enumTypes(): array {
+
         return [
             self::TYPE_HOUSE_NUMBER,
             self::TYPE_LOCALITY,

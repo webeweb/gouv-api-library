@@ -145,6 +145,7 @@ abstract class AbstractCsvResponse extends AdressesResponse {
      * @return string[] Returns the result columns.
      */
     public static function enumResultColumns(): array {
+
         return [
             self::RESULT_CITY,
             self::RESULT_CITYCODE,

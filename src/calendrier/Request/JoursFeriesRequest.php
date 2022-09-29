@@ -73,6 +73,7 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
      * {@inheritdoc}
      */
     public function getSubstituables(): array {
+
         return [
             ":zone"  => $this->getZone(),
             ":annee" => null !== $this->getAnnee() ? "/{$this->getAnnee()}" : "",

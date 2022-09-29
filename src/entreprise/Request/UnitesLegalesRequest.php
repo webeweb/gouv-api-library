@@ -53,6 +53,7 @@ class UnitesLegalesRequest extends AbstractRequest implements SubstituableReques
      * {@inheritdoc}
      */
     public function getSubstituables(): array {
+
         return [
             ":siren" => null !== $this->getSiren() ? "/{$this->getSiren()}" : "",
         ];

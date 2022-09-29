@@ -173,9 +173,11 @@ class ResponseDeserializer extends JsonDeserializer {
      * @return array Returns the converted array.
      */
     protected static function toArray(array $response): array {
+
         if (true === ArrayHelper::isObject($response)) {
             return [$response];
         }
+
         return $response;
     }
 }

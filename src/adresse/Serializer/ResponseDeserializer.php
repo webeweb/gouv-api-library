@@ -143,6 +143,7 @@ class ResponseDeserializer {
      * @return string[] Returns the methods.
      */
     protected static function getMethods(): array {
+
         return [
             AbstractCsvResponse::RESULT_CITY        => "setCity",
             AbstractCsvResponse::RESULT_CITYCODE    => "setCityCode",

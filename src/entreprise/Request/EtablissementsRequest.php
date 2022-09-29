@@ -53,6 +53,7 @@ class EtablissementsRequest extends AbstractRequest implements SubstituableReque
      * {@inheritdoc}
      */
     public function getSubstituables(): array {
+
         return [
             ":siret" => null !== $this->getSiret() ? "/{$this->getSiret()}" : "",
         ];
