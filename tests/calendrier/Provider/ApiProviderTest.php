@@ -12,6 +12,7 @@
 namespace WBW\Library\GouvApi\Calendrier\Tests\Provider;
 
 use Exception;
+use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Calendrier\Provider\ApiProvider;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
@@ -34,7 +35,7 @@ class ApiProviderTest extends AbstractTestCase {
     public function testJoursFeries(): void {
 
         // Set a Jours fériés request mock.
-        $arg = new JoursFeriesRequest(JoursFeriesRequest::ZONE_METROPOLE);
+        $arg = new JoursFeriesRequest(ZoneInterface::ZONE_METROPOLE);
         $arg->setAnnee(2021);
 
         $obj = new ApiProvider($this->logger);

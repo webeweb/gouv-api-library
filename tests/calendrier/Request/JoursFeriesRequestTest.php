@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Calendrier\Tests\Request;
 
+use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
@@ -34,7 +35,7 @@ class JoursFeriesRequestTest extends AbstractTestCase {
 
         $this->assertEquals([":zone" => null, ":annee" => ""], $obj->getSubstituables());
 
-        $obj->setZone(JoursFeriesRequest::ZONE_METROPOLE);
+        $obj->setZone(ZoneInterface::ZONE_METROPOLE);
         $this->assertEquals([":zone" => "metropole", ":annee" => ""], $obj->getSubstituables());
 
         $obj->setAnnee(2021);
@@ -63,8 +64,8 @@ class JoursFeriesRequestTest extends AbstractTestCase {
 
         $obj = new JoursFeriesRequest();
 
-        $obj->setZone(JoursFeriesRequest::ZONE_METROPOLE);
-        $this->assertEquals(JoursFeriesRequest::ZONE_METROPOLE, $obj->getZone());
+        $obj->setZone(ZoneInterface::ZONE_METROPOLE);
+        $this->assertEquals(ZoneInterface::ZONE_METROPOLE, $obj->getZone());
     }
 
     /**

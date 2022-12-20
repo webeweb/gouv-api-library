@@ -11,6 +11,7 @@
 
 require_once __DIR__ . "/../../vendor/autoload.php";
 
+use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Calendrier\Provider\ApiProvider;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 
@@ -19,7 +20,7 @@ $provider = new ApiProvider();
 
 // Create a Jours fériés request.
 $request = new JoursFeriesRequest();
-$request->setZone(JoursFeriesRequest::ZONE_METROPOLE);
+$request->setZone(ZoneInterface::ZONE_METROPOLE);
 $request->setAnnee(2021); // Optional
 
 // Call the API and get the response.
