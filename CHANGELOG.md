@@ -1,8 +1,9 @@
 CHANGELOG
 =========
 
-### master
+### [1.2.0](https://github.com/webeweb/gouv-api-library/tree/v1.2.0) (2022-12-20)
 
+- Add PHP 8.2 support
 - Improve PHPDoc
 
 ### [1.1.0](https://github.com/webeweb/gouv-api-library/tree/v1.1.0) (2021-12-08)
