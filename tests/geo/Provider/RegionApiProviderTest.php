@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
-use Exception;
+use Throwable;
 use WBW\Library\GouvApi\Geo\Provider\RegionApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Region\CommunesRequest;
 use WBW\Library\GouvApi\Geo\Request\Region\DepartementsRequest;
@@ -34,7 +34,7 @@ class RegionApiProviderTest extends AbstractTestCase {
      * Tests communes()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testCommunes(): void {
 
@@ -48,7 +48,7 @@ class RegionApiProviderTest extends AbstractTestCase {
 
             $res = $obj->communes($request);
             $this->assertInstanceOf(CommunesResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
             $this->assertEquals(500, $ex->getCode());
@@ -60,7 +60,7 @@ class RegionApiProviderTest extends AbstractTestCase {
      * Tests departements()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testDepartements(): void {
 
@@ -78,7 +78,7 @@ class RegionApiProviderTest extends AbstractTestCase {
      * Tests regions()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testRegions(): void {
 

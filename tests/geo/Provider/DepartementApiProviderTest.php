@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
-use Exception;
+use Throwable;
 use WBW\Library\GouvApi\Geo\Provider\DepartementApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Departement\CommunesRequest;
 use WBW\Library\GouvApi\Geo\Request\Departement\DepartementsRequest;
@@ -31,7 +31,7 @@ class DepartementApiProviderTest extends AbstractTestCase {
      * Tests communes()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testCommunes(): void {
 
@@ -49,7 +49,7 @@ class DepartementApiProviderTest extends AbstractTestCase {
      * Tests departements()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testDepartements(): void {
 

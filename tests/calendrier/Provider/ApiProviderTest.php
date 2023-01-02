@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GouvApi\Calendrier\Tests\Provider;
 
-use Exception;
+use Throwable;
 use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Calendrier\Provider\ApiProvider;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
@@ -30,7 +30,7 @@ class ApiProviderTest extends AbstractTestCase {
      * Tests joursFeries()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testJoursFeries(): void {
 

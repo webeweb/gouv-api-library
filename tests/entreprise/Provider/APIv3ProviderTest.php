@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GouvApi\Entreprise\Tests\Provider;
 
-use Exception;
+use Throwable;
 use WBW\Library\GouvApi\Entreprise\Provider\APIv3Provider;
 use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
 use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
@@ -32,7 +32,7 @@ class APIv3ProviderTest extends AbstractTestCase {
      * Tests etablissements()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testEtablissements(): void {
 
@@ -47,7 +47,7 @@ class APIv3ProviderTest extends AbstractTestCase {
 
             $res = $obj->etablissements($request);
             $this->assertInstanceOf(EtablissementsResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
             $this->assertEquals("Call API provider failed", $ex->getMessage());
@@ -58,7 +58,7 @@ class APIv3ProviderTest extends AbstractTestCase {
      * Tests etablissements()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testEtablissementsWithSiret(): void {
 
@@ -71,7 +71,7 @@ class APIv3ProviderTest extends AbstractTestCase {
 
             $res = $obj->etablissements($request);
             $this->assertInstanceOf(EtablissementsResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
             $this->assertEquals("Call API provider failed", $ex->getMessage());
@@ -82,7 +82,7 @@ class APIv3ProviderTest extends AbstractTestCase {
      * Tests unitesLegales()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testUniteLegales(): void {
 
@@ -97,7 +97,7 @@ class APIv3ProviderTest extends AbstractTestCase {
 
             $res = $obj->unitesLegales($request);
             $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
             $this->assertEquals("Call API provider failed", $ex->getMessage());
@@ -108,7 +108,7 @@ class APIv3ProviderTest extends AbstractTestCase {
      * Tests unitesLegales()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testUniteLegalesWithSiren(): void {
 
@@ -121,7 +121,7 @@ class APIv3ProviderTest extends AbstractTestCase {
 
             $res = $obj->unitesLegales($request);
             $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             $this->assertInstanceOf(ApiException::class, $ex);
             $this->assertEquals("Call API provider failed", $ex->getMessage());

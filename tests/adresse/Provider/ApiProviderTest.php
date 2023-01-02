@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GouvApi\Adresse\Tests\Provider;
 
-use Exception;
+use Throwable;
 use WBW\Library\GeoJson\Model\FeatureCollection;
 use WBW\Library\GouvApi\Adresse\Provider\ApiProvider;
 use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
@@ -34,7 +34,7 @@ class ApiProviderTest extends AbstractTestCase {
      * Tests reverse()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testReverse(): void {
 
@@ -58,7 +58,7 @@ class ApiProviderTest extends AbstractTestCase {
      * Tests reverseCsv()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testReverseCsv(): void {
 
@@ -81,7 +81,7 @@ class ApiProviderTest extends AbstractTestCase {
      * Tests search()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testSearch(): void {
 
@@ -106,7 +106,7 @@ class ApiProviderTest extends AbstractTestCase {
      * Tests searchCsv()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testSearchCsv(): void {
 
@@ -129,7 +129,7 @@ class ApiProviderTest extends AbstractTestCase {
      * Tests searchCsv()
      *
      * @return void
-     * @throws Exception Throws an exception if an error occurs.
+     * @throws Throwable Throws an exception if an error occurs.
      */
     public function testSearchCsvWithColumns(): void {
 
