@@ -11,10 +11,10 @@
 
 namespace WBW\Library\GouvApi\Common\Provider;
 
-use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
 use Psr\Log\LoggerInterface;
+use Throwable;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\Provider\AbstractProvider as BaseProvider;
 use WBW\Library\Provider\Exception\ApiException;
@@ -84,7 +84,7 @@ abstract class AbstractProvider extends BaseProvider {
             $response = $client->request($method, $uri, $options);
 
             return $response->getBody()->getContents();
-        } catch (Exception $ex) {
+        } catch (Throwable $ex) {
 
             throw new ApiException("Call API provider failed", 500, $ex);
         }
