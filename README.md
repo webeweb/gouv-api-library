@@ -1,7 +1,7 @@
 gouv-api-library
 ================
 
-[![Build Status](https://img.shields.io/github/workflow/status/webeweb/gouv-api-library/build?style=flat-square)](https://github.com/webeweb/gouv-api-library/actions)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/webeweb/gouv-api-library/build.yml?style=flat-square)](https://github.com/webeweb/gouv-api-library/actions)
 [![Coverage Status](https://img.shields.io/coveralls/github/webeweb/gouv-api-library/master.svg?style=flat-square)](https://coveralls.io/github/webeweb/gouv-api-library?branch=master)
 [![Scrutinizer Code Quality](https://img.shields.io/scrutinizer/quality/g/webeweb/gouv-api-library/master.svg?style=flat-square)](https://scrutinizer-ci.com/g/webeweb/gouv-api-library/?branch=master)
 [![Latest Stable Version](https://img.shields.io/packagist/v/webeweb/gouv-api-library.svg?style=flat-square)](https://packagist.org/packages/webeweb/gouv-api-library)
