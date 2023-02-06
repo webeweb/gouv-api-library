@@ -15,6 +15,7 @@ use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
 use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
@@ -105,6 +106,7 @@ class JoursFeriesRequestTest extends AbstractTestCase {
 
         $obj = new JoursFeriesRequest();
 
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
         $this->assertInstanceOf(SubstituableRequestInterface::class, $obj);
 
         $this->assertEquals(JoursFeriesRequest::RESOURCE_PATH, $obj->getResourcePath());

@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
 use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
 use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
@@ -76,6 +77,7 @@ class EtablissementsRequestTest extends AbstractTestCase {
 
         $obj = new EtablissementsRequest();
 
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
         $this->assertInstanceOf(SubstituableRequestInterface::class, $obj);
 
         $this->assertEquals(EtablissementsRequest::RESOURCE_PATH, $obj->getResourcePath());

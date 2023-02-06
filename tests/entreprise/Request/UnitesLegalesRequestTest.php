@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
 use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
 use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
@@ -76,6 +77,7 @@ class UnitesLegalesRequestTest extends AbstractTestCase {
 
         $obj = new UnitesLegalesRequest();
 
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
         $this->assertInstanceOf(SubstituableRequestInterface::class, $obj);
 
         $this->assertEquals(UnitesLegalesRequest::RESOURCE_PATH, $obj->getResourcePath());
