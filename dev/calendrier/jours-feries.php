@@ -24,7 +24,7 @@ $request->setZone(ZoneInterface::ZONE_METROPOLE);
 $request->setAnnee(2021); // Optional
 
 // Call the API and get the response.
-$response = $provider->joursFeries($request);
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 $format = "%-5s: %s\n";
