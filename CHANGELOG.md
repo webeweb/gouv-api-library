@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+### master
+
+- Update dependencies
+- Update documentation
+
 ### [1.3.1](https://github.com/webeweb/gouv-api-library/tree/v1.3.1) (2023-01-02)
 
 - Code checkstyle
