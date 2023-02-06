@@ -12,7 +12,9 @@
 namespace WBW\Library\GouvApi\Entreprise\Request;
 
 use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSiretTrait;
+use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
 use WBW\Library\GouvApi\Entreprise\Serializer\RequestSerializer;
+use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
@@ -41,6 +43,13 @@ class EtablissementsRequest extends AbstractRequest implements SubstituableReque
         parent::__construct();
 
         $this->setSiret($siret);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeEtablissementsResponse($rawResponse);
     }
 
     /**

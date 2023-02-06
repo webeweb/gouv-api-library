@@ -12,6 +12,7 @@
 namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
 use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
+use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
 use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
@@ -22,6 +23,19 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
  * @package WBW\Library\GouvApi\Entreprise\Tests\Request
  */
 class EtablissementsRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        $obj = new EtablissementsRequest();
+
+        $res = $obj->deserializeResponse("");
+        $this->assertInstanceOf(EtablissementsResponse::class, $res);
+    }
 
     /**
      * Tests getSubstituables()
