@@ -11,16 +11,19 @@
 
 namespace WBW\Library\GouvApi\Geo\Provider;
 
+use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
+use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
+use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API provider.
  *
  * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Geo\Provider
- * @abstract
  */
-abstract class ApiProvider extends AbstractProvider {
+class ApiProvider extends AbstractProvider {
 
     /**
      * Endpoint path.
@@ -28,6 +31,22 @@ abstract class ApiProvider extends AbstractProvider {
      * @var string
      */
     const ENDPOINT_PATH = "https://geo.api.gouv.fr";
+
+    /**
+     * Sends a request.
+     *
+     * @param AbstractRequest $request The request.
+     * @return AbstractResponse Returns the communes response.
+     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
+     * @throws ApiException Throws an API exception if an error occurs.
+     */
+    public function sendRequest(AbstractRequest $request): AbstractResponse {
+
+        $queryData   = $request->serializeRequest();
+        $rawResponse = $this->callApi($request, $queryData);
+
+        return $request->deserializeResponse($rawResponse);
+    }
 
     /**
      * {@inheritdoc}

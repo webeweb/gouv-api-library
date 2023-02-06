@@ -12,7 +12,7 @@
 namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
 use Throwable;
-use WBW\Library\GouvApi\Geo\Provider\DepartementApiProvider;
+use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Departement\CommunesRequest;
 use WBW\Library\GouvApi\Geo\Request\Departement\DepartementsRequest;
 use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
@@ -39,9 +39,9 @@ class DepartementApiProviderTest extends AbstractTestCase {
         $request = new CommunesRequest();
         $request->setCode("01");
 
-        $obj = new DepartementApiProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
-        $res = $obj->communes($request);
+        $res = $obj->sendRequest($request);
         $this->assertInstanceOf(CommunesResponse::class, $res);
     }
 
@@ -56,9 +56,9 @@ class DepartementApiProviderTest extends AbstractTestCase {
         // Set a Départements request mock.
         $request = new DepartementsRequest();
 
-        $obj = new DepartementApiProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
-        $res = $obj->departements($request);
+        $res = $obj->sendRequest($request);
         $this->assertInstanceOf(DepartementsResponse::class, $res);
     }
 }

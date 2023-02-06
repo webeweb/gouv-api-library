@@ -13,7 +13,6 @@ namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
 use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
-use WBW\Library\GouvApi\Geo\Tests\Fixtures\Provider\TestApiProvider;
 
 /**
  * Découpage administratif provider test.
@@ -32,7 +31,7 @@ class ApiProviderTest extends AbstractTestCase {
 
         $this->assertEquals("https://geo.api.gouv.fr", ApiProvider::ENDPOINT_PATH);
 
-        $obj = new TestApiProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
         $this->assertSame($this->logger, $obj->getLogger());
         $this->assertFalse($obj->getDebug());

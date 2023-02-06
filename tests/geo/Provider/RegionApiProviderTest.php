@@ -12,7 +12,7 @@
 namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
 use Throwable;
-use WBW\Library\GouvApi\Geo\Provider\RegionApiProvider;
+use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Region\CommunesRequest;
 use WBW\Library\GouvApi\Geo\Request\Region\DepartementsRequest;
 use WBW\Library\GouvApi\Geo\Request\Region\RegionsRequest;
@@ -42,11 +42,11 @@ class RegionApiProviderTest extends AbstractTestCase {
         $request = new CommunesRequest();
         $request->setCode("11");
 
-        $obj = new RegionApiProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
         try {
 
-            $res = $obj->communes($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(CommunesResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -68,9 +68,9 @@ class RegionApiProviderTest extends AbstractTestCase {
         $request = new DepartementsRequest();
         $request->setCode("11");
 
-        $obj = new RegionApiProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
-        $res = $obj->departements($request);
+        $res = $obj->sendRequest($request);
         $this->assertInstanceOf(DepartementsResponse::class, $res);
     }
 
@@ -85,9 +85,9 @@ class RegionApiProviderTest extends AbstractTestCase {
         // Set a Régions request mock.
         $request = new RegionsRequest();
 
-        $obj = new RegionApiProvider($this->logger);
+        $obj = new ApiProvider($this->logger);
 
-        $res = $obj->regions($request);
+        $res = $obj->sendRequest($request);
         $this->assertInstanceOf(RegionsResponse::class, $res);
     }
 }
