@@ -32,11 +32,11 @@ class RequestSerializerTest extends AbstractTestCase {
     public function testSerializeEtablissementsRequest(): void {
 
         // Set an Etablissements request mock.
-        $request = new EtablissementsRequest();
-        $request->setPage(2);
-        $request->setPerPage(100);
+        $arg = new EtablissementsRequest();
+        $arg->setPage(2);
+        $arg->setPerPage(100);
 
-        $res = RequestSerializer::serializeEtablissementsRequest($request);
+        $res = RequestSerializer::serializeEtablissementsRequest($arg);
         $this->assertCount(2, $res);
 
         $this->assertEquals(2, $res["page"]);
@@ -51,11 +51,11 @@ class RequestSerializerTest extends AbstractTestCase {
     public function testSerializeUnitesLegalesRequest(): void {
 
         // Set an Unités légales request mock.
-        $request = new UnitesLegalesRequest();
-        $request->setPage(2);
-        $request->setPerPage(100);
+        $arg = new UnitesLegalesRequest();
+        $arg->setPage(2);
+        $arg->setPerPage(100);
 
-        $res = RequestSerializer::serializeUnitesLegalesRequest($request);
+        $res = RequestSerializer::serializeUnitesLegalesRequest($arg);
         $this->assertCount(2, $res);
 
         $this->assertEquals(2, $res["page"]);
