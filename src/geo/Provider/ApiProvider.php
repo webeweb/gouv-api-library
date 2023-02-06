@@ -33,6 +33,13 @@ class ApiProvider extends AbstractProvider {
     const ENDPOINT_PATH = "https://geo.api.gouv.fr";
 
     /**
+     * {@inheritdoc}
+     */
+    public function getEndpointPath(): string {
+        return self::ENDPOINT_PATH;
+    }
+
+    /**
      * Sends a request.
      *
      * @param AbstractRequest $request The request.
@@ -46,12 +53,5 @@ class ApiProvider extends AbstractProvider {
         $rawResponse = $this->callApi($request, $queryData);
 
         return $request->deserializeResponse($rawResponse);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getEndpointPath(): string {
-        return self::ENDPOINT_PATH;
     }
 }
