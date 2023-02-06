@@ -32,13 +32,13 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeCommunesResponse(): void {
 
-        // Set a JSON mock.
-        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeCommunesResponse.json");
+        // Set a raw response mock.
+        $rawResponse = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeCommunesResponse.json");
 
-        $res = ResponseDeserializer::deserializeCommunesResponse($json);
+        $res = ResponseDeserializer::deserializeCommunesResponse($rawResponse);
         $this->assertInstanceOf(CommunesResponse::class, $res);
 
-        $this->assertEquals($json, $res->getRawResponse());
+        $this->assertEquals($rawResponse, $res->getRawResponse());
         $this->assertCount(393, $res->getCommunes());
 
         $this->assertEquals("L'Abergement-Clémenciat", $res->getCommunes()[0]->getNom());
@@ -61,13 +61,13 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeCommunesResponseWithBadResponse(): void {
 
-        // Set a JSON mock.
-        $json = "";
+        // Set a raw response mock.
+        $rawResponse = "";
 
-        $res = ResponseDeserializer::deserializeCommunesResponse($json);
+        $res = ResponseDeserializer::deserializeCommunesResponse($rawResponse);
         $this->assertInstanceOf(CommunesResponse::class, $res);
 
-        $this->assertEquals($json, $res->getRawResponse());
+        $this->assertEquals($rawResponse, $res->getRawResponse());
         $this->assertCount(0, $res->getCommunes());
     }
 
@@ -78,13 +78,13 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeCommunesResponseWithGeoJSON(): void {
 
-        // Set a JSON mock.
-        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeCommunesResponseWithGeoJSON.json");
+        // Set a raw response mock.
+        $rawResponse = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeCommunesResponseWithGeoJSON.json");
 
-        $res = ResponseDeserializer::deserializeCommunesResponse($json);
+        $res = ResponseDeserializer::deserializeCommunesResponse($rawResponse);
         $this->assertInstanceOf(CommunesResponse::class, $res);
 
-        $this->assertEquals($json, $res->getRawResponse());
+        $this->assertEquals($rawResponse, $res->getRawResponse());
         $this->assertCount(1, $res->getCommunes());
 
         $this->assertEquals("Versailles", $res->getCommunes()[0]->getNom());
@@ -108,13 +108,13 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDepartementsResponse(): void {
 
-        // Set a JSON mock.
-        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeDepartementsResponse.json");
+        // Set a raw response mock.
+        $rawResponse = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeDepartementsResponse.json");
 
-        $res = ResponseDeserializer::deserializeDepartementsResponse($json);
+        $res = ResponseDeserializer::deserializeDepartementsResponse($rawResponse);
         $this->assertInstanceOf(DepartementsResponse::class, $res);
 
-        $this->assertEquals($json, $res->getRawResponse());
+        $this->assertEquals($rawResponse, $res->getRawResponse());
         $this->assertCount(5, $res->getDepartements());
 
         $this->assertEquals("Calvados", $res->getDepartements()[0]->getNom());
@@ -130,13 +130,13 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeDepartementsResponseWithBadResponse(): void {
 
-        // Set a JSON mock.
-        $json = "";
+        // Set a raw response mock.
+        $rawResponse = "";
 
-        $res = ResponseDeserializer::deserializeDepartementsResponse($json);
+        $res = ResponseDeserializer::deserializeDepartementsResponse($rawResponse);
         $this->assertInstanceOf(DepartementsResponse::class, $res);
 
-        $this->assertEquals($json, $res->getRawResponse());
+        $this->assertEquals($rawResponse, $res->getRawResponse());
         $this->assertCount(0, $res->getDepartements());
     }
 
@@ -147,13 +147,13 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeRegionsResponse(): void {
 
-        // Set a JSON mock.
-        $json = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRegionsResponse.json");
+        // Set a raw response mock.
+        $rawResponse = file_get_contents(__DIR__ . "/ResponseDeserializerTest.testDeserializeRegionsResponse.json");
 
-        $res = ResponseDeserializer::deserializeRegionsResponse($json);
+        $res = ResponseDeserializer::deserializeRegionsResponse($rawResponse);
         $this->assertInstanceOf(RegionsResponse::class, $res);
 
-        $this->assertEquals($json, $res->getRawResponse());
+        $this->assertEquals($rawResponse, $res->getRawResponse());
         $this->assertCount(18, $res->getRegions());
 
         $this->assertEquals("Guadeloupe", $res->getRegions()[0]->getNom());
@@ -168,13 +168,13 @@ class ResponseDeserializerTest extends AbstractTestCase {
      */
     public function testDeserializeRegionsResponseWithBadResponse(): void {
 
-        // Set a JSON mock.
-        $json = "";
+        // Set a raw response mock.
+        $rawResponse = "";
 
-        $res = ResponseDeserializer::deserializeRegionsResponse($json);
+        $res = ResponseDeserializer::deserializeRegionsResponse($rawResponse);
         $this->assertInstanceOf(RegionsResponse::class, $res);
 
-        $this->assertEquals($json, $res->getRawResponse());
+        $this->assertEquals($rawResponse, $res->getRawResponse());
         $this->assertCount(0, $res->getRegions());
     }
 }
