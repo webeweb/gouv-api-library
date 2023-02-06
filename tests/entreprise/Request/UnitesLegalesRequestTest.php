@@ -12,6 +12,7 @@
 namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
 use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
+use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
 use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
@@ -22,6 +23,19 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
  * @package WBW\Library\GouvApi\Entreprise\Tests\Request
  */
 class UnitesLegalesRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        $obj = new UnitesLegalesRequest();
+
+        $res = $obj->deserializeResponse("");
+        $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
+    }
 
     /**
      * Tests getSubstituables()
