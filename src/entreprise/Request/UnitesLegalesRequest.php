@@ -12,6 +12,7 @@
 namespace WBW\Library\GouvApi\Entreprise\Request;
 
 use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSirenTrait;
+use WBW\Library\GouvApi\Entreprise\Serializer\RequestSerializer;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
@@ -57,5 +58,12 @@ class UnitesLegalesRequest extends AbstractRequest implements SubstituableReques
         return [
             ":siren" => null !== $this->getSiren() ? "/{$this->getSiren()}" : "",
         ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return RequestSerializer::serializeUnitesLegalesRequest($this);
     }
 }
