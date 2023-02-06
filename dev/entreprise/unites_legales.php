@@ -13,6 +13,7 @@ require_once __DIR__ . "/../../vendor/autoload.php";
 
 use WBW\Library\GouvApi\Entreprise\Provider\APIv3Provider;
 use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
+use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
 
 // Create the API provider.
 $provider = new APIv3Provider();
@@ -20,8 +21,8 @@ $provider = new APIv3Provider();
 // Create an Unités légales request.
 $request = new UnitesLegalesRequest();
 
-// Call the API and get the response.
-$response = $provider->unitesLegales($request);
+/** @var UnitesLegalesResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 $format = "%-40s: %s\n";
