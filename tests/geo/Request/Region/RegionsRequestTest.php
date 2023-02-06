@@ -13,6 +13,7 @@ namespace WBW\Library\GouvApi\Geo\Tests\Request\Region;
 
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Geo\Request\Region\RegionsRequest;
+use WBW\Library\GouvApi\Geo\Response\RegionsResponse;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
@@ -23,6 +24,19 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
  * @package WBW\Library\GouvApi\Geo\Tests\Request\Region
  */
 class RegionsRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        $obj = new RegionsRequest();
+
+        $res = $obj->deserializeResponse("");
+        $this->assertInstanceOf(RegionsResponse::class, $res);
+    }
 
     /**
      * Tests getSubstituables()

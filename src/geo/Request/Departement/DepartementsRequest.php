@@ -11,7 +11,9 @@
 
 namespace WBW\Library\GouvApi\Geo\Request\Departement;
 
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
+use WBW\Library\GouvApi\Geo\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
@@ -28,6 +30,13 @@ class DepartementsRequest extends AbstractRequest implements SubstituableRequest
      * @avr string
      */
     const RESOURCE_PATH = "/departements:code";
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeDepartementsResponse($rawResponse);
+    }
 
     /**
      * {@inheritdoc}

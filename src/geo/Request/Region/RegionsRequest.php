@@ -12,7 +12,9 @@
 namespace WBW\Library\GouvApi\Geo\Request\Region;
 
 use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
+use WBW\Library\GouvApi\Geo\Serializer\ResponseDeserializer;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
@@ -31,6 +33,13 @@ class RegionsRequest extends AbstractRequest implements SubstituableRequestInter
      * @avr string
      */
     const RESOURCE_PATH = "/regions:code";
+
+    /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeRegionsResponse($rawResponse);
+    }
 
     /**
      * {@inheritdoc}
