@@ -11,17 +11,18 @@
 
 require_once __DIR__ . "/../../../vendor/autoload.php";
 
-use WBW\Library\GouvApi\Geo\Provider\RegionApiProvider;
+use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Region\RegionsRequest;
+use WBW\Library\GouvApi\Geo\Response\RegionsResponse;
 
 // Create the API provider.
-$provider = new RegionApiProvider();
+$provider = new ApiProvider();
 
 // Create a Regions request.
 $request = new RegionsRequest();
 
-// Call the API and get the response.
-$response = $provider->regions($request);
+/** @var RegionsResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 $format = "%-20s: %s\n";

@@ -11,17 +11,18 @@
 
 require_once __DIR__ . "/../../../vendor/autoload.php";
 
-use WBW\Library\GouvApi\Geo\Provider\DepartementApiProvider;
+use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Departement\DepartementsRequest;
+use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
 
 // Create the API provider.
-$provider = new DepartementApiProvider();
+$provider = new ApiProvider();
 
 // Create a Departements request.
 $request = new DepartementsRequest();
 
-// Call the API and get the response.
-$response = $provider->departements($request);
+/** @var DepartementsResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 $format = "%-20s: %s\n";

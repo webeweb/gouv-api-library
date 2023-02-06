@@ -11,18 +11,19 @@
 
 require_once __DIR__ . "/../../../vendor/autoload.php";
 
-use WBW\Library\GouvApi\Geo\Provider\CommuneApiProvider;
+use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Commune\CommunesRequest;
+use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
 
 // Create the API provider.
-$provider = new CommuneApiProvider();
+$provider = new ApiProvider();
 
 // Create a Communes request.
 $request = new CommunesRequest();
 $request->setCode("75056");
 
-// Call the API and get the response.
-$response = $provider->communes($request);
+/** @var CommunesResponse $response */
+$response = $provider->sendRequest($request);
 
 // Handle the response.
 $format = "%-20s: %s\n";
