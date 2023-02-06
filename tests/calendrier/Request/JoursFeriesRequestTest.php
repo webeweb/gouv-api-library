@@ -13,6 +13,7 @@ namespace WBW\Library\GouvApi\Calendrier\Tests\Request;
 
 use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
+use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
 use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
@@ -23,6 +24,45 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
  * @package WBW\Library\GouvApi\Calendrier\Tests\Request
  */
 class JoursFeriesRequestTest extends AbstractTestCase {
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponse(): void {
+
+        // Set a raw response mock.
+        $rawResponse = file_get_contents(__DIR__ . "/JoursFeriesRequestTest.testDeserializeResponse.json");
+
+        $obj = new JoursFeriesRequest();
+
+        $res = $obj->deserializeResponse($rawResponse);
+        $this->assertInstanceOf(JoursFeriesResponse::class, $res);
+
+        $this->assertEquals($rawResponse, $res->getRawResponse());
+
+        $this->assertCount(11, $res->getJoursFeries());
+
+        $this->assertEquals("01/01/2021", $res->getJoursFeries()[0]->getDate()->format("d/m/Y"));
+        $this->assertEquals("1er janvier", $res->getJoursFeries()[0]->getNom());
+    }
+
+    /**
+     * Tests deserializeResponse()
+     *
+     * @return void
+     */
+    public function testDeserializeResponseWithBadRawResponse(): void {
+
+        // Set a raw response mock.
+        $rawResponse = "";
+
+        $obj = new JoursFeriesRequest();
+
+        $res = $obj->deserializeResponse($rawResponse);
+        $this->assertInstanceOf(JoursFeriesResponse::class, $res);
+    }
 
     /**
      * Tests getSubstituables()
@@ -40,6 +80,18 @@ class JoursFeriesRequestTest extends AbstractTestCase {
 
         $obj->setAnnee(2021);
         $this->assertEquals([":zone" => "metropole", ":annee" => "/2021"], $obj->getSubstituables());
+    }
+
+    /**
+     * Tests serializeRequest()
+     *
+     * @return void
+     */
+    public function testSerializeRequest(): void {
+
+        $obj = new JoursFeriesRequest();
+
+        $this->assertEquals([], $obj->serializeRequest());
     }
 
     /**

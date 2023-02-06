@@ -12,7 +12,9 @@
 namespace WBW\Library\GouvApi\Calendrier\Request;
 
 use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
+use WBW\Library\GouvApi\Calendrier\Serializer\ResponseDeserializer;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
@@ -54,6 +56,13 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeJoursFeriesResponse($rawResponse);
+    }
+
+    /**
      * Get the année.
      *
      * @return int|null Returns the année.
@@ -87,6 +96,13 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
      */
     public function getZone(): ?string {
         return $this->zone;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return [];
     }
 
     /**

@@ -14,7 +14,6 @@ namespace WBW\Library\GouvApi\Calendrier\Provider;
 use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
-use WBW\Library\GouvApi\Calendrier\Serializer\ResponseDeserializer;
 use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 use WBW\Library\Provider\Exception\ApiException;
 
@@ -41,17 +40,18 @@ class ApiProvider extends AbstractProvider {
     }
 
     /**
-     * Jours fériés.
+     * Sends a request.
      *
-     * @param JoursFeriesRequest $request The jours fériés request.
-     * @return JoursFeriesResponse|null Returns the jours fériés response in case of success, null otherwise.
+     * @param JoursFeriesRequest $request The request.
+     * @return JoursFeriesResponse Returns the response.
      * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function joursFeries(JoursFeriesRequest $request): ?JoursFeriesResponse {
+    public function sendRequest(JoursFeriesRequest $request): JoursFeriesResponse {
 
-        $rawResponse = $this->callApi($request, []);
+        $queryData   = $request->serializeRequest();
+        $rawResponse = $this->callApi($request, $queryData);
 
-        return ResponseDeserializer::deserializeJoursFeriesResponse($rawResponse);
+        return $request->deserializeResponse($rawResponse);
     }
 }

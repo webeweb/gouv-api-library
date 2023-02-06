@@ -40,7 +40,7 @@ class ApiProviderTest extends AbstractTestCase {
 
         $obj = new ApiProvider($this->logger);
 
-        $res = $obj->joursFeries($arg);
+        $res = $obj->sendRequest($arg);
         $this->assertInstanceOf(JoursFeriesResponse::class, $res);
 
         $this->assertCount(11, $res->getJoursFeries());
