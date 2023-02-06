@@ -45,4 +45,11 @@ class DepartementsRequest extends AbstractRequest implements SubstituableRequest
             ":code" => null !== $this->getCode() ? "/{$this->getCode()}" : "",
         ];
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return [];
+    }
 }

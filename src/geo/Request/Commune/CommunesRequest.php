@@ -50,4 +50,11 @@ class CommunesRequest extends AbstractRequest implements SubstituableRequestInte
             ":code" => null !== $this->getCode() ? "/{$this->getCode()}" : "",
         ];
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return [];
+    }
 }

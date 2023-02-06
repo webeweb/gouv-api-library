@@ -48,4 +48,11 @@ class RegionsRequest extends AbstractRequest implements SubstituableRequestInter
             ":code" => null !== $this->getCode() ? "/{$this->getCode()}" : "",
         ];
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return [];
+    }
 }

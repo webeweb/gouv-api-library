@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Geo\Tests\Request\Departement;
 
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Geo\Request\Departement\CommunesRequest;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
@@ -37,6 +38,19 @@ class CommunesRequestTest extends AbstractTestCase {
     }
 
     /**
+     * Tests serializeRequest()
+     *
+     * @return void
+     */
+    public function testSerializeRequest(): void {
+
+        $obj = new CommunesRequest();
+
+        $res = $obj->serializeRequest();
+        $this->assertEquals([], $res);
+    }
+
+    /**
      * Tests __construct()
      *
      * @return void
@@ -47,6 +61,7 @@ class CommunesRequestTest extends AbstractTestCase {
 
         $obj = new CommunesRequest();
 
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
         $this->assertInstanceOf(SubstituableRequestInterface::class, $obj);
 
         $this->assertEquals(CommunesRequest::RESOURCE_PATH, $obj->getResourcePath());

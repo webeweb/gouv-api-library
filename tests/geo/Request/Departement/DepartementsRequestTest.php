@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Geo\Tests\Request\Departement;
 
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Geo\Request\Departement\DepartementsRequest;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
@@ -39,6 +40,19 @@ class DepartementsRequestTest extends AbstractTestCase {
     }
 
     /**
+     * Tests serializeRequest()
+     *
+     * @return void
+     */
+    public function testSerializeRequest(): void {
+
+        $obj = new DepartementsRequest();
+
+        $res = $obj->serializeRequest();
+        $this->assertEquals([], $res);
+    }
+
+    /**
      * Tests __construct()
      *
      * @return void
@@ -49,6 +63,7 @@ class DepartementsRequestTest extends AbstractTestCase {
 
         $obj = new DepartementsRequest();
 
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
         $this->assertInstanceOf(SubstituableRequestInterface::class, $obj);
 
         $this->assertEquals(DepartementsRequest::RESOURCE_PATH, $obj->getResourcePath());

@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Geo\Tests\Request\Region;
 
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Geo\Request\Region\RegionsRequest;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
@@ -39,6 +40,19 @@ class RegionsRequestTest extends AbstractTestCase {
     }
 
     /**
+     * Tests serializeRequest()
+     *
+     * @return void
+     */
+    public function testSerializeRequest(): void {
+
+        $obj = new RegionsRequest();
+
+        $res = $obj->serializeRequest();
+        $this->assertEquals([], $res);
+    }
+
+    /**
      * Tests __construct()
      *
      * @return void
@@ -49,6 +63,7 @@ class RegionsRequestTest extends AbstractTestCase {
 
         $obj = new RegionsRequest();
 
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
         $this->assertInstanceOf(SubstituableRequestInterface::class, $obj);
 
         $this->assertEquals(RegionsRequest::RESOURCE_PATH, $obj->getResourcePath());
