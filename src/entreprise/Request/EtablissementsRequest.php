@@ -12,6 +12,7 @@
 namespace WBW\Library\GouvApi\Entreprise\Request;
 
 use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSiretTrait;
+use WBW\Library\GouvApi\Entreprise\Serializer\RequestSerializer;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
@@ -57,5 +58,12 @@ class EtablissementsRequest extends AbstractRequest implements SubstituableReque
         return [
             ":siret" => null !== $this->getSiret() ? "/{$this->getSiret()}" : "",
         ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serializeRequest(): array {
+        return RequestSerializer::serializeEtablissementsRequest($this);
     }
 }
