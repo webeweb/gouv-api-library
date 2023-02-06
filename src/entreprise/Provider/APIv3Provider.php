@@ -12,12 +12,8 @@
 namespace WBW\Library\GouvApi\Entreprise\Provider;
 
 use GuzzleHttp\Exception\GuzzleException;
-use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
-use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
-use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
-use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
-use WBW\Library\GouvApi\Entreprise\Serializer\RequestSerializer;
-use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Entreprise\Request\AbstractRequest;
+use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
@@ -30,23 +26,6 @@ use WBW\Library\Provider\Exception\ApiException;
 class APIv3Provider extends AbstractProvider {
 
     /**
-     * Etablissements.
-     *
-     * @param EtablissementsRequest $request The établissements request.
-     * @return EtablissementsResponse Returns the établissements response.
-     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
-     * @throws ApiException Throws an API exception if an error occurs.
-     */
-    public function etablissements(EtablissementsRequest $request): EtablissementsResponse {
-
-        $queryData = RequestSerializer::serializeEtablissementsRequest($request);
-
-        $rawResponse = $this->callApi($request, $queryData);
-
-        return ResponseDeserializer::deserializeEtablissementsResponse($rawResponse);
-    }
-
-    /**
      * {@inheritdoc}
      */
     public function getVersion(): int {
@@ -54,19 +33,18 @@ class APIv3Provider extends AbstractProvider {
     }
 
     /**
-     * Unités légales.
+     * Sends a request.
      *
-     * @param UnitesLegalesRequest $request The établissements request.
-     * @return UnitesLegalesResponse Returns the établissements response.
+     * @param AbstractRequest $request The request.
+     * @return AbstractResponse Returns the response.
      * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function unitesLegales(UnitesLegalesRequest $request): UnitesLegalesResponse {
+    public function sendRequest(AbstractRequest $request): AbstractResponse {
 
-        $queryData = RequestSerializer::serializeUnitesLegalesRequest($request);
-
+        $queryData   = $request->serializeRequest();
         $rawResponse = $this->callApi($request, $queryData);
 
-        return ResponseDeserializer::deserializeUnitesLegalesResponse($rawResponse);
+        return $request->deserializeResponse($rawResponse);
     }
 }

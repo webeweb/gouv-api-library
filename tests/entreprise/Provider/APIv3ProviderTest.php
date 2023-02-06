@@ -45,7 +45,7 @@ class APIv3ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->etablissements($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(EtablissementsResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -69,7 +69,7 @@ class APIv3ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->etablissements($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(EtablissementsResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -86,7 +86,7 @@ class APIv3ProviderTest extends AbstractTestCase {
      */
     public function testUniteLegales(): void {
 
-        // Set an UniteLegales request.
+        // Set an Unités légales request.
         $request = new UnitesLegalesRequest();
         $request->setPage(2);
         $request->setPerPage(50);
@@ -95,7 +95,7 @@ class APIv3ProviderTest extends AbstractTestCase {
 
         try {
 
-            $res = $obj->unitesLegales($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
         } catch (Throwable $ex) {
 
@@ -110,16 +110,16 @@ class APIv3ProviderTest extends AbstractTestCase {
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
      */
-    public function testUniteLegalesWithSiren(): void {
+    public function testUnitesLegalesWithSiren(): void {
 
-        // Set an UniteLegales request.
+        // Set an Unités légales request.
         $request = new UnitesLegalesRequest("350273462");
 
         $obj = new APIv3Provider($this->logger);
 
         try {
 
-            $res = $obj->unitesLegales($request);
+            $res = $obj->sendRequest($request);
             $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
         } catch (Throwable $ex) {
 
