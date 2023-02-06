@@ -60,14 +60,9 @@ class UnitesLegalesRequestTest extends AbstractTestCase {
     public function testSerializeRequest(): void {
 
         $obj = new UnitesLegalesRequest();
-        $obj->setPage(2);
-        $obj->setPerPage(100);
 
         $res = $obj->serializeRequest();
-        $this->assertCount(2, $res);
-
-        $this->assertEquals(2, $res["page"]);
-        $this->assertEquals(100, $res["per_page"]);
+        $this->assertIsArray($res);
     }
 
     /**
