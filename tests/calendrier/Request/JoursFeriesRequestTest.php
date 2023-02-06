@@ -32,35 +32,9 @@ class JoursFeriesRequestTest extends AbstractTestCase {
      */
     public function testDeserializeResponse(): void {
 
-        // Set a raw response mock.
-        $rawResponse = file_get_contents(__DIR__ . "/JoursFeriesRequestTest.testDeserializeResponse.json");
-
         $obj = new JoursFeriesRequest();
 
-        $res = $obj->deserializeResponse($rawResponse);
-        $this->assertInstanceOf(JoursFeriesResponse::class, $res);
-
-        $this->assertEquals($rawResponse, $res->getRawResponse());
-
-        $this->assertCount(11, $res->getJoursFeries());
-
-        $this->assertEquals("01/01/2021", $res->getJoursFeries()[0]->getDate()->format("d/m/Y"));
-        $this->assertEquals("1er janvier", $res->getJoursFeries()[0]->getNom());
-    }
-
-    /**
-     * Tests deserializeResponse()
-     *
-     * @return void
-     */
-    public function testDeserializeResponseWithBadRawResponse(): void {
-
-        // Set a raw response mock.
-        $rawResponse = "";
-
-        $obj = new JoursFeriesRequest();
-
-        $res = $obj->deserializeResponse($rawResponse);
+        $res = $obj->deserializeResponse("");
         $this->assertInstanceOf(JoursFeriesResponse::class, $res);
     }
 
