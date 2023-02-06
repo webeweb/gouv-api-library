@@ -13,6 +13,7 @@ namespace WBW\Library\GouvApi\Adresse\Tests\Request;
 
 use WBW\Library\GouvApi\Adresse\Request\ReverseRequest;
 use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 
 /**
  * Reverse request test.
@@ -32,6 +33,8 @@ class ReverseRequestTest extends AbstractTestCase {
         $this->assertEquals("/reverse/", ReverseRequest::RESOURCE_PATH);
 
         $obj = new ReverseRequest();
+
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
 
         $this->assertEquals(ReverseRequest::RESOURCE_PATH, $obj->getResourcePath());
 

@@ -13,6 +13,7 @@ namespace WBW\Library\GouvApi\Adresse\Tests\Request;
 
 use WBW\Library\GouvApi\Adresse\Request\SearchRequest;
 use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 
 /**
  * Search request test.
@@ -79,6 +80,8 @@ class SearchRequestTest extends AbstractTestCase {
         $this->assertEquals("street", SearchRequest::TYPE_STREET);
 
         $obj = new SearchRequest();
+
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
 
         $this->assertEquals(SearchRequest::RESOURCE_PATH, $obj->getResourcePath());
 

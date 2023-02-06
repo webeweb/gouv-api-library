@@ -13,6 +13,7 @@ namespace WBW\Library\GouvApi\Adresse\Tests\Request;
 
 use WBW\Library\GouvApi\Adresse\Request\SearchCsvRequest;
 use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
+use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 
 /**
  * Search CSV request test.
@@ -58,6 +59,8 @@ class SearchCsvRequestTest extends AbstractTestCase {
         $this->assertEquals("/search/csv/", SearchCsvRequest::RESOURCE_PATH);
 
         $obj = new SearchCsvRequest("data");
+
+        $this->assertInstanceOf(AbstractRequest::class, $obj);
 
         $this->assertEquals(SearchCsvRequest::RESOURCE_PATH, $obj->getResourcePath());
 
