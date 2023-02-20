@@ -11,21 +11,21 @@
 
 namespace WBW\Library\GouvApi\Entreprise\Model;
 
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\IntegerAnneeEffectifsTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\IntegerNombrePeriodesTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringActivitePrincipaleTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringCaractereEmployeurTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringCreatedAtTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringDateCreationTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringDateDebutTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringDateDernierTraitementTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringEtatAdministratifTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringNomenclatureActivitePrincipaleTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSirenTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSiretTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringStatutDiffusionTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringTrancheEffectifsTrait;
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringUpdatedAtTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Integers\IntegerAnneeEffectifsTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Integers\IntegerNombrePeriodesTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringActivitePrincipaleTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringCaractereEmployeurTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringCreatedAtTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateCreationTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateDebutTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateDernierTraitementTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringEtatAdministratifTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringNomenclatureActivitePrincipaleTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringSirenTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringSiretTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringStatutDiffusionTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringTrancheEffectifsTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringUpdatedAtTrait;
 use WBW\Library\Traits\Floats\FloatLatitudeTrait;
 use WBW\Library\Traits\Floats\FloatLongitudeTrait;
 use WBW\Library\Traits\Integers\IntegerIdTrait;

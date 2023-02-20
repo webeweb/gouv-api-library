@@ -11,10 +11,10 @@
 
 namespace WBW\Library\GouvApi\Entreprise\Request;
 
-use WBW\Library\GouvApi\Entreprise\Model\Attribute\StringSiretTrait;
 use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
 use WBW\Library\GouvApi\Entreprise\Serializer\RequestSerializer;
 use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringSiretTrait;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**

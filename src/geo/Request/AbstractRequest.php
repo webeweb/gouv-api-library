@@ -12,7 +12,7 @@
 namespace WBW\Library\GouvApi\Geo\Request;
 
 use WBW\Library\GouvApi\Common\Request\AbstractRequest as BaseRequest;
-use WBW\Library\GouvApi\Geo\Model\Attribute\ArrayFieldsTrait;
+use WBW\Library\GouvApi\Geo\Traits\Arrays\ArrayFieldsTrait;
 use WBW\Library\Traits\Strings\StringCodeTrait;
 
 /**

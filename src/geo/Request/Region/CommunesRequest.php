@@ -12,9 +12,9 @@
 namespace WBW\Library\GouvApi\Geo\Request\Region;
 
 use WBW\Library\GouvApi\Common\Response\AbstractResponse;
-use WBW\Library\GouvApi\Geo\Model\Attribute\StringGeometryTrait;
 use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
 use WBW\Library\GouvApi\Geo\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Geo\Traits\Strings\StringGeometryTrait;
 use WBW\Library\Provider\Api\SubstituableRequestInterface;
 use WBW\Library\Traits\Strings\StringFormatTrait;
 

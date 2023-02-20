@@ -11,8 +11,8 @@
 
 namespace WBW\Library\GouvApi\Geo\Model;
 
-use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
-use WBW\Library\GouvApi\Geo\Model\Attribute\StringCodeRegionTrait;
+use WBW\Library\GouvApi\Common\Traits\Strings\StringNomTrait;
+use WBW\Library\GouvApi\Geo\Traits\Strings\StringCodeRegionTrait;
 use WBW\Library\Traits\Floats\FloatScoreTrait;
 use WBW\Library\Traits\Strings\StringCodeTrait;
 

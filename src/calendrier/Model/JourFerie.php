@@ -11,7 +11,7 @@
 
 namespace WBW\Library\GouvApi\Calendrier\Model;
 
-use WBW\Library\GouvApi\Common\Model\Attribute\StringNomTrait;
+use WBW\Library\GouvApi\Common\Traits\Strings\StringNomTrait;
 use WBW\Library\Traits\DateTimes\DateTimeDateTrait;
 
 /**
