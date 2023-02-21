@@ -38,7 +38,7 @@ abstract class AbstractProvider extends BaseProvider {
     }
 
     /**
-     * Build the configuration.
+     * Builds the configuration.
      *
      * @return array Returns the configuration.
      */
@@ -55,7 +55,7 @@ abstract class AbstractProvider extends BaseProvider {
     }
 
     /**
-     * Call the API.
+     * Calls the API.
      *
      * @param AbstractRequest $request The request.
      * @param array $queryData The query data.
@@ -69,7 +69,6 @@ abstract class AbstractProvider extends BaseProvider {
         try {
 
             $config = $this->buildConfiguration();
-
             $client = new Client($config);
 
             $method  = 0 === count($postData) ? "GET" : "POST";
