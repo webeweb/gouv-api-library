@@ -3,6 +3,7 @@ CHANGELOG
 
 ### master
 
+- Improve code quality
 - Update dependencies
 - Update documentation
 
