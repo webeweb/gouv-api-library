@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Traits\Strings\TestStringGeometryTrai
 class StringGeometryTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setGeometry()
+     * Test setGeometry()
      *
      * @return void
      */

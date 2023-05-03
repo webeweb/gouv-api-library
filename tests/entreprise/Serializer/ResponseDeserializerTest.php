@@ -28,7 +28,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class ResponseDeserializerTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeEtablissementsResponse()
+     * Test deserializeEtablissementsResponse()
      *
      * @return void
      */
@@ -120,7 +120,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeEtablissementsResponse()
+     * Test deserializeEtablissementsResponse()
      *
      * @return void
      */
@@ -140,7 +140,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeEtablissmenentsResponse()
+     * Test deserializeEtablissmenentsResponse()
      *
      * @return void
      */
@@ -162,7 +162,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeUnitesLegalesResponse()
+     * Test deserializeUnitesLegalesResponse()
      *
      * @return void
      */
@@ -223,7 +223,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeUnitesLegalesResponse()
+     * Test deserializeUnitesLegalesResponse()
      *
      * @return void
      */
@@ -243,7 +243,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests deserializeUnitesLegalesResponse()
+     * Test deserializeUnitesLegalesResponse()
      *
      * @return void
      */

@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class UniteLegaleTest extends AbstractTestCase {
 
     /**
-     * Tests setAnneeCategorieEntreprise()
+     * Test setAnneeCategorieEntreprise()
      *
      * @return void
      */
@@ -37,7 +37,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCategorieEntreprise()
+     * Test setCategorieEntreprise()
      *
      * @return void
      */
@@ -50,7 +50,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCategorieJuridique()
+     * Test setCategorieJuridique()
      *
      * @return void
      */
@@ -63,7 +63,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDateFin()
+     * Test setDateFin()
      *
      * @return void
      */
@@ -76,7 +76,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDenomination()
+     * Test setDenomination()
      *
      * @return void
      */
@@ -89,7 +89,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDenominationUsuelle1()
+     * Test setDenominationUsuelle1()
      *
      * @return void
      */
@@ -102,7 +102,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDenominationUsuelle2()
+     * Test setDenominationUsuelle2()
      *
      * @return void
      */
@@ -115,7 +115,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDenominationUsuelle3()
+     * Test setDenominationUsuelle3()
      *
      * @return void
      */
@@ -128,7 +128,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEconomieSocialeSolidaire()
+     * Test setEconomieSocialeSolidaire()
      *
      * @return void
      */
@@ -141,7 +141,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEtablissementSiege()
+     * Test setEtablissementSiege()
      *
      * @return void
      */
@@ -157,7 +157,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setIdentifiantAssociation()
+     * Test setIdentifiantAssociation()
      *
      * @return void
      */
@@ -170,7 +170,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNicSiege()
+     * Test setNicSiege()
      *
      * @return void
      */
@@ -183,7 +183,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNomUsage()
+     * Test setNomUsage()
      *
      * @return void
      */
@@ -196,7 +196,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumeroTvaIntra()
+     * Test setNumeroTvaIntra()
      *
      * @return void
      */
@@ -209,7 +209,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPrenom1()
+     * Test setPrenom1()
      *
      * @return void
      */
@@ -222,7 +222,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPrenom2()
+     * Test setPrenom2()
      *
      * @return void
      */
@@ -235,7 +235,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPrenom3()
+     * Test setPrenom3()
      *
      * @return void
      */
@@ -248,7 +248,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPrenom4()
+     * Test setPrenom4()
      *
      * @return void
      */
@@ -261,7 +261,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPrenomUsuel()
+     * Test setPrenomUsuel()
      *
      * @return void
      */
@@ -274,7 +274,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPseudonyme()
+     * Test setPseudonyme()
      *
      * @return void
      */
@@ -287,7 +287,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setSexe()
+     * Test setSexe()
      *
      * @return void
      */
@@ -300,7 +300,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setSigle()
+     * Test setSigle()
      *
      * @return void
      */
@@ -313,7 +313,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setUnitePurgee()
+     * Test setUnitePurgee()
      *
      * @return void
      */
@@ -326,7 +326,7 @@ class UniteLegaleTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

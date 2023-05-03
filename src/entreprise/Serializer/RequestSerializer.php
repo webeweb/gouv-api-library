@@ -25,7 +25,7 @@ use WBW\Library\Types\Helper\ArrayHelper;
 class RequestSerializer {
 
     /**
-     * Serializes an établissements request.
+     * Serialize an établissements request.
      *
      * @param EtablissementsRequest $request The request.
      * @return array Returns the serialized request.
@@ -35,7 +35,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes a request.
+     * Serialize a request.
      *
      * @param AbstractRequest $request The request.
      * @return array Returns the serialized request.
@@ -50,7 +50,7 @@ class RequestSerializer {
     }
 
     /**
-     * Serializes an unités légales request.
+     * Serialize an unités légales request.
      *
      * @param UnitesLegalesRequest $request The request.
      * @return array Returns the serialized request.

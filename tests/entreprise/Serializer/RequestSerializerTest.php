@@ -25,7 +25,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class RequestSerializerTest extends AbstractTestCase {
 
     /**
-     * Tests serializeEtablissementsRequest()
+     * Test serializeEtablissementsRequest()
      *
      * @return void
      */
@@ -44,7 +44,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeUnitesLegalesRequest()
+     * Test serializeUnitesLegalesRequest()
      *
      * @return void
      */

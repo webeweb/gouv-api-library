@@ -27,7 +27,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 class RequestSerializerTest extends AbstractTestCase {
 
     /**
-     * Tests serializeReverseCsvRequest()
+     * Test serializeReverseCsvRequest()
      *
      * @return void
      */
@@ -44,7 +44,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeReverseRequest()
+     * Test serializeReverseRequest()
      *
      * @return void
      */
@@ -63,7 +63,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeSearchCsvRequest()
+     * Test serializeSearchCsvRequest()
      *
      * @return void
      */
@@ -80,7 +80,7 @@ class RequestSerializerTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeSearchRequest()
+     * Test serializeSearchRequest()
      *
      * @return void
      */

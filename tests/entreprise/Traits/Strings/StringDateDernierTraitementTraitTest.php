@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Traits\Strings\TestStringDateD
 class StringDateDernierTraitementTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setDateDernierTraitement()
+     * Test setDateDernierTraitement()
      *
      * @return void
      */

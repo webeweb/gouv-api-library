@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 class SearchRequestTest extends AbstractTestCase {
 
     /**
-     * Tests enumTypes()
+     * Test enumTypes()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class SearchRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setAutocomplete()
+     * Test setAutocomplete()
      *
      * @return void
      */
@@ -53,7 +53,7 @@ class SearchRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLimit()
+     * Test setLimit()
      *
      * @return void
      */
@@ -66,7 +66,7 @@ class SearchRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 class RegionsResponseTest extends AbstractTestCase {
 
     /**
-     * Tests addRegion()
+     * Test addRegion()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class RegionsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

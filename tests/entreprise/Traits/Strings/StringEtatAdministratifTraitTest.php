@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Traits\Strings\TestStringEtatA
 class StringEtatAdministratifTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setEtatAdministratif()
+     * Test setEtatAdministratif()
      *
      * @return void
      */

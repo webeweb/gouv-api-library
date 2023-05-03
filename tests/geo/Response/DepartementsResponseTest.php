@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 class DepartementsResponseTest extends AbstractTestCase {
 
     /**
-     * Tests addDepartement()
+     * Test addDepartement()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class DepartementsResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

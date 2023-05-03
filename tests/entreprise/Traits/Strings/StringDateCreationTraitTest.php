@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Traits\Strings\TestStringDateC
 class StringDateCreationTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setDateCreation()
+     * Test setDateCreation()
      *
      * @return void
      */

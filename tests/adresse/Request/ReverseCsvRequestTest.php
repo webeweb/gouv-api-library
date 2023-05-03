@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 class ReverseCsvRequestTest extends AbstractTestCase {
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

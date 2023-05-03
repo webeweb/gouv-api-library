@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Traits\Strings\TestStringNomen
 class StringNomenclatureActivitePrincipaleTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setNomenclatureActivitePrincipale()
+     * Test setNomenclatureActivitePrincipale()
      *
      * @return void
      */

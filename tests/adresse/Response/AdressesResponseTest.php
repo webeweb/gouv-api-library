@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 class AdressesResponseTest extends AbstractTestCase {
 
     /**
-     * Tests addAdresse()
+     * Test addAdresse()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class AdressesResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

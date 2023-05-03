@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 class AdresseTest extends AbstractTestCase {
 
     /**
-     * Tests addColumn()
+     * Test addColumn()
      *
      * @return void
      */
@@ -36,7 +36,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCity()
+     * Test setCity()
      *
      * @return void
      */
@@ -49,7 +49,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCityCode()
+     * Test setCityCode()
      *
      * @return void
      */
@@ -62,7 +62,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setContext()
+     * Test setContext()
      *
      * @return void
      */
@@ -75,7 +75,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDistance()
+     * Test setDistance()
      *
      * @return void
      */
@@ -88,7 +88,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDistrict()
+     * Test setDistrict()
      *
      * @return void
      */
@@ -101,7 +101,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setHouseNumber()
+     * Test setHouseNumber()
      *
      * @return void
      */
@@ -114,7 +114,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLatitude()
+     * Test setLatitude()
      *
      * @return void
      */
@@ -127,7 +127,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLongitude()
+     * Test setLongitude()
      *
      * @return void
      */
@@ -140,7 +140,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setOldCity()
+     * Test setOldCity()
      *
      * @return void
      */
@@ -153,7 +153,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setOldCityCode()
+     * Test setOldCityCode()
      *
      * @return void
      */
@@ -166,7 +166,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setPostcode()
+     * Test setPostcode()
      *
      * @return void
      */
@@ -179,7 +179,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setScore()
+     * Test setScore()
      *
      * @return void
      */
@@ -192,7 +192,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setStreet()
+     * Test setStreet()
      *
      * @return void
      */
@@ -205,7 +205,7 @@ class AdresseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

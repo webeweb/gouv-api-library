@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Adresse\Tests\Fixtures\Response\TestCsvResponse;
 class AbstractCsvResponseTest extends AbstractTestCase {
 
     /**
-     * Tests enumResultColumns()
+     * Test enumResultColumns()
      *
      * @retun void
      */
@@ -53,7 +53,7 @@ class AbstractCsvResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

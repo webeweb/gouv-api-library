@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Response\TestResponse;
 class AbstractResponseTest extends AbstractTestCase {
 
     /**
-     * Tests setMeta()
+     * Test setMeta()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class AbstractResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

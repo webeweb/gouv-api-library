@@ -105,7 +105,7 @@ class SearchRequest extends AbstractRequest {
     }
 
     /**
-     * Enumerates the types.
+     * Enumerate the types.
      *
      * @return string[] Returns the types.
      */

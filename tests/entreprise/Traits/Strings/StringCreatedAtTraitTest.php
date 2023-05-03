@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Traits\Strings\TestStringCreat
 class StringCreatedAtTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setCreatedAt()
+     * Test setCreatedAt()
      *
      * @return void
      */

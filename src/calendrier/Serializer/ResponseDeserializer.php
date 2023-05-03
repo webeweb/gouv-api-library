@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
 class ResponseDeserializer {
 
     /**
-     * Deserializes a jours fériés response.
+     * Deserialize a jours fériés response.
      *
      * @param string $rawResponse The raw response.
      * @return JoursFeriesResponse Returns the jours fériés response.

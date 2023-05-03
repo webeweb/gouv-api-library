@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Geo\Tests\Fixtures\Traits\Strings\TestStringCodeRegionTr
 class StringCodeRegionTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setCodeRegion()
+     * Test setCodeRegion()
      *
      * @return void
      */

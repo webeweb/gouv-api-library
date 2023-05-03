@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 class ZoneInterfaceTest extends AbstractTestCase {
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

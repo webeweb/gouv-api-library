@@ -140,7 +140,7 @@ abstract class AbstractCsvResponse extends AdressesResponse {
     const RESULT_TYPE = "result_type";
 
     /**
-     * Enumerates the result columns.
+     * Enumerate the result columns.
      *
      * @return string[] Returns the result columns.
      */

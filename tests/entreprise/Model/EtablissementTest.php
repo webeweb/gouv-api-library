@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class EtablissementTest extends AbstractTestCase {
 
     /**
-     * Tests setActivitePrincipaleRegistreMetiers()
+     * Test setActivitePrincipaleRegistreMetiers()
      *
      * @return void
      */
@@ -37,7 +37,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCodeCedex()
+     * Test setCodeCedex()
      *
      * @return void
      */
@@ -50,7 +50,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCodeCedex2()
+     * Test setCodeCedex2()
      *
      * @return void
      */
@@ -63,7 +63,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCodeCommune()
+     * Test setCodeCommune()
      *
      * @return void
      */
@@ -76,7 +76,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCodeCommune2()
+     * Test setCodeCommune2()
      *
      * @return void
      */
@@ -89,7 +89,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCodePaysEtranger()
+     * Test setCodePaysEtranger()
      *
      * @return void
      */
@@ -102,7 +102,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCodePaysEtranger2()
+     * Test setCodePaysEtranger2()
      *
      * @return void
      */
@@ -115,7 +115,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCodePostal()
+     * Test setCodePostal()
      *
      * @return void
      */
@@ -128,7 +128,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setCodePostal2()
+     * Test setCodePostal2()
      *
      * @return void
      */
@@ -141,7 +141,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setComplementAdresse()
+     * Test setComplementAdresse()
      *
      * @return void
      */
@@ -154,7 +154,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setComplementAdresse2()
+     * Test setComplementAdresse2()
      *
      * @return void
      */
@@ -167,7 +167,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDenominationUsuelle()
+     * Test setDenominationUsuelle()
      *
      * @return void
      */
@@ -180,7 +180,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDistributionSpeciale()
+     * Test setDistributionSpeciale()
      *
      * @return void
      */
@@ -193,7 +193,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setDistributionSpeciale2()
+     * Test setDistributionSpeciale2()
      *
      * @return void
      */
@@ -206,7 +206,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEnseigne1()
+     * Test setEnseigne1()
      *
      * @return void
      */
@@ -219,7 +219,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEnseigne2()
+     * Test setEnseigne2()
      *
      * @return void
      */
@@ -232,7 +232,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEnseigne3()
+     * Test setEnseigne3()
      *
      * @return void
      */
@@ -245,7 +245,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setEtablissementSiege()
+     * Test setEtablissementSiege()
      *
      * @return void
      */
@@ -258,7 +258,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setGeoAdresse()
+     * Test setGeoAdresse()
      *
      * @return void
      */
@@ -271,7 +271,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setGeoId()
+     * Test setGeoId()
      *
      * @return void
      */
@@ -284,7 +284,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setGeoL4()
+     * Test setGeoL4()
      *
      * @return void
      */
@@ -297,7 +297,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setGeoL5()
+     * Test setGeoL5()
      *
      * @return void
      */
@@ -310,7 +310,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setGeoLigne()
+     * Test setGeoLigne()
      *
      * @return void
      */
@@ -323,7 +323,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setGeoScore()
+     * Test setGeoScore()
      *
      * @return void
      */
@@ -336,7 +336,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setGeoType()
+     * Test setGeoType()
      *
      * @return void
      */
@@ -349,7 +349,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setIndiceRepetition()
+     * Test setIndiceRepetition()
      *
      * @return void
      */
@@ -362,7 +362,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setIndiceRepetition2()
+     * Test setIndiceRepetition2()
      *
      * @return void
      */
@@ -375,7 +375,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleCedex()
+     * Test setLibelleCedex()
      *
      * @return void
      */
@@ -388,7 +388,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleCedex2()
+     * Test setLibelleCedex2()
      *
      * @return void
      */
@@ -401,7 +401,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleCommune()
+     * Test setLibelleCommune()
      *
      * @return void
      */
@@ -414,7 +414,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleCommune2()
+     * Test setLibelleCommune2()
      *
      * @return void
      */
@@ -427,7 +427,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleCommuneEtranger()
+     * Test setLibelleCommuneEtranger()
      *
      * @return void
      */
@@ -440,7 +440,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleCommuneEtranger2()
+     * Test setLibelleCommuneEtranger2()
      *
      * @return void
      */
@@ -453,7 +453,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibellePaysEtranger()
+     * Test setLibellePaysEtranger()
      *
      * @return void
      */
@@ -466,7 +466,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibellePaysEtranger2()
+     * Test setLibellePaysEtranger2()
      *
      * @return void
      */
@@ -479,7 +479,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleVoie()
+     * Test setLibelleVoie()
      *
      * @return void
      */
@@ -492,7 +492,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setLibelleVoie2()
+     * Test setLibelleVoie2()
      *
      * @return void
      */
@@ -505,7 +505,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNic()
+     * Test setNic()
      *
      * @return void
      */
@@ -518,7 +518,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumeroVoie()
+     * Test setNumeroVoie()
      *
      * @return void
      */
@@ -531,7 +531,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setNumeroVoie2()
+     * Test setNumeroVoie2()
      *
      * @return void
      */
@@ -544,7 +544,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setTypeVoie()
+     * Test setTypeVoie()
      *
      * @return void
      */
@@ -557,7 +557,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setTypeVoie2()
+     * Test setTypeVoie2()
      *
      * @return void
      */
@@ -570,7 +570,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setUniteLegale()
+     * Test setUniteLegale()
      *
      * @return void
      */
@@ -586,7 +586,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests setUniteLegaleId()
+     * Test setUniteLegaleId()
      *
      * @return void
      */
@@ -599,7 +599,7 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

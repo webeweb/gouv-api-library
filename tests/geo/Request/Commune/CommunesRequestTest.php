@@ -26,7 +26,7 @@ use WBW\Library\Provider\Api\SubstituableRequestInterface;
 class CommunesRequestTest extends AbstractTestCase {
 
     /**
-     * Tests deserializeResponse()
+     * Test deserializeResponse()
      *
      * @return void
      */
@@ -39,7 +39,7 @@ class CommunesRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests getSubstituables()
+     * Test getSubstituables()
      *
      * @return void
      */
@@ -54,7 +54,7 @@ class CommunesRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests serializeRequest()
+     * Test serializeRequest()
      *
      * @return void
      */
@@ -67,7 +67,7 @@ class CommunesRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

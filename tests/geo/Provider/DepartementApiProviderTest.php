@@ -28,7 +28,7 @@ use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
 class DepartementApiProviderTest extends AbstractTestCase {
 
     /**
-     * Tests communes()
+     * Test communes()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -46,7 +46,7 @@ class DepartementApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests departements()
+     * Test departements()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.

@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\Fixtures\Traits\Strings\TestStringDateD
 class StringDateDebutTraitTest extends AbstractTestCase {
 
     /**
-     * Tests setDateDebut()
+     * Test setDateDebut()
      *
      * @return void
      */

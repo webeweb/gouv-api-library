@@ -40,7 +40,7 @@ class ApiProvider extends AbstractProvider {
     }
 
     /**
-     * Sends a request.
+     * Send a request.
      *
      * @param JoursFeriesRequest $request The request.
      * @return JoursFeriesResponse Returns the response.

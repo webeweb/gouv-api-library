@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
 class UnitesLegalesResponseTest extends AbstractTestCase {
 
     /**
-     * Tests addUniteLegale()
+     * Test addUniteLegale()
      *
      * @return void
      */
@@ -40,7 +40,7 @@ class UnitesLegalesResponseTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

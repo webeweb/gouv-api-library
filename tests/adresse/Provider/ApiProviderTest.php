@@ -31,7 +31,7 @@ use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
 class ApiProviderTest extends AbstractTestCase {
 
     /**
-     * Tests reverse()
+     * Test reverse()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -55,7 +55,7 @@ class ApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests reverseCsv()
+     * Test reverseCsv()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -78,7 +78,7 @@ class ApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests search()
+     * Test search()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -103,7 +103,7 @@ class ApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests searchCsv()
+     * Test searchCsv()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -126,7 +126,7 @@ class ApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests searchCsv()
+     * Test searchCsv()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -153,7 +153,7 @@ class ApiProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

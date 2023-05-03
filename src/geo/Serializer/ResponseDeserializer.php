@@ -29,7 +29,7 @@ use WBW\Library\Types\Helper\ArrayHelper;
 class ResponseDeserializer extends JsonDeserializer {
 
     /**
-     * Deserializes a commune.
+     * Deserialize a commune.
      *
      * @param array $response The response.
      * @return Commune Returns the commune.
@@ -54,7 +54,7 @@ class ResponseDeserializer extends JsonDeserializer {
     }
 
     /**
-     * Deserializes a communes response.
+     * Deserialize a communes response.
      *
      * @param string $rawResponse The raw response.
      * @return CommunesResponse Returns the communes response.
@@ -78,7 +78,7 @@ class ResponseDeserializer extends JsonDeserializer {
     }
 
     /**
-     * Deserializes a département.
+     * Deserialize a département.
      *
      * @param array $response The response.
      * @return Departement|null Returns the département.
@@ -99,7 +99,7 @@ class ResponseDeserializer extends JsonDeserializer {
     }
 
     /**
-     * Deserializes a départements response.
+     * Deserialize a départements response.
      *
      * @param string $rawResponse The raw response.
      * @return DepartementsResponse Returns the départements response.
@@ -123,7 +123,7 @@ class ResponseDeserializer extends JsonDeserializer {
     }
 
     /**
-     * Deserializes a région.
+     * Deserialize a région.
      *
      * @param array $response The response.
      * @return Region|null Returns the région.
@@ -143,7 +143,7 @@ class ResponseDeserializer extends JsonDeserializer {
     }
 
     /**
-     * Deserializes a régions response.
+     * Deserialize a régions response.
      *
      * @param string $rawResponse The raw response.
      * @return RegionsResponse Returns the régions response.

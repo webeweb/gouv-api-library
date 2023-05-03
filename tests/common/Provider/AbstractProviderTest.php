@@ -23,7 +23,7 @@ use WBW\Library\GouvApi\Common\Tests\Fixtures\Provider\TestProvider;
 class AbstractProviderTest extends AbstractTestCase {
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

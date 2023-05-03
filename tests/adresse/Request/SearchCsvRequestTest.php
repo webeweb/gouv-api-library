@@ -24,7 +24,7 @@ use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 class SearchCsvRequestTest extends AbstractTestCase {
 
     /**
-     * Tests addColumn()
+     * Test addColumn()
      *
      * @return void
      */
@@ -37,7 +37,7 @@ class SearchCsvRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests addResultColumn()
+     * Test addResultColumn()
      *
      * @return void
      */
@@ -50,7 +50,7 @@ class SearchCsvRequestTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

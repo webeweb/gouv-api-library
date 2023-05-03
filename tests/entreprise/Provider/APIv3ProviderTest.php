@@ -29,7 +29,7 @@ use WBW\Library\Provider\Exception\ApiException;
 class APIv3ProviderTest extends AbstractTestCase {
 
     /**
-     * Tests etablissements()
+     * Test etablissements()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -55,7 +55,7 @@ class APIv3ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests etablissements()
+     * Test etablissements()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -79,7 +79,7 @@ class APIv3ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests unitesLegales()
+     * Test unitesLegales()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -105,7 +105,7 @@ class APIv3ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests unitesLegales()
+     * Test unitesLegales()
      *
      * @return void
      * @throws Throwable Throws an exception if an error occurs.
@@ -129,7 +129,7 @@ class APIv3ProviderTest extends AbstractTestCase {
     }
 
     /**
-     * Tests __construct()
+     * Test __construct()
      *
      * @return void
      */

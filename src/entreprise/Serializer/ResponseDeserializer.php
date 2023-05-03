@@ -29,7 +29,7 @@ use WBW\Library\Types\Helper\BooleanHelper;
 class ResponseDeserializer {
 
     /**
-     * Deserializes an établisement.
+     * Deserialize an établisement.
      *
      * @param array|null $data The data.
      * @return Etablissement|null Returns the établissement.
@@ -108,7 +108,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes an établissements response.
+     * Deserialize an établissements response.
      *
      * @param string $rawResponse The raw response.
      * @return EtablissementsResponse Returns the établissements response.
@@ -138,7 +138,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes a meta.
+     * Deserialize a meta.
      *
      * @param array|null $data The data.
      * @return Meta|null Returns the meta.
@@ -159,7 +159,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes a response.
+     * Deserialize a response.
      *
      * @param array $data The data.
      * @param AbstractResponse $model The response.
@@ -172,7 +172,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes an unité légale.
+     * Deserialize an unité légale.
      *
      * @param array|null $data The data.
      * @return UniteLegale|null Returns the unité légale.
@@ -228,7 +228,7 @@ class ResponseDeserializer {
     }
 
     /**
-     * Deserializes an unités légales response.
+     * Deserialize an unités légales response.
      *
      * @param string $rawResponse The raw response.
      * @return UnitesLegalesResponse Returns the établissements response.
