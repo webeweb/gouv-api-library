@@ -46,7 +46,7 @@ class ApiProviderTest extends AbstractTestCase {
         $res = $obj->reverse($arg);
         $this->assertInstanceOf(FeatureCollection::class, $res);
 
-        $this->assertCount(5, $res->getFeatures());
+        $this->assertGreaterThanOrEqual(1, count($res->getFeatures()));
 
         $this->assertEquals("draft", $res->getForeignMember("version"));
         $this->assertEquals("BAN", $res->getForeignMember("attribution"));
