@@ -7,6 +7,10 @@ CHANGELOG
 - Update dependencies
 - Update documentation
 
+### [1.4.1](https://github.com/webeweb/gouv-api-library/tree/v1.4.1) (2023-07-08)
+
+- Fix incoherent return type into Adresse API provider
+
 ### [1.4.0](https://github.com/webeweb/gouv-api-library/tree/v1.4.0) (2023-06-03)
 
 - Update dependencies
