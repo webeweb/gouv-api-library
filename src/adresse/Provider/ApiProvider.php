@@ -120,7 +120,7 @@ class ApiProvider extends AbstractProvider {
      * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function search(SearchRequest $request): FeatureCollection {
+    public function search(SearchRequest $request): ?FeatureCollection {
 
         $queryData = RequestSerializer::serializeSearchRequest($request);
 
