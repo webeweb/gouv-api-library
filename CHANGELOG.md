@@ -4,6 +4,7 @@ CHANGELOG
 ### master
 
 - Improve code quality
+- Improve PHPDoc
 - Update dependencies
 - Update documentation
 
