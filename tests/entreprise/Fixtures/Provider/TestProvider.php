@@ -22,7 +22,7 @@ use WBW\Library\GouvApi\Entreprise\Provider\AbstractProvider;
 class TestProvider extends AbstractProvider {
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getVersion(): int {
         return 0;

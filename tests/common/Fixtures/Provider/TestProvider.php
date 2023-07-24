@@ -22,7 +22,7 @@ use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 class TestProvider extends AbstractProvider {
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getEndpointPath(): string {
         return "";

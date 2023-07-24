@@ -30,7 +30,7 @@ abstract class AbstractProvider extends BaseProvider {
     const ENDPOINT_PATH = "https://entreprise.data.gouv.fr";
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getEndpointPath(): string {
         return self::ENDPOINT_PATH;

@@ -47,7 +47,7 @@ class APIv3Provider extends AbstractProvider {
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getVersion(): int {
         return 3;

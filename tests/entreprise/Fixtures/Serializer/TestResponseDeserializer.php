@@ -25,21 +25,21 @@ use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
 class TestResponseDeserializer extends ResponseDeserializer {
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public static function deserializeEtablissement(?array $data): ?Etablissement {
         return parent::deserializeEtablissement($data);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public static function deserializeMeta(?array $data): ?Meta {
         return parent::deserializeMeta($data);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public static function deserializeUniteLegale(?array $data): ?UniteLegale {
         return parent::deserializeUniteLegale($data);
