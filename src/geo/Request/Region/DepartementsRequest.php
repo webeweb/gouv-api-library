@@ -32,21 +32,21 @@ class DepartementsRequest extends AbstractRequest implements SubstituableRequest
     const RESOURCE_PATH = "/regions/:code/departements";
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeDepartementsResponse($rawResponse);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getSubstituables(): array {
 
@@ -56,7 +56,7 @@ class DepartementsRequest extends AbstractRequest implements SubstituableRequest
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return [];

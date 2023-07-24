@@ -22,7 +22,7 @@ use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
 class TestRequest extends AbstractRequest {
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return "";

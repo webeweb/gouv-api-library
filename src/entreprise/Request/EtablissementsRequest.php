@@ -46,21 +46,21 @@ class EtablissementsRequest extends AbstractRequest implements SubstituableReque
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeEtablissementsResponse($rawResponse);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getSubstituables(): array {
 
@@ -70,7 +70,7 @@ class EtablissementsRequest extends AbstractRequest implements SubstituableReque
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return RequestSerializer::serializeEtablissementsRequest($this);

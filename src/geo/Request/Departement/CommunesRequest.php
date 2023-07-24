@@ -37,21 +37,21 @@ class CommunesRequest extends AbstractRequest implements SubstituableRequestInte
     const RESOURCE_PATH = "/departements/:code/communes";
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeCommunesResponse($rawResponse);
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getSubstituables(): array {
 
@@ -61,7 +61,7 @@ class CommunesRequest extends AbstractRequest implements SubstituableRequestInte
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return [];

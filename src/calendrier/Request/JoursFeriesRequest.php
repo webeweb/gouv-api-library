@@ -56,7 +56,7 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function deserializeResponse(string $rawResponse): AbstractResponse {
         return ResponseDeserializer::deserializeJoursFeriesResponse($rawResponse);
@@ -72,14 +72,14 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getSubstituables(): array {
 
@@ -99,7 +99,7 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return [];

@@ -27,7 +27,7 @@ class ReverseCsvRequest extends AbstractCsvRequest {
     const RESOURCE_PATH = "/reverse/csv/";
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
