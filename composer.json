@@ -1,31 +1,24 @@
 {
     "name": "webeweb/gouv-api-library",
-    "type": "library",
     "description": "Integrate Gouv API with your projects",
-    "keywords": [
-        "adresse",
-        "api",
-        "calendrier",
-        "commune",
-        "decoupage administratif",
-        "departement",
-        "entreprise",
-        "library",
-        "jour feries",
-        "geo",
-        "gouv",
-        "region",
-        "sirene",
-        "webeweb"
-    ],
-    "homepage": "https://github.com/webeweb/gouv-api-library",
     "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "webeweb",
+        "library",
+        "gouv",
+        "api"
+    ],
     "authors": [
         {
             "name": "webeweb",
             "homepage": "https://github.com/webeweb"
         }
     ],
+    "homepage": "https://github.com/webeweb/gouv-api-library",
+    "support": {
+        "issues": "https://github.com/webeweb/gouv-api-library/issues"
+    },
     "require": {
         "php": "^7.1|^8.0",
         "ext-json": "*",
@@ -35,15 +28,10 @@
         "webeweb/geo-json-library": "^1.3"
     },
     "require-dev": {
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^1.4",
+        "phpstan/phpstan-phpunit": "^1.0",
         "phpunit/phpunit": "^7.0|^9.0"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.x-dev"
-        }
     },
     "autoload": {
         "psr-4": {
@@ -63,7 +51,15 @@
             "WBW\\Library\\GouvApi\\Geo\\Tests\\": "tests/geo"
         }
     },
-    "support": {
-        "issues": "https://github.com/webeweb/gouv-api-library/issues"
+    "config": {
+        "allow-plugins": {
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.x-dev"
+        }
     }
 }
