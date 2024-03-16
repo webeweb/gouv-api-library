@@ -46,7 +46,7 @@ class Adresse {
     /**
      * Columns.
      *
-     * @var array
+     * @var array<string,string>
      */
     private $columns;
 
@@ -167,7 +167,7 @@ class Adresse {
     /**
      * Get the columns.
      *
-     * @return array Returns the columns.
+     * @return array<string,string> Returns the columns.
      */
     public function getColumns(): array {
         return $this->columns;
@@ -297,7 +297,7 @@ class Adresse {
     /**
      * Set the columns.
      *
-     * @param array $columns The columns.
+     * @param array<string,string> $columns The columns.
      * @return Adresse Returns this adresse.
      */
     protected function setColumns(array $columns): Adresse {
