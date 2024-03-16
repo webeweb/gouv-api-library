@@ -30,7 +30,7 @@ class RequestSerializer {
      * Serialize a reverse CSV request.
      *
      * @param ReverseCsvRequest $request The reverse CSV request.
-     * @return array Returns the serialized reverse CSV request.
+     * @return array<string,mixed> Returns the serialized reverse CSV request.
      */
     public static function serializeReverseCsvRequest(ReverseCsvRequest $request): array {
 
@@ -45,7 +45,7 @@ class RequestSerializer {
      * Serialize a reverse request.
      *
      * @param ReverseRequest $request The reverse request.
-     * @return array Returns the serialized reverse request.
+     * @return array<string,mixed> Returns the serialized reverse request.
      */
     public static function serializeReverseRequest(ReverseRequest $request): array {
 
@@ -61,7 +61,7 @@ class RequestSerializer {
      * Serialize a search CSV request.
      *
      * @param SearchCsvRequest $request The search CSV request.
-     * @return array Returns the serialized search CSV request.
+     * @return array<string,mixed> Returns the serialized search CSV request.
      */
     public static function serializeSearchCsvRequest(SearchCsvRequest $request): array {
 
@@ -78,7 +78,7 @@ class RequestSerializer {
      * Serialize a search request.
      *
      * @param SearchRequest $request The search request.
-     * @return array Returns the serialized search request.
+     * @return array<string,mixed> Returns the serialized search request.
      */
     public static function serializeSearchRequest(SearchRequest $request): array {
 
