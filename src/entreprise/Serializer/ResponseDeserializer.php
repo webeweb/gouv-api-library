@@ -31,7 +31,7 @@ class ResponseDeserializer {
     /**
      * Deserialize an établisement.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Etablissement|null Returns the établissement.
      */
     protected static function deserializeEtablissement(?array $data): ?Etablissement {
@@ -140,7 +140,7 @@ class ResponseDeserializer {
     /**
      * Deserialize a meta.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return Meta|null Returns the meta.
      */
     protected static function deserializeMeta(?array $data): ?Meta {
@@ -161,7 +161,7 @@ class ResponseDeserializer {
     /**
      * Deserialize a response.
      *
-     * @param array $data The data.
+     * @param array<string,mixed> $data The data.
      * @param AbstractResponse $model The response.
      * @return void
      */
@@ -174,7 +174,7 @@ class ResponseDeserializer {
     /**
      * Deserialize an unité légale.
      *
-     * @param array|null $data The data.
+     * @param array<string,mixed>|null $data The data.
      * @return UniteLegale|null Returns the unité légale.
      */
     protected static function deserializeUniteLegale(?array $data): ?UniteLegale {
