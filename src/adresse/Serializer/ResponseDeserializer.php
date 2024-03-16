@@ -98,6 +98,8 @@ class ResponseDeserializer {
      * @return ReverseCsvResponse Returns the reverse CSV response.
      */
     public static function deserializeReverseCsvResponse(string $rawResponse): ReverseCsvResponse {
+
+        /** @var ReverseCsvResponse */
         return static::deserializeCsvResponse($rawResponse, new ReverseCsvResponse());
     }
 
@@ -118,6 +120,8 @@ class ResponseDeserializer {
      * @return SearchCsvResponse Returns the search CSV response.
      */
     public static function deserializeSearchCsvResponse(string $rawResponse): SearchCsvResponse {
+
+        /** @var SearchCsvResponse */
         return static::deserializeCsvResponse($rawResponse, new SearchCsvResponse());
     }
 
