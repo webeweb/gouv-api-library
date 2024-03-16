@@ -11,6 +11,8 @@
 
 namespace WBW\Library\GouvApi\Geo\Serializer;
 
+use WBW\Library\GeoJson\Model\Geometry\Point;
+use WBW\Library\GeoJson\Model\Geometry\Polygon;
 use WBW\Library\GeoJson\Serializer\JsonDeserializer;
 use WBW\Library\GouvApi\Geo\Model\Commune;
 use WBW\Library\GouvApi\Geo\Model\Departement;
@@ -31,18 +33,24 @@ class ResponseDeserializer extends JsonDeserializer {
     /**
      * Deserialize a commune.
      *
-     * @param array $response The response.
+     * @param array<string,mixed> $response The response.
      * @return Commune Returns the commune.
      */
     protected static function deserializeCommune(array $response): Commune {
+
+        /** @var Point $centre */
+        $centre = static::deserializeGeometry(ArrayHelper::get($response, "centre", []));
+
+        /** @var Polygon $contour */
+        $contour = static::deserializeGeometry(ArrayHelper::get($response, "contour", []));
 
         $model = new Commune();
         $model->setNom(ArrayHelper::get($response, "nom"));
         $model->setCode(ArrayHelper::get($response, "code"));
         $model->setCodeDepartement(ArrayHelper::get($response, "codeDepartement"));
         $model->setCodeRegion(ArrayHelper::get($response, "codeRegion"));
-        $model->setCentre(static::deserializeGeometry(ArrayHelper::get($response, "centre", [])));
-        $model->setContour(static::deserializeGeometry(ArrayHelper::get($response, "contour", [])));
+        $model->setCentre($centre);
+        $model->setContour($contour);
         $model->setSurface(ArrayHelper::get($response, "surface"));
         $model->setPopulation(ArrayHelper::get($response, "population"));
         $model->setCodesPostaux(ArrayHelper::get($response, "codesPostaux", []));
@@ -80,7 +88,7 @@ class ResponseDeserializer extends JsonDeserializer {
     /**
      * Deserialize a département.
      *
-     * @param array $response The response.
+     * @param array<string,mixed> $response The response.
      * @return Departement|null Returns the département.
      */
     protected static function deserializeDepartement(array $response): ?Departement {
@@ -125,7 +133,7 @@ class ResponseDeserializer extends JsonDeserializer {
     /**
      * Deserialize a région.
      *
-     * @param array $response The response.
+     * @param array<string,mixed> $response The response.
      * @return Region|null Returns the région.
      */
     protected static function deserializeRegion(array $response): ?Region {
@@ -169,8 +177,8 @@ class ResponseDeserializer extends JsonDeserializer {
     /**
      * Convert an object into an array of object.
      *
-     * @param array $response The response.
-     * @return array Returns the converted array.
+     * @param array<string,mixed> $response The response.
+     * @return array<string,mixed>[] Returns the converted array.
      */
     protected static function toArray(array $response): array {
 
