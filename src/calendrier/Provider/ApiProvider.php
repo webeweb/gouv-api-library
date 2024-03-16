@@ -11,7 +11,6 @@
 
 namespace WBW\Library\GouvApi\Calendrier\Provider;
 
-use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
 use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
@@ -44,7 +43,6 @@ class ApiProvider extends AbstractProvider {
      *
      * @param JoursFeriesRequest $request The request.
      * @return JoursFeriesResponse Returns the response.
-     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function sendRequest(JoursFeriesRequest $request): JoursFeriesResponse {

@@ -11,7 +11,6 @@
 
 namespace WBW\Library\GouvApi\Entreprise\Provider;
 
-use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\GouvApi\Entreprise\Request\AbstractRequest;
 use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
 use WBW\Library\Provider\Exception\ApiException;
@@ -37,7 +36,6 @@ class APIv3Provider extends AbstractProvider {
      *
      * @param AbstractRequest $request The request.
      * @return AbstractResponse Returns the response.
-     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function sendRequest(AbstractRequest $request): AbstractResponse {

@@ -11,7 +11,6 @@
 
 namespace WBW\Library\GouvApi\Geo\Provider;
 
-use GuzzleHttp\Exception\GuzzleException;
 use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
@@ -44,7 +43,6 @@ class ApiProvider extends AbstractProvider {
      *
      * @param AbstractRequest $request The request.
      * @return AbstractResponse Returns the communes response.
-     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     public function sendRequest(AbstractRequest $request): AbstractResponse {

@@ -12,7 +12,6 @@
 namespace WBW\Library\GouvApi\Common\Provider;
 
 use GuzzleHttp\Client;
-use GuzzleHttp\Exception\GuzzleException;
 use Psr\Log\LoggerInterface;
 use Throwable;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
@@ -40,7 +39,7 @@ abstract class AbstractProvider extends BaseProvider {
     /**
      * Build the configuration.
      *
-     * @return array Returns the configuration.
+     * @return array<string,mixed> Returns the configuration.
      */
     private function buildConfiguration(): array {
 
@@ -61,7 +60,6 @@ abstract class AbstractProvider extends BaseProvider {
      * @param array $queryData The query data.
      * @param array $postData The post data.
      * @return string Returns the raw response.
-     * @throws GuzzleException Throws a Guzzle exception if an error occurs.
      * @throws ApiException Throws an API exception if an error occurs.
      */
     protected function callApi(AbstractRequest $request, array $queryData, array $postData = []): string {
