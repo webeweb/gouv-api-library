@@ -28,7 +28,7 @@ class RequestSerializer {
      * Serialize an établissements request.
      *
      * @param EtablissementsRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeEtablissementsRequest(EtablissementsRequest $request): array {
         return static::serializeRequest($request);
@@ -38,7 +38,7 @@ class RequestSerializer {
      * Serialize a request.
      *
      * @param AbstractRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     protected static function serializeRequest(AbstractRequest $request): array {
 
@@ -53,7 +53,7 @@ class RequestSerializer {
      * Serialize an unités légales request.
      *
      * @param UnitesLegalesRequest $request The request.
-     * @return array Returns the serialized request.
+     * @return array<string,mixed> Returns the serialized request.
      */
     public static function serializeUnitesLegalesRequest(UnitesLegalesRequest $request): array {
         return static::serializeRequest($request);
