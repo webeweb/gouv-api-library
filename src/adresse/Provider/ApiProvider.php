@@ -42,9 +42,9 @@ class ApiProvider extends AbstractProvider {
     /**
      * Add an array.
      *
-     * @param array $post The POST.
+     * @param array<string,mixed>[] $post The POST.
      * @param string $name The name.
-     * @param array $data The data.
+     * @param mixed[] $data The data.
      * @return void
      */
     protected function appendArray(array &$post, string $name, array $data): void {
