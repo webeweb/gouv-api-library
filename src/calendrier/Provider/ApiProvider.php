@@ -50,6 +50,7 @@ class ApiProvider extends AbstractProvider {
         $queryData   = $request->serializeRequest();
         $rawResponse = $this->callApi($request, $queryData);
 
+        /** @var JoursFeriesResponse */
         return $request->deserializeResponse($rawResponse);
     }
 }
