@@ -58,7 +58,7 @@ abstract class AbstractProvider extends BaseProvider {
      *
      * @param AbstractRequest $request The request.
      * @param array<string,mixed> $queryData The query data.
-     * @param array<string,mixed> $postData The post data.
+     * @param array<string,mixed>[] $postData The post data.
      * @return string Returns the raw response.
      * @throws ApiException Throws an API exception if an error occurs.
      */
