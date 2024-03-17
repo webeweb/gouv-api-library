@@ -12,7 +12,9 @@
 namespace WBW\Library\GouvApi\Adresse\Request;
 
 use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
+use WBW\Library\GouvApi\Adresse\Serializer\ResponseDeserializer;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\Traits\Floats\FloatLatTrait;
 use WBW\Library\Traits\Floats\FloatLonTrait;
 use WBW\Library\Traits\Strings\StringQTrait;
@@ -103,6 +105,13 @@ class SearchRequest extends AbstractRequest {
         parent::__construct();
 
         $this->setQ($q);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeSearchResponse($rawResponse);
     }
 
     /**
