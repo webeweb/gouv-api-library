@@ -37,6 +37,5 @@ class FeatureCollectionResponseTest extends AbstractTestCase {
 
         $obj->setFeatureCollection($featureCollection);
         $this->assertSame($featureCollection, $obj->getFeatureCollection());
-
     }
 }
