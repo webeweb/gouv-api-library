@@ -34,5 +34,4 @@ class StringDateDebutTraitTest extends AbstractTestCase {
         $obj->setDateDebut("dateDebut");
         $this->assertEquals("dateDebut", $obj->getDateDebut());
     }
-
 }

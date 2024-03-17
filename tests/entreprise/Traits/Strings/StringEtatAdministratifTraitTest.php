@@ -34,5 +34,4 @@ class StringEtatAdministratifTraitTest extends AbstractTestCase {
         $obj->setEtatAdministratif("etatAdministratif");
         $this->assertEquals("etatAdministratif", $obj->getEtatAdministratif());
     }
-
 }

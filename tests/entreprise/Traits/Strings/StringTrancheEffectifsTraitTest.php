@@ -34,5 +34,4 @@ class StringTrancheEffectifsTraitTest extends AbstractTestCase {
         $obj->setTrancheEffectifs("trancheEffectifs");
         $this->assertEquals("trancheEffectifs", $obj->getTrancheEffectifs());
     }
-
 }

@@ -20,7 +20,6 @@ use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
 use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
 use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
 use WBW\Library\Types\Helper\ArrayHelper;
-use WBW\Library\Types\Helper\BooleanHelper;
 
 /**
  * Response deserializer.

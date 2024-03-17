@@ -34,5 +34,4 @@ class StringActivitePrincipaleTraitTest extends AbstractTestCase {
         $obj->setActivitePrincipale("activitePrincipale");
         $this->assertEquals("activitePrincipale", $obj->getActivitePrincipale());
     }
-
 }

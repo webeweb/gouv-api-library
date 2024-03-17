@@ -34,5 +34,4 @@ class StringCreatedAtTraitTest extends AbstractTestCase {
         $obj->setCreatedAt("createdAt");
         $this->assertEquals("createdAt", $obj->getCreatedAt());
     }
-
 }

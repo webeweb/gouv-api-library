@@ -34,5 +34,4 @@ class StringUpdatedAtTraitTest extends AbstractTestCase {
         $obj->setUpdatedAt("updatedAt");
         $this->assertEquals("updatedAt", $obj->getUpdatedAt());
     }
-
 }

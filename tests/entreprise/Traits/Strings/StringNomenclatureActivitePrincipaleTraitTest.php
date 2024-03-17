@@ -34,5 +34,4 @@ class StringNomenclatureActivitePrincipaleTraitTest extends AbstractTestCase {
         $obj->setNomenclatureActivitePrincipale("nomenclatureActivitePrincipale");
         $this->assertEquals("nomenclatureActivitePrincipale", $obj->getNomenclatureActivitePrincipale());
     }
-
 }

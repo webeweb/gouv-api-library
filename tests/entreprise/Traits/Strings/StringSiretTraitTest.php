@@ -34,5 +34,4 @@ class StringSiretTraitTest extends AbstractTestCase {
         $obj->setSiret("siret");
         $this->assertEquals("siret", $obj->getSiret());
     }
-
 }

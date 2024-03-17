@@ -34,5 +34,4 @@ class StringDateDernierTraitementTraitTest extends AbstractTestCase {
         $obj->setDateDernierTraitement("dateDernierTraitement");
         $this->assertEquals("dateDernierTraitement", $obj->getDateDernierTraitement());
     }
-
 }

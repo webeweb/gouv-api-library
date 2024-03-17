@@ -34,5 +34,4 @@ class StringStatutDiffusionTraitTest extends AbstractTestCase {
         $obj->setStatutDiffusion("statutDiffusion");
         $this->assertEquals("statutDiffusion", $obj->getStatutDiffusion());
     }
-
 }

@@ -34,5 +34,4 @@ class StringCaractereEmployeurTraitTest extends AbstractTestCase {
         $obj->setCaractereEmployeur("caractereEmployeur");
         $this->assertEquals("caractereEmployeur", $obj->getCaractereEmployeur());
     }
-
 }
