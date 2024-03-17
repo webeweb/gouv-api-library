@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 /*
  * This file is part of the gouv-api-library package.
  *
@@ -9,39 +11,39 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvApi\Entreprise\Traits\Integers;
+namespace WBW\Library\GouvApi\Entreprise\Traits\Strings;
 
 /**
- * Integer année effectifs trait.
+ * String année effectifs trait.
  *
  * @author webeweb <https://github.com/webeweb>
- * @package WBW\Library\GouvApi\Entreprise\Traits\Integers
+ * @package WBW\Library\GouvApi\Entreprise\Traits\Strings
  */
-trait IntegerAnneeEffectifsTrait {
+trait StringAnneeEffectifsTrait {
 
     /**
      * Année effectifs.
      *
-     * @var int|null
+     * @var string|null
      */
     protected $anneeEffectifs;
 
     /**
      * Get the année effectifs.
      *
-     * @return int|null Returns the année effectifs.
+     * @return string|null Returns the année effectifs.
      */
-    public function getAnneeEffectifs(): ?int {
+    public function getAnneeEffectifs(): ?string {
         return $this->anneeEffectifs;
     }
 
     /**
      * Set the année effectifs.
      *
-     * @param int|null $anneeEffectifs The année effectifs.
+     * @param string|null $anneeEffectifs The année effectifs.
      * @return self Returns this instance.
      */
-    public function setAnneeEffectifs(?int $anneeEffectifs): self {
+    public function setAnneeEffectifs(?string $anneeEffectifs): self {
         $this->anneeEffectifs = $anneeEffectifs;
         return $this;
     }

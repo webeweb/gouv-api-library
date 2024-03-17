@@ -253,8 +253,8 @@ class EtablissementTest extends AbstractTestCase {
 
         $obj = new Etablissement();
 
-        $obj->setEtablissementSiege(true);
-        $this->assertTrue($obj->getEtablissementSiege());
+        $obj->setEtablissementSiege("etablissementSiege");
+        $this->assertEquals("etablissementSiege", $obj->getEtablissementSiege());
     }
 
     /**
@@ -331,8 +331,8 @@ class EtablissementTest extends AbstractTestCase {
 
         $obj = new Etablissement();
 
-        $obj->setGeoScore(0.123456789);
-        $this->assertEquals(0.123456789, $obj->getGeoScore());
+        $obj->setGeoScore("geoScore");
+        $this->assertEquals("geoScore", $obj->getGeoScore());
     }
 
     /**
@@ -372,6 +372,19 @@ class EtablissementTest extends AbstractTestCase {
 
         $obj->setIndiceRepetition2("indiceRepetition2");
         $this->assertEquals("indiceRepetition2", $obj->getIndiceRepetition2());
+    }
+
+    /**
+     * Test setLatitude()
+     *
+     * @return void
+     */
+    public function testSetLatitude(): void {
+
+        $obj = new Etablissement();
+
+        $obj->setLatitude("latitude");
+        $this->assertEquals("latitude", $obj->getLatitude());
     }
 
     /**
@@ -505,6 +518,19 @@ class EtablissementTest extends AbstractTestCase {
     }
 
     /**
+     * Test setLongitude()
+     *
+     * @return void
+     */
+    public function testSetLongitude(): void {
+
+        $obj = new Etablissement();
+
+        $obj->setLongitude("longitude");
+        $this->assertEquals("longitude", $obj->getLongitude());
+    }
+
+    /**
      * Test setNic()
      *
      * @return void
@@ -616,8 +642,6 @@ class EtablissementTest extends AbstractTestCase {
         $this->assertNull($obj->getDateDebut());
         $this->assertNull($obj->getDateDernierTraitement());
         $this->assertNull($obj->getEtatAdministratif());
-        $this->assertNull($obj->getLatitude());
-        $this->assertNull($obj->getLongitude());
         $this->assertNull($obj->getNombrePeriodes());
         $this->assertNull($obj->getNomenclatureActivitePrincipale());
         $this->assertNull($obj->getSiren());
@@ -653,6 +677,7 @@ class EtablissementTest extends AbstractTestCase {
         $this->assertNull($obj->getGeoType());
         $this->assertNull($obj->getIndiceRepetition());
         $this->assertNull($obj->getIndiceRepetition2());
+        $this->assertNull($obj->getLatitude());
         $this->assertNull($obj->getLibelleCedex());
         $this->assertNull($obj->getLibelleCedex2());
         $this->assertNull($obj->getLibelleCommune());
@@ -663,6 +688,7 @@ class EtablissementTest extends AbstractTestCase {
         $this->assertNull($obj->getLibellePaysEtranger2());
         $this->assertNull($obj->getLibelleVoie());
         $this->assertNull($obj->getLibelleVoie2());
+        $this->assertNull($obj->getLongitude());
         $this->assertNull($obj->getNic());
         $this->assertNull($obj->getNumeroVoie());
         $this->assertNull($obj->getNumeroVoie2());

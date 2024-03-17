@@ -136,8 +136,8 @@ class UniteLegaleTest extends AbstractTestCase {
 
         $obj = new UniteLegale();
 
-        $obj->setEconomieSocialeSolidaire(true);
-        $this->assertTrue($obj->getEconomieSocialeSolidaire());
+        $obj->setEconomieSocialeSolidaire("economieSocialeSolidaire");
+        $this->assertEquals("economieSocialeSolidaire", $obj->getEconomieSocialeSolidaire());
     }
 
     /**
@@ -321,8 +321,8 @@ class UniteLegaleTest extends AbstractTestCase {
 
         $obj = new UniteLegale();
 
-        $obj->setUnitePurgee(true);
-        $this->assertTrue($obj->getUnitePurgee());
+        $obj->setUnitePurgee("unitePurgee");
+        $this->assertEquals("unitePurgee", $obj->getUnitePurgee());
     }
 
     /**

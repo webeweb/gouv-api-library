@@ -65,7 +65,7 @@ class ResponseDeserializerTest extends AbstractTestCase {
         $this->assertNull($res->getEtablissements()[0]->getAnneeEffectifs());
         $this->assertNull($res->getEtablissements()[0]->getActivitePrincipaleRegistreMetiers());
         $this->assertEquals("2013-03-05T08:35:24", $res->getEtablissements()[0]->getDateDernierTraitement());
-        $this->assertFalse($res->getEtablissements()[0]->getEtablissementSiege());
+        $this->assertEquals("false", $res->getEtablissements()[0]->getEtablissementSiege());
         $this->assertEquals(4, $res->getEtablissements()[0]->getNombrePeriodes());
         $this->assertNull($res->getEtablissements()[0]->getComplementAdresse());
         $this->assertNull($res->getEtablissements()[0]->getNumeroVoie());

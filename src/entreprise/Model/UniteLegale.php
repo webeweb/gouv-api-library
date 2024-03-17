@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 /*
  * This file is part of the gouv-api-library package.
  *
@@ -12,15 +14,15 @@
 namespace WBW\Library\GouvApi\Entreprise\Model;
 
 use WBW\Library\GouvApi\Common\Traits\Strings\StringNomTrait;
-use WBW\Library\GouvApi\Entreprise\Traits\Integers\IntegerAnneeEffectifsTrait;
-use WBW\Library\GouvApi\Entreprise\Traits\Integers\IntegerNombrePeriodesTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringActivitePrincipaleTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringAnneeEffectifsTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringCaractereEmployeurTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringCreatedAtTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateCreationTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateDebutTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateDernierTraitementTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringEtatAdministratifTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringNombrePeriodesTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringNomenclatureActivitePrincipaleTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringSirenTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringStatutDiffusionTrait;
@@ -39,8 +41,8 @@ class UniteLegale {
     use IntegerIdTrait {
         setId as public;
     }
-    use IntegerAnneeEffectifsTrait;
-    use IntegerNombrePeriodesTrait;
+    use StringAnneeEffectifsTrait;
+    use StringNombrePeriodesTrait;
     use StringActivitePrincipaleTrait;
     use StringCaractereEmployeurTrait;
     use StringCreatedAtTrait;
@@ -114,7 +116,7 @@ class UniteLegale {
     /**
      * Economie sociale solidaire.
      *
-     * @var bool|null
+     * @var string|null
      */
     protected $economieSocialeSolidaire;
 
@@ -212,7 +214,7 @@ class UniteLegale {
     /**
      * Unite purgée.
      *
-     * @var bool|null
+     * @var string|null
      */
     protected $unitePurgee;
 
@@ -298,9 +300,9 @@ class UniteLegale {
     /**
      * Get the économie sociale solidaire.
      *
-     * @return bool|null Returns the économie sociale solidaire.
+     * @return string|null Returns the économie sociale solidaire.
      */
-    public function getEconomieSocialeSolidaire(): ?bool {
+    public function getEconomieSocialeSolidaire(): ?string {
         return $this->economieSocialeSolidaire;
     }
 
@@ -424,9 +426,9 @@ class UniteLegale {
     /**
      * Get the unité purgée.
      *
-     * @return bool|null Returns the unité purgée.
+     * @return string|null Returns the unité purgée.
      */
-    public function getUnitePurgee(): ?bool {
+    public function getUnitePurgee(): ?string {
         return $this->unitePurgee;
     }
 
@@ -521,10 +523,10 @@ class UniteLegale {
     /**
      * Set the économie sociale solidaire.
      *
-     * @param bool|null $economieSocialeSolidaire The économie sociale solidaire.
+     * @param string|null $economieSocialeSolidaire The économie sociale solidaire.
      * @return UniteLegale Returns this unité légale.
      */
-    public function setEconomieSocialeSolidaire(?bool $economieSocialeSolidaire): UniteLegale {
+    public function setEconomieSocialeSolidaire(?string $economieSocialeSolidaire): UniteLegale {
         $this->economieSocialeSolidaire = $economieSocialeSolidaire;
         return $this;
     }
@@ -675,10 +677,10 @@ class UniteLegale {
     /**
      * Set the unité purgée.
      *
-     * @param bool|null $unitePurgee The unité purgée.
+     * @param string|null $unitePurgee The unité purgée.
      * @return UniteLegale Returns this unité légale.
      */
-    public function setUnitePurgee(?bool $unitePurgee): UniteLegale {
+    public function setUnitePurgee(?string $unitePurgee): UniteLegale {
         $this->unitePurgee = $unitePurgee;
         return $this;
     }

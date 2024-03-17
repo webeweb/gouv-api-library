@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 /*
  * This file is part of the gouv-api-library package.
  *
@@ -11,23 +13,21 @@
 
 namespace WBW\Library\GouvApi\Entreprise\Model;
 
-use WBW\Library\GouvApi\Entreprise\Traits\Integers\IntegerAnneeEffectifsTrait;
-use WBW\Library\GouvApi\Entreprise\Traits\Integers\IntegerNombrePeriodesTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringActivitePrincipaleTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringAnneeEffectifsTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringCaractereEmployeurTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringCreatedAtTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateCreationTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateDebutTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringDateDernierTraitementTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringEtatAdministratifTrait;
+use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringNombrePeriodesTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringNomenclatureActivitePrincipaleTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringSirenTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringSiretTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringStatutDiffusionTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringTrancheEffectifsTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringUpdatedAtTrait;
-use WBW\Library\Traits\Floats\FloatLatitudeTrait;
-use WBW\Library\Traits\Floats\FloatLongitudeTrait;
 use WBW\Library\Traits\Integers\IntegerIdTrait;
 
 /**
@@ -41,10 +41,8 @@ class Etablissement {
     use IntegerIdTrait {
         setId as public;
     }
-    use FloatLatitudeTrait;
-    use FloatLongitudeTrait;
-    use IntegerAnneeEffectifsTrait;
-    use IntegerNombrePeriodesTrait;
+    use StringAnneeEffectifsTrait;
+    use StringNombrePeriodesTrait;
     use StringActivitePrincipaleTrait;
     use StringCaractereEmployeurTrait;
     use StringCreatedAtTrait;
@@ -181,7 +179,7 @@ class Etablissement {
     /**
      * Etablissement siège.
      *
-     * @var bool|null
+     * @var string|null
      */
     protected $etablissementSiege;
 
@@ -223,7 +221,7 @@ class Etablissement {
     /**
      * Géo score.
      *
-     * @var float|null
+     * @var string|null
      */
     protected $geoScore;
 
@@ -247,6 +245,13 @@ class Etablissement {
      * @var string|null
      */
     protected $indiceRepetition2;
+
+    /**
+     * Latitude.
+     *
+     * @var string|null
+     */
+    protected $latitude;
 
     /**
      * Libellé cedex.
@@ -317,6 +322,13 @@ class Etablissement {
      * @var string|null
      */
     protected $libelleVoie2;
+
+    /**
+     * Longitude.
+     *
+     * @var string|null
+     */
+    protected $longitude;
 
     /**
      * NIC.
@@ -530,9 +542,9 @@ class Etablissement {
     /**
      * Get the établissement siège.
      *
-     * @return bool|null Returns the établissement siège.
+     * @return string|null Returns the établissement siège.
      */
-    public function getEtablissementSiege(): ?bool {
+    public function getEtablissementSiege(): ?string {
         return $this->etablissementSiege;
     }
 
@@ -584,9 +596,9 @@ class Etablissement {
     /**
      * Get thé géo score.
      *
-     * @return float|null Returns the géo score.
+     * @return string|null Returns the géo score.
      */
-    public function getGeoScore(): ?float {
+    public function getGeoScore(): ?string {
         return $this->geoScore;
     }
 
@@ -615,6 +627,15 @@ class Etablissement {
      */
     public function getIndiceRepetition2(): ?string {
         return $this->indiceRepetition2;
+    }
+
+    /**
+     * Get the latitude.
+     *
+     * @return string|null Returns the latitude.
+     */
+    public function getLatitude(): ?string {
+        return $this->latitude;
     }
 
     /**
@@ -705,6 +726,15 @@ class Etablissement {
      */
     public function getLibelleVoie2(): ?string {
         return $this->libelleVoie2;
+    }
+
+    /**
+     * Get the longitude.
+     *
+     * @return string|null Returns the longitude.
+     */
+    public function getLongitude(): ?string {
+        return $this->longitude;
     }
 
     /**
@@ -960,10 +990,10 @@ class Etablissement {
     /**
      * Set the établissement siège.
      *
-     * @param bool|null $etablissementSiege The établissement siège.
+     * @param string|null $etablissementSiege The établissement siège.
      * @return Etablissement Returns this établissement.
      */
-    public function setEtablissementSiege(?bool $etablissementSiege): Etablissement {
+    public function setEtablissementSiege(?string $etablissementSiege): Etablissement {
         $this->etablissementSiege = $etablissementSiege;
         return $this;
     }
@@ -1026,10 +1056,10 @@ class Etablissement {
     /**
      * Set the géo score.
      *
-     * @param float|null $geoScore The géo score.
+     * @param string|null $geoScore The géo score.
      * @return Etablissement Returns this établissement.
      */
-    public function setGeoScore(?float $geoScore): Etablissement {
+    public function setGeoScore(?string $geoScore): Etablissement {
         $this->geoScore = $geoScore;
         return $this;
     }
@@ -1064,6 +1094,17 @@ class Etablissement {
      */
     public function setIndiceRepetition2(?string $indiceRepetition2): Etablissement {
         $this->indiceRepetition2 = $indiceRepetition2;
+        return $this;
+    }
+
+    /**
+     * Set the latitude.
+     *
+     * @param string|null $latitude The latitude.
+     * @return Etablissement Returns this établissement.
+     */
+    public function setLatitude(?string $latitude): Etablissement {
+        $this->latitude = $latitude;
         return $this;
     }
 
@@ -1174,6 +1215,17 @@ class Etablissement {
      */
     public function setLibelleVoie2(?string $libelleVoie2): Etablissement {
         $this->libelleVoie2 = $libelleVoie2;
+        return $this;
+    }
+
+    /**
+     * Set the longitude.
+     *
+     * @param string|null $longitude The longitude.
+     * @return Etablissement Returns this établissement.
+     */
+    public function setLongitude(?string $longitude): Etablissement {
+        $this->longitude = $longitude;
         return $this;
     }
 

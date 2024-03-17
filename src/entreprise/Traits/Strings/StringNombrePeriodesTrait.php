@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 /*
  * This file is part of the gouv-api-library package.
  *
@@ -9,39 +11,39 @@
  * file that was distributed with this source code.
  */
 
-namespace WBW\Library\GouvApi\Entreprise\Traits\Integers;
+namespace WBW\Library\GouvApi\Entreprise\Traits\Strings;
 
 /**
- * Integer nombre periodes trait.
+ * String nombre périodes trait.
  *
  * @author webeweb <https://github.com/webeweb>
  * @package WBW\Library\GouvApi\Entreprise\Traits\Integers
  */
-trait IntegerNombrePeriodesTrait {
+trait StringNombrePeriodesTrait {
 
     /**
      * Nombre périodes.
      *
-     * @var int|null
+     * @var string|null
      */
     protected $nombrePeriodes;
 
     /**
      * Get the nombre périodes.
      *
-     * @return int|null Returns the nombre périodes.
+     * @return string|null Returns the nombre périodes.
      */
-    public function getNombrePeriodes(): ?int {
+    public function getNombrePeriodes(): ?string {
         return $this->nombrePeriodes;
     }
 
     /**
      * Set the nombres périodes.
      *
-     * @param int|null $nombrePeriodes The nombre périodes.
+     * @param string|null $nombrePeriodes The nombre périodes.
      * @return self Returns this instance.
      */
-    public function setNombrePeriodes(?int $nombrePeriodes): self {
+    public function setNombrePeriodes(?string $nombrePeriodes): self {
         $this->nombrePeriodes = $nombrePeriodes;
         return $this;
     }

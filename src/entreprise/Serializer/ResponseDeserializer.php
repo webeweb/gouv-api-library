@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types = 1);
+
 /*
  * This file is part of the gouv-api-library package.
  *
@@ -51,7 +53,7 @@ class ResponseDeserializer {
         $model->setAnneeEffectifs(ArrayHelper::get($data, "annee_effectifs"));
         $model->setActivitePrincipale(ArrayHelper::get($data, "activite_principale_registre_metiers"));
         $model->setDateDernierTraitement(ArrayHelper::get($data, "date_dernier_traitement"));
-        $model->setEtablissementSiege(BooleanHelper::parseString(ArrayHelper::get($data, "etablissement_siege")));
+        $model->setEtablissementSiege(ArrayHelper::get($data, "etablissement_siege"));
         $model->setNombrePeriodes(ArrayHelper::get($data, "nombre_periodes"));
         $model->setComplementAdresse(ArrayHelper::get($data, "complement_adresse"));
         $model->setNumeroVoie(ArrayHelper::get($data, "numero_voie"));
@@ -187,7 +189,7 @@ class ResponseDeserializer {
         $model->setId(ArrayHelper::get($data, "id"));
         $model->setSiren(ArrayHelper::get($data, "siren"));
         $model->setStatutDiffusion(ArrayHelper::get($data, "statut_diffusion"));
-        $model->setUnitePurgee(BooleanHelper::parseString(ArrayHelper::get($data, "unite_purgee")));
+        $model->setUnitePurgee(ArrayHelper::get($data, "unite_purgee"));
         $model->setDateCreation(ArrayHelper::get($data, "date_creation"));
         $model->setSigle(ArrayHelper::get($data, "sigle"));
         $model->setSexe(ArrayHelper::get($data, "sexe"));
