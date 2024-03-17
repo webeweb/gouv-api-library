@@ -3,6 +3,7 @@ CHANGELOG
 
 ### master
 
+- Add PHP 8.3 support
 - Improve code quality
 - Improve PHPDoc
 - Update dependencies
