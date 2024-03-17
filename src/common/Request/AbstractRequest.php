@@ -28,4 +28,11 @@ abstract class AbstractRequest extends BaseRequest {
     public function __construct() {
         // NOTHING TO DO
     }
+
+    /**
+     * Serialize this request.
+     *
+     * @return array<string,mixed> Returns this serialized request.
+     */
+    abstract public function serializeRequest(): array;
 }

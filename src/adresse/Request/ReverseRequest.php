@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Adresse\Request;
 
+use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\Traits\Floats\FloatLatTrait;
 use WBW\Library\Traits\Floats\FloatLonTrait;
@@ -46,6 +47,13 @@ class ReverseRequest extends AbstractRequest {
         $this->setLon($lon);
     }
 
+
+    /**
+     * {@inheritDoc}
+     */
+    public function serializeRequest(): array {
+        return RequestSerializer::serializeReverseRequest($this);
+    }
     /**
      * {@inheritDoc}
      */

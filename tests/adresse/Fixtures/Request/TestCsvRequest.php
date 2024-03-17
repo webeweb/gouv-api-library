@@ -27,4 +27,11 @@ class TestCsvRequest extends AbstractCsvRequest {
     public function getResourcePath(): string {
         return "";
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function serializeRequest(): array {
+        return [];
+    }
 }

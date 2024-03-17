@@ -11,6 +11,8 @@
 
 namespace WBW\Library\GouvApi\Adresse\Request;
 
+use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
+
 /**
  * Reverse CSV request.
  *
@@ -31,5 +33,12 @@ class ReverseCsvRequest extends AbstractCsvRequest {
      */
     public function getResourcePath(): string {
         return self::RESOURCE_PATH;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function serializeRequest(): array {
+        return RequestSerializer::serializeReverseCsvRequest($this);
     }
 }

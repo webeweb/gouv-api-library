@@ -11,6 +11,8 @@
 
 namespace WBW\Library\GouvApi\Adresse\Request;
 
+use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
+
 /**
  * Search CSV request.
  *
@@ -97,6 +99,13 @@ class SearchCsvRequest extends AbstractCsvRequest {
      */
     public function getResultColumns(): array {
         return $this->resultColumns;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function serializeRequest(): array {
+        return RequestSerializer::serializeSearchCsvRequest($this);
     }
 
     /**

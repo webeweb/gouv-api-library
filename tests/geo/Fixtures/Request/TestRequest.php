@@ -27,4 +27,11 @@ class TestRequest extends AbstractRequest {
     public function getResourcePath(): string {
         return "";
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function serializeRequest(): array {
+        return [];
+    }
 }
