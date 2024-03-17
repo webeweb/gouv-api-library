@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-### master
+### [2.0.0](https://github.com/webeweb/gouv-api-library/tree/v2.0.0) (2024-03-17)
 
 - Add PHP 8.3 support
 - Improve code quality
