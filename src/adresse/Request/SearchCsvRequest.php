@@ -12,6 +12,8 @@
 namespace WBW\Library\GouvApi\Adresse\Request;
 
 use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
+use WBW\Library\GouvApi\Adresse\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 
 /**
  * Search CSV request.
@@ -74,6 +76,13 @@ class SearchCsvRequest extends AbstractCsvRequest {
     public function addResultColumn(string $resultColumn): SearchCsvRequest {
         $this->resultColumns[] = $resultColumn;
         return $this;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeSearchCsvResponse($rawResponse);
     }
 
     /**
