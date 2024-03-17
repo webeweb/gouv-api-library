@@ -47,17 +47,17 @@ class ReverseRequest extends AbstractRequest {
         $this->setLon($lon);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    public function getResourcePath(): string {
+        return self::RESOURCE_PATH;
+    }
 
     /**
      * {@inheritDoc}
      */
     public function serializeRequest(): array {
         return RequestSerializer::serializeReverseRequest($this);
-    }
-    /**
-     * {@inheritDoc}
-     */
-    public function getResourcePath(): string {
-        return self::RESOURCE_PATH;
     }
 }

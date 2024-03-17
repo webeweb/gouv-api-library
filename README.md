@@ -26,7 +26,6 @@ If you like this package, pay me a beer (or a coffee)
 
 [![PHP](https://img.shields.io/packagist/php-v/webeweb/gouv-api-library.svg?style=for-the-badge&color=777BB4&logo=php)](http://php.net)
 
-
 ## Installation
 
 Open a command console, enter your project directory and execute the following
