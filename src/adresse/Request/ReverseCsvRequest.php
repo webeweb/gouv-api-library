@@ -12,6 +12,8 @@
 namespace WBW\Library\GouvApi\Adresse\Request;
 
 use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
+use WBW\Library\GouvApi\Adresse\Serializer\ResponseDeserializer;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 
 /**
  * Reverse CSV request.
@@ -27,6 +29,13 @@ class ReverseCsvRequest extends AbstractCsvRequest {
      * @var string
      */
     const RESOURCE_PATH = "/reverse/csv/";
+
+    /**
+     * {@inheritDoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return ResponseDeserializer::deserializeReverseCsvResponse($rawResponse);
+    }
 
     /**
      * {@inheritDoc}
