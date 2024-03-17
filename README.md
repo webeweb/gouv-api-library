@@ -12,7 +12,7 @@ Includes:
 
 - [API Adresse](https://adresse.data.gouv.fr/api-doc/adresse)
 - [API Géo](https://api.gouv.fr/documentation/api-geo)
-- [API Sirene](https://entreprise.data.gouv.fr/api_doc/sirene)
+- ~~[API Sirene](https://entreprise.data.gouv.fr/api_doc/sirene)~~
 - [Jours fériés](https://api.gouv.fr/documentation/jours-feries)
 
 Provides:
