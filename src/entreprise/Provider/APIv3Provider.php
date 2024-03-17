@@ -11,8 +11,8 @@
 
 namespace WBW\Library\GouvApi\Entreprise\Provider;
 
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\GouvApi\Entreprise\Request\AbstractRequest;
-use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
 use WBW\Library\Provider\Exception\ApiException;
 
 /**
