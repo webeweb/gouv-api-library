@@ -217,7 +217,7 @@ class ResponseDeserializer {
         $model->setActivitePrincipale(ArrayHelper::get($data, "activite_principale"));
         $model->setNomenclatureActivitePrincipale(ArrayHelper::get($data, "nomenclature_activite_principale"));
         $model->setNicSiege(ArrayHelper::get($data, "nic_siege"));
-        $model->setEconomieSocialeSolidaire(BooleanHelper::parseString(ArrayHelper::get($data, "economie_sociale_solidaire")));
+        $model->setEconomieSocialeSolidaire(ArrayHelper::get($data, "economie_sociale_solidaire"));
         $model->setCaractereEmployeur(ArrayHelper::get($data, "caractere_employeur"));
         $model->setCreatedAt(ArrayHelper::get($data, "created_at"));
         $model->setUpdatedAt(ArrayHelper::get($data, "updated_at"));
