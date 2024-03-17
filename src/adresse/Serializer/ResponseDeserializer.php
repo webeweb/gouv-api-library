@@ -11,10 +11,10 @@
 
 namespace WBW\Library\GouvApi\Adresse\Serializer;
 
-use WBW\Library\GeoJson\Model\FeatureCollection;
 use WBW\Library\GeoJson\Serializer\JsonDeserializer;
 use WBW\Library\GouvApi\Adresse\Model\Adresse;
 use WBW\Library\GouvApi\Adresse\Response\AbstractCsvResponse;
+use WBW\Library\GouvApi\Adresse\Response\FeatureCollectionResponse;
 use WBW\Library\GouvApi\Adresse\Response\ReverseCsvResponse;
 use WBW\Library\GouvApi\Adresse\Response\SearchCsvResponse;
 
@@ -92,6 +92,27 @@ class ResponseDeserializer {
     }
 
     /**
+     * Deserialize a feature collection response.
+     *
+     * @param string $rawResponse The raw response.
+     * @return FeatureCollectionResponse|null Returns the feature collection response.
+     */
+    protected static function deserializeFeatureCollectionResponse(string $rawResponse): ?FeatureCollectionResponse {
+
+        $response = json_decode($rawResponse, true);
+        if (null === $response) {
+            return null;
+        }
+
+        $featureCollection = JsonDeserializer::deserializeFeatureCollection($response);
+
+        $model = new FeatureCollectionResponse();
+        $model->setFeatureCollection($featureCollection);
+
+        return $model;
+    }
+
+    /**
      * Deserialize a reverse CSV response.
      *
      * @param string $rawResponse The raw response.
@@ -107,10 +128,10 @@ class ResponseDeserializer {
      * Deserialize a reverse response.
      *
      * @param string $rawResponse The raw response.
-     * @return FeatureCollection|null Returns the reverse response in case of success, null otherwise.
+     * @return FeatureCollectionResponse|null Returns the reverse response in case of success, null otherwise.
      */
-    public static function deserializeReverseResponse(string $rawResponse): ?FeatureCollection {
-        return static::deserializeSearchResponse($rawResponse);
+    public static function deserializeReverseResponse(string $rawResponse): ?FeatureCollectionResponse {
+        return static::deserializeFeatureCollectionResponse($rawResponse);
     }
 
     /**
@@ -129,16 +150,10 @@ class ResponseDeserializer {
      * Deserialize a search response.
      *
      * @param string $rawResponse The raw response.
-     * @return FeatureCollection|null Returns the search response in case of success, null otherwise.
+     * @return FeatureCollectionResponse|null Returns the search response in case of success, null otherwise.
      */
-    public static function deserializeSearchResponse(string $rawResponse): ?FeatureCollection {
-
-        $response = json_decode($rawResponse, true);
-        if (null === $response) {
-            return null;
-        }
-
-        return JsonDeserializer::deserializeFeatureCollection($response);
+    public static function deserializeSearchResponse(string $rawResponse): ?FeatureCollectionResponse {
+        return static::deserializeFeatureCollectionResponse($rawResponse);
     }
 
     /**
