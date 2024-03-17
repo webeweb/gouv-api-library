@@ -1,6 +1,8 @@
 API Sirene
 ==========
 
+> IMPORTANT NOTICE: This API is deprecated
+
 The API Sirene is available [here](https://entreprise.data.gouv.fr/api_doc/sirene)
 
 Etablissements
