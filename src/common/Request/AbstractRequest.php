@@ -11,6 +11,7 @@
 
 namespace WBW\Library\GouvApi\Common\Request;
 
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\Provider\Request\AbstractRequest as BaseRequest;
 
 /**
@@ -28,6 +29,14 @@ abstract class AbstractRequest extends BaseRequest {
     public function __construct() {
         // NOTHING TO DO
     }
+
+    /**
+     * Deserialize a response.
+     *
+     * @param string $rawResponse The raw response.
+     * @return AbstractResponse Returns the deserialized response.
+     */
+    abstract public function deserializeResponse(string $rawResponse): AbstractResponse;
 
     /**
      * Serialize this request.

@@ -12,6 +12,8 @@
 namespace WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request;
 
 use WBW\Library\GouvApi\Adresse\Request\AbstractCsvRequest;
+use WBW\Library\GouvApi\Common\Response\AbstractResponse;
+use WBW\Library\GouvApi\Common\Tests\Fixtures\Response\TestResponse;
 
 /**
  * Test CSV request.
@@ -20,6 +22,13 @@ use WBW\Library\GouvApi\Adresse\Request\AbstractCsvRequest;
  * @package WBW\Library\GouvApi\Adresse\Tests\Fixtures\Request
  */
 class TestCsvRequest extends AbstractCsvRequest {
+
+    /**
+     * {@inheritDoc}
+     */
+    public function deserializeResponse(string $rawResponse): AbstractResponse {
+        return new TestResponse();
+    }
 
     /**
      * {@inheritDoc}
