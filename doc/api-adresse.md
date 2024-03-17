@@ -19,10 +19,10 @@ $request = new SearchRequest("address");
 $response = $provider->search($request);
 
 // Handle the response.
-// ...
+$featureCollection = $response->getFeatureCollection();
 ```
 
-> IMPORTANT NOTICE: $response is a [FeatureCollection](https://github.com/webeweb/geo-json-library/blob/master/doc/index.md).
+> IMPORTANT NOTICE: $featureCollection is a [FeatureCollection](https://github.com/webeweb/geo-json-library/blob/master/doc/index.md).
 
 Reverse
 
@@ -40,10 +40,10 @@ $request = new ReverseRequest(49.897443, 2.290084);
 $response = $provider->reverse($request);
 
 // Handle the response.
-// ...
+$featureCollection = $response->getFeatureCollection();
 ```
 
-> IMPORTANT NOTICE: $response is a [FeatureCollection](https://github.com/webeweb/geo-json-library/blob/master/doc/index.md).
+> IMPORTANT NOTICE: $featureCollection is a [FeatureCollection](https://github.com/webeweb/geo-json-library/blob/master/doc/index.md).
 
 Search CSV
 
