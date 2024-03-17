@@ -11,15 +11,13 @@
 
 namespace WBW\Library\GouvApi\Adresse\Provider;
 
-use WBW\Library\GeoJson\Model\FeatureCollection;
 use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
 use WBW\Library\GouvApi\Adresse\Request\ReverseRequest;
 use WBW\Library\GouvApi\Adresse\Request\SearchCsvRequest;
 use WBW\Library\GouvApi\Adresse\Request\SearchRequest;
+use WBW\Library\GouvApi\Adresse\Response\FeatureCollectionResponse;
 use WBW\Library\GouvApi\Adresse\Response\ReverseCsvResponse;
 use WBW\Library\GouvApi\Adresse\Response\SearchCsvResponse;
-use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
-use WBW\Library\GouvApi\Adresse\Serializer\ResponseDeserializer;
 use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 use WBW\Library\Provider\Exception\ApiException;
 use WBW\Library\Types\Helper\ArrayHelper;
@@ -72,16 +70,16 @@ class ApiProvider extends AbstractProvider {
      * Reverse.
      *
      * @param ReverseRequest $request The reverse request.
-     * @return FeatureCollection|null Returns the reverse response in case of success, null otherwise.
+     * @return FeatureCollectionResponse|null Returns the reverse response in case of success, null otherwise.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function reverse(ReverseRequest $request): ?FeatureCollection {
+    public function reverse(ReverseRequest $request): ?FeatureCollectionResponse {
 
-        $queryData = RequestSerializer::serializeReverseRequest($request);
-
+        $queryData   = $request->serializeRequest();
         $rawResponse = $this->callApi($request, $queryData);
 
-        return ResponseDeserializer::deserializeReverseResponse($rawResponse);
+        /** @var FeatureCollectionResponse */
+        return $request->deserializeResponse($rawResponse);
     }
 
     /**
@@ -93,7 +91,7 @@ class ApiProvider extends AbstractProvider {
      */
     public function reverseCsv(ReverseCsvRequest $request): ReverseCsvResponse {
 
-        $queryData = RequestSerializer::serializeReverseCsvRequest($request);
+        $queryData = $request->serializeRequest();
 
         $filename = realpath($queryData["data"]);
         $postData = [
@@ -106,23 +104,24 @@ class ApiProvider extends AbstractProvider {
 
         $rawResponse = $this->callApi($request, [], $postData);
 
-        return ResponseDeserializer::deserializeReverseCsvResponse($rawResponse);
+        /** @var ReverseCsvResponse */
+        return $request->deserializeResponse($rawResponse);
     }
 
     /**
      * Search.
      *
      * @param SearchRequest $request The search request.
-     * @return FeatureCollection|null Returns the search response in case of success, null otherwise.
+     * @return FeatureCollectionResponse|null Returns the search response in case of success, null otherwise.
      * @throws ApiException Throws an API exception if an error occurs.
      */
-    public function search(SearchRequest $request): ?FeatureCollection {
+    public function search(SearchRequest $request): ?FeatureCollectionResponse {
 
-        $queryData = RequestSerializer::serializeSearchRequest($request);
-
+        $queryData   = $request->serializeRequest();
         $rawResponse = $this->callApi($request, $queryData);
 
-        return ResponseDeserializer::deserializeSearchResponse($rawResponse);
+        /** @var FeatureCollectionResponse */
+        return $request->deserializeResponse($rawResponse);
     }
 
     /**
@@ -134,7 +133,7 @@ class ApiProvider extends AbstractProvider {
      */
     public function searchCsv(SearchCsvRequest $request): SearchCsvResponse {
 
-        $queryData = RequestSerializer::serializeSearchCsvRequest($request);
+        $queryData = $request->serializeRequest();
 
         $filename = realpath($queryData["data"]);
         $postData = [
@@ -149,6 +148,7 @@ class ApiProvider extends AbstractProvider {
 
         $rawResponse = $this->callApi($request, [], $postData);
 
-        return ResponseDeserializer::deserializeSearchCsvResponse($rawResponse);
+        /** @var SearchCsvResponse */
+        return $request->deserializeResponse($rawResponse);
     }
 }

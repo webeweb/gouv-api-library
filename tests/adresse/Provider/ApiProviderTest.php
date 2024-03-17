@@ -12,12 +12,12 @@
 namespace WBW\Library\GouvApi\Adresse\Tests\Provider;
 
 use Throwable;
-use WBW\Library\GeoJson\Model\FeatureCollection;
 use WBW\Library\GouvApi\Adresse\Provider\ApiProvider;
 use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
 use WBW\Library\GouvApi\Adresse\Request\ReverseRequest;
 use WBW\Library\GouvApi\Adresse\Request\SearchCsvRequest;
 use WBW\Library\GouvApi\Adresse\Request\SearchRequest;
+use WBW\Library\GouvApi\Adresse\Response\FeatureCollectionResponse;
 use WBW\Library\GouvApi\Adresse\Response\ReverseCsvResponse;
 use WBW\Library\GouvApi\Adresse\Response\SearchCsvResponse;
 use WBW\Library\GouvApi\Adresse\Tests\AbstractTestCase;
@@ -44,14 +44,14 @@ class ApiProviderTest extends AbstractTestCase {
         $obj = new ApiProvider($this->logger);
 
         $res = $obj->reverse($arg);
-        $this->assertInstanceOf(FeatureCollection::class, $res);
+        $this->assertInstanceOf(FeatureCollectionResponse::class, $res);
 
-        $this->assertGreaterThanOrEqual(1, count($res->getFeatures()));
+        $this->assertGreaterThanOrEqual(1, count($res->getFeatureCollection()->getFeatures()));
 
-        $this->assertEquals("draft", $res->getForeignMember("version"));
-        $this->assertEquals("BAN", $res->getForeignMember("attribution"));
-        $this->assertNotNull($res->getForeignMember("licence"));
-        $this->assertEquals(1, $res->getForeignMember("limit"));
+        $this->assertEquals("draft", $res->getFeatureCollection()->getForeignMember("version"));
+        $this->assertEquals("BAN", $res->getFeatureCollection()->getForeignMember("attribution"));
+        $this->assertNotNull($res->getFeatureCollection()->getForeignMember("licence"));
+        $this->assertEquals(1, $res->getFeatureCollection()->getForeignMember("limit"));
     }
 
     /**
@@ -91,15 +91,15 @@ class ApiProviderTest extends AbstractTestCase {
         $obj = new ApiProvider($this->logger);
 
         $res = $obj->search($arg);
-        $this->assertInstanceOf(FeatureCollection::class, $res);
+        $this->assertInstanceOf(FeatureCollectionResponse::class, $res);
 
-        $this->assertCount(5, $res->getFeatures());
+        $this->assertCount(5, $res->getFeatureCollection()->getFeatures());
 
-        $this->assertEquals("draft", $res->getForeignMember("version"));
-        $this->assertEquals("BAN", $res->getForeignMember("attribution"));
-        $this->assertNotNull($res->getForeignMember("licence"));
-        $this->assertEquals($arg->getQ(), $res->getForeignMember("query"));
-        $this->assertEquals(5, $res->getForeignMember("limit"));
+        $this->assertEquals("draft", $res->getFeatureCollection()->getForeignMember("version"));
+        $this->assertEquals("BAN", $res->getFeatureCollection()->getForeignMember("attribution"));
+        $this->assertNotNull($res->getFeatureCollection()->getForeignMember("licence"));
+        $this->assertEquals($arg->getQ(), $res->getFeatureCollection()->getForeignMember("query"));
+        $this->assertEquals(5, $res->getFeatureCollection()->getForeignMember("limit"));
     }
 
     /**
