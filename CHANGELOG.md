@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+### [2.1.0](https://github.com/webeweb/gouv-api-library/tree/v2.1.0) (2024-03-18)
+
+- Improve constants visibility
+
 ### [2.0.0](https://github.com/webeweb/gouv-api-library/tree/v2.0.0) (2024-03-17)
 
 - Add PHP 8.3 support
