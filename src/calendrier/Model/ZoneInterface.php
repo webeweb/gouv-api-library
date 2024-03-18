@@ -26,89 +26,89 @@ interface ZoneInterface {
      *
      * @var string
      */
-    const ZONE_ALSACE_MOSELLE = "alsace-moselle";
+    public const ZONE_ALSACE_MOSELLE = "alsace-moselle";
 
     /**
      * Zone "Guadeloupe".
      *
      * @var string
      */
-    const ZONE_GUADELOUPE = "guadeloupe";
+    public const ZONE_GUADELOUPE = "guadeloupe";
 
     /**
      * Zone "Guyane".
      *
      * @var string
      */
-    const ZONE_GUYANE = "guyane";
+    public const ZONE_GUYANE = "guyane";
 
     /**
      * Zone "La Réunion".
      *
      * @var string
      */
-    const ZONE_LA_REUNION = "la-reunion";
+    public const ZONE_LA_REUNION = "la-reunion";
 
     /**
      * Zone "Martinique".
      *
      * @var string
      */
-    const ZONE_MARTINIQUE = "martinique";
+    public const ZONE_MARTINIQUE = "martinique";
 
     /**
      * Zone "Mayotte".
      *
      * @var string
      */
-    const ZONE_MAYOTTE = "mayotte";
+    public const ZONE_MAYOTTE = "mayotte";
 
     /**
      * Zone "Métropole".
      *
      * @var string
      */
-    const ZONE_METROPOLE = "metropole";
+    public const ZONE_METROPOLE = "metropole";
 
     /**
      * Zone "Nouvelle Calédonie".
      *
      * @var string
      */
-    const ZONE_NOUVELLE_CALEDONIE = "nouvelle-caledonie";
+    public const ZONE_NOUVELLE_CALEDONIE = "nouvelle-caledonie";
 
     /**
      * Zone "Polynésie Française".
      *
      * @var string
      */
-    const ZONE_POLYNESIE_FRANCAISE = "polynesie-francaise";
+    public const ZONE_POLYNESIE_FRANCAISE = "polynesie-francaise";
 
     /**
      * Zone "Saint Barthélémy".
      *
      * @var string
      */
-    const ZONE_SAINT_BARTHELEMY = "saint-barthelemy";
+    public const ZONE_SAINT_BARTHELEMY = "saint-barthelemy";
 
     /**
      * Zone "Saint Martin".
      *
      * @var string
      */
-    const ZONE_SAINT_MARTIN = "saint-martin";
+    public const ZONE_SAINT_MARTIN = "saint-martin";
 
     /**
      * Zone "Saint Pierre et Miquelon".
      *
      * @var string
      */
-    const ZONE_SAINT_PIERRE_MIQUELON = "saint-pierre-et-miquelon";
+    public const ZONE_SAINT_PIERRE_MIQUELON = "saint-pierre-et-miquelon";
 
     /**
      * Zone "Wallis et Futuna".
      *
      * @var string
      */
-    const ZONE_WALLIS_FUTUNA = "wallis-et-futuna";
+    public const ZONE_WALLIS_FUTUNA = "wallis-et-futuna";
 }

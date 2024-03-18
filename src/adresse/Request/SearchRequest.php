@@ -40,35 +40,35 @@ class SearchRequest extends AbstractRequest {
      *
      * @var string
      */
-    const RESOURCE_PATH = "/search/";
+    public const RESOURCE_PATH = "/search/";
 
     /**
      * Type "house number".
      *
      * @var string
      */
-    const TYPE_HOUSE_NUMBER = "housenumber";
+    public const TYPE_HOUSE_NUMBER = "housenumber";
 
     /**
      * Type "locality".
      *
      * @var string
      */
-    const TYPE_LOCALITY = "locality";
+    public const TYPE_LOCALITY = "locality";
 
     /**
      * Type "municipality".
      *
      * @var string
      */
-    const TYPE_MUNICIPALITY = "municipality";
+    public const TYPE_MUNICIPALITY = "municipality";
 
     /**
      * Type "street".
      *
      * @var string
      */
-    const TYPE_STREET = "street";
+    public const TYPE_STREET = "street";
 
     /**
      * Autocomplete.

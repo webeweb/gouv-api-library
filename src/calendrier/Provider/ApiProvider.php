@@ -31,7 +31,7 @@ class ApiProvider extends AbstractProvider {
      *
      * @var string
      */
-    const ENDPOINT_PATH = "https://calendrier.api.gouv.fr";
+    public const ENDPOINT_PATH = "https://calendrier.api.gouv.fr";
 
     /**
      * {@inheritDoc}

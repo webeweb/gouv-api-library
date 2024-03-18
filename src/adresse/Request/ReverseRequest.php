@@ -36,7 +36,7 @@ class ReverseRequest extends AbstractRequest {
      *
      * @var string
      */
-    const RESOURCE_PATH = "/reverse/";
+    public const RESOURCE_PATH = "/reverse/";
 
     /**
      * Constructor.

@@ -37,7 +37,7 @@ class ApiProvider extends AbstractProvider {
      *
      * @var string
      */
-    const ENDPOINT_PATH = "https://api-adresse.data.gouv.fr";
+    public const ENDPOINT_PATH = "https://api-adresse.data.gouv.fr";
 
     /**
      * Add an array.

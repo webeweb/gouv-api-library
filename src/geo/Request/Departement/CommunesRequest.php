@@ -36,7 +36,7 @@ class CommunesRequest extends AbstractRequest implements SubstituableRequestInte
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/departements/:code/communes";
+    public const RESOURCE_PATH = "/departements/:code/communes";
 
     /**
      * {@inheritDoc}

@@ -31,7 +31,7 @@ class DepartementsRequest extends AbstractRequest implements SubstituableRequest
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/regions/:code/departements";
+    public const RESOURCE_PATH = "/regions/:code/departements";
 
     /**
      * {@inheritDoc}

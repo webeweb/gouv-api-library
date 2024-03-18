@@ -32,7 +32,7 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/jours-feries/:zone:annee.json";
+    public const RESOURCE_PATH = "/jours-feries/:zone:annee.json";
 
     /**
      * Année.

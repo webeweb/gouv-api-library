@@ -29,7 +29,7 @@ abstract class AbstractProvider extends BaseProvider {
      *
      * @var string
      */
-    const ENDPOINT_PATH = "https://entreprise.data.gouv.fr";
+    public const ENDPOINT_PATH = "https://entreprise.data.gouv.fr";
 
     /**
      * {@inheritDoc}

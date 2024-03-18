@@ -34,7 +34,7 @@ class RegionsRequest extends AbstractRequest implements SubstituableRequestInter
      *
      * @avr string
      */
-    const RESOURCE_PATH = "/regions:code";
+    public const RESOURCE_PATH = "/regions:code";
 
     /**
      * {@inheritDoc}

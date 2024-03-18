@@ -30,7 +30,7 @@ class ReverseCsvRequest extends AbstractCsvRequest {
      *
      * @var string
      */
-    const RESOURCE_PATH = "/reverse/csv/";
+    public const RESOURCE_PATH = "/reverse/csv/";
 
     /**
      * {@inheritDoc}

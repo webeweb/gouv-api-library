@@ -30,7 +30,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
      *
      * @var string
      */
-    const RESOURCE_PATH = "/search/csv/";
+    public const RESOURCE_PATH = "/search/csv/";
 
     /**
      * Columns.
