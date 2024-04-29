@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+### [2.2.0](https://github.com/webeweb/gouv-api-library/tree/v2.2.0) (2024-04-29)
+
+- Update dependencies
+
 ### [2.1.0](https://github.com/webeweb/gouv-api-library/tree/v2.1.0) (2024-03-18)
 
 - Improve constants visibility
