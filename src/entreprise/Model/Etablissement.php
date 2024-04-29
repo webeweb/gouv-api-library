@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Entreprise\Model;
 
+use WBW\Library\Common\Traits\Integers\IntegerIdTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringActivitePrincipaleTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringAnneeEffectifsTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringCaractereEmployeurTrait;
@@ -28,7 +29,6 @@ use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringSiretTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringStatutDiffusionTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringTrancheEffectifsTrait;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringUpdatedAtTrait;
-use WBW\Library\Traits\Integers\IntegerIdTrait;
 
 /**
  * Etablissement.

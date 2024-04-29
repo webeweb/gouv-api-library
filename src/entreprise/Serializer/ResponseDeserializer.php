@@ -13,13 +13,13 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Entreprise\Serializer;
 
+use WBW\Library\Common\Helper\ArrayHelper;
 use WBW\Library\GouvApi\Entreprise\Model\Etablissement;
 use WBW\Library\GouvApi\Entreprise\Model\Meta;
 use WBW\Library\GouvApi\Entreprise\Model\UniteLegale;
 use WBW\Library\GouvApi\Entreprise\Response\AbstractResponse;
 use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
 use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
-use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * Response deserializer.

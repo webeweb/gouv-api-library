@@ -13,11 +13,11 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Geo\Tests\Request\Region;
 
+use WBW\Library\Common\Provider\SubstituableRequestInterface;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Geo\Request\Region\CommunesRequest;
 use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
-use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Communes request test.

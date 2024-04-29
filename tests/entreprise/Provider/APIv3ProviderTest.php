@@ -14,13 +14,13 @@ declare(strict_types = 1);
 namespace WBW\Library\GouvApi\Entreprise\Tests\Provider;
 
 use Throwable;
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\GouvApi\Entreprise\Provider\APIv3Provider;
 use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
 use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
 use WBW\Library\GouvApi\Entreprise\Response\EtablissementsResponse;
 use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
 use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
-use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API v3 provider test.
@@ -51,7 +51,7 @@ class APIv3ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(EtablissementsResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
             $this->assertEquals("Call API provider failed", $ex->getMessage());
         }
     }
@@ -75,7 +75,7 @@ class APIv3ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(EtablissementsResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
             $this->assertEquals("Call API provider failed", $ex->getMessage());
         }
     }
@@ -101,7 +101,7 @@ class APIv3ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
             $this->assertEquals("Call API provider failed", $ex->getMessage());
         }
     }
@@ -125,7 +125,7 @@ class APIv3ProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(UnitesLegalesResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
             $this->assertEquals("Call API provider failed", $ex->getMessage());
         }
     }

@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Calendrier\Model;
 
+use WBW\Library\Common\Traits\DateTimes\DateTimeDateTrait;
 use WBW\Library\GouvApi\Common\Traits\Strings\StringNomTrait;
-use WBW\Library\Traits\DateTimes\DateTimeDateTrait;
 
 /**
  * Jour férié.

@@ -13,6 +13,8 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Adresse\Provider;
 
+use WBW\Library\Common\Helper\ArrayHelper;
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
 use WBW\Library\GouvApi\Adresse\Request\ReverseRequest;
 use WBW\Library\GouvApi\Adresse\Request\SearchCsvRequest;
@@ -21,8 +23,6 @@ use WBW\Library\GouvApi\Adresse\Response\FeatureCollectionResponse;
 use WBW\Library\GouvApi\Adresse\Response\ReverseCsvResponse;
 use WBW\Library\GouvApi\Adresse\Response\SearchCsvResponse;
 use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
-use WBW\Library\Provider\Exception\ApiException;
-use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * API provider.
@@ -73,7 +73,7 @@ class ApiProvider extends AbstractProvider {
      *
      * @param ReverseRequest $request The reverse request.
      * @return FeatureCollectionResponse|null Returns the reverse response in case of success, null otherwise.
-     * @throws ApiException Throws an API exception if an error occurs.
+     * @throws ProviderException Throws a provider exception if an error occurs.
      */
     public function reverse(ReverseRequest $request): ?FeatureCollectionResponse {
 
@@ -89,7 +89,7 @@ class ApiProvider extends AbstractProvider {
      *
      * @param ReverseCsvRequest $request The reverse CSV request.
      * @return ReverseCsvResponse Returns the reverse CSV response.
-     * @throws ApiException Throws an API exception if an error occurs.
+     * @throws ProviderException Throws a provider exception if an error occurs.
      */
     public function reverseCsv(ReverseCsvRequest $request): ReverseCsvResponse {
 
@@ -115,7 +115,7 @@ class ApiProvider extends AbstractProvider {
      *
      * @param SearchRequest $request The search request.
      * @return FeatureCollectionResponse|null Returns the search response in case of success, null otherwise.
-     * @throws ApiException Throws an API exception if an error occurs.
+     * @throws ProviderException Throws a provider exception if an error occurs.
      */
     public function search(SearchRequest $request): ?FeatureCollectionResponse {
 
@@ -131,7 +131,7 @@ class ApiProvider extends AbstractProvider {
      *
      * @param SearchCsvRequest $request The search CSV request.
      * @return SearchCsvResponse Returns the search CSV response.
-     * @throws ApiException Throws an API exception if an error occurs.
+     * @throws ProviderException Throws a provider exception if an error occurs.
      */
     public function searchCsv(SearchCsvRequest $request): SearchCsvResponse {
 

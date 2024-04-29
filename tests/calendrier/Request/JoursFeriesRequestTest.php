@@ -13,12 +13,12 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Calendrier\Tests\Request;
 
+use WBW\Library\Common\Provider\SubstituableRequestInterface;
 use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
 use WBW\Library\GouvApi\Calendrier\Tests\AbstractTestCase;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
-use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Jours fériés request test.

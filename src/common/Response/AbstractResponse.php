@@ -13,7 +13,7 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Common\Response;
 
-use WBW\Library\Provider\Response\AbstractResponse as BaseResponse;
+use WBW\Library\Common\Provider\AbstractResponse as BaseResponse;
 
 /**
  * Abstract response.

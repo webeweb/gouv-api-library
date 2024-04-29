@@ -24,8 +24,8 @@
         "ext-json": "*",
         "guzzlehttp/guzzle": "^6.0|^7.0",
         "psr/log": "^1.0|^2.0|^3.0",
-        "webeweb/core-library": "^8.23",
-        "webeweb/geo-json-library": "^1.3"
+        "webeweb/core-library": "^9.0",
+        "webeweb/geo-json-library": "^1.9"
     },
     "require-dev": {
         "phpstan/extension-installer": "^1.1",

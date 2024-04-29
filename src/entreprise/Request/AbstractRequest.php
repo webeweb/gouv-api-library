@@ -13,9 +13,9 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Entreprise\Request;
 
+use WBW\Library\Common\Traits\Integers\IntegerPageTrait;
+use WBW\Library\Common\Traits\Integers\IntegerPerPageTrait;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest as BaseRequest;
-use WBW\Library\Traits\Integers\IntegerPageTrait;
-use WBW\Library\Traits\Integers\IntegerPerPageTrait;
 
 /**
  * Abstract request.

@@ -13,11 +13,11 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Entreprise\Tests\Request;
 
+use WBW\Library\Common\Provider\SubstituableRequestInterface;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
 use WBW\Library\GouvApi\Entreprise\Response\UnitesLegalesResponse;
 use WBW\Library\GouvApi\Entreprise\Tests\AbstractTestCase;
-use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Unités légales request test.

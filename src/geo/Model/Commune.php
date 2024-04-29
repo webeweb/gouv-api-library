@@ -13,13 +13,13 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Geo\Model;
 
+use WBW\Library\Common\Traits\Floats\FloatScoreTrait;
+use WBW\Library\Common\Traits\Strings\StringCodeTrait;
 use WBW\Library\GeoJson\Model\Geometry\Point;
 use WBW\Library\GeoJson\Model\Geometry\Polygon;
 use WBW\Library\GouvApi\Common\Traits\Strings\StringNomTrait;
 use WBW\Library\GouvApi\Geo\Traits\Strings\StringCodeDepartementTrait;
 use WBW\Library\GouvApi\Geo\Traits\Strings\StringCodeRegionTrait;
-use WBW\Library\Traits\Floats\FloatScoreTrait;
-use WBW\Library\Traits\Strings\StringCodeTrait;
 
 /**
  * Commune.

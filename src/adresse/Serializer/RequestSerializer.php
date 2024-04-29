@@ -13,12 +13,12 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Adresse\Serializer;
 
+use WBW\Library\Common\Helper\ArrayHelper;
+use WBW\Library\Common\Helper\IntegerHelper;
 use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
 use WBW\Library\GouvApi\Adresse\Request\ReverseRequest;
 use WBW\Library\GouvApi\Adresse\Request\SearchCsvRequest;
 use WBW\Library\GouvApi\Adresse\Request\SearchRequest;
-use WBW\Library\Types\Helper\ArrayHelper;
-use WBW\Library\Types\Helper\IntegerHelper;
 
 /**
  * Request serializer.

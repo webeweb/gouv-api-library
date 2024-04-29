@@ -13,11 +13,11 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Entreprise\Request;
 
+use WBW\Library\Common\Provider\SubstituableRequestInterface;
 use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\GouvApi\Entreprise\Serializer\RequestSerializer;
 use WBW\Library\GouvApi\Entreprise\Serializer\ResponseDeserializer;
 use WBW\Library\GouvApi\Entreprise\Traits\Strings\StringSirenTrait;
-use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Unités légales request.

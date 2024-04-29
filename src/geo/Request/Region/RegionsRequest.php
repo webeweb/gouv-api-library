@@ -13,11 +13,11 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Geo\Request\Region;
 
+use WBW\Library\Common\Provider\SubstituableRequestInterface;
 use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\GouvApi\Common\Traits\Strings\StringNomTrait;
 use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
 use WBW\Library\GouvApi\Geo\Serializer\ResponseDeserializer;
-use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Régions request.

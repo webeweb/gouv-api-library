@@ -13,10 +13,10 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Geo\Provider;
 
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
 use WBW\Library\GouvApi\Common\Response\AbstractResponse;
 use WBW\Library\GouvApi\Geo\Request\AbstractRequest;
-use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API provider.
@@ -45,7 +45,7 @@ class ApiProvider extends AbstractProvider {
      *
      * @param AbstractRequest $request The request.
      * @return AbstractResponse Returns the communes response.
-     * @throws ApiException Throws an API exception if an error occurs.
+     * @throws ProviderException Throws a provider exception if an error occurs.
      */
     public function sendRequest(AbstractRequest $request): AbstractResponse {
 

@@ -14,6 +14,7 @@ declare(strict_types = 1);
 namespace WBW\Library\GouvApi\Geo\Tests\Provider;
 
 use Throwable;
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\GouvApi\Geo\Provider\ApiProvider;
 use WBW\Library\GouvApi\Geo\Request\Region\CommunesRequest;
 use WBW\Library\GouvApi\Geo\Request\Region\DepartementsRequest;
@@ -22,7 +23,6 @@ use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
 use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
 use WBW\Library\GouvApi\Geo\Response\RegionsResponse;
 use WBW\Library\GouvApi\Geo\Tests\AbstractTestCase;
-use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * Région API provider test.
@@ -52,7 +52,7 @@ class RegionApiProviderTest extends AbstractTestCase {
             $this->assertInstanceOf(CommunesResponse::class, $res);
         } catch (Throwable $ex) {
 
-            $this->assertInstanceOf(ApiException::class, $ex);
+            $this->assertInstanceOf(ProviderException::class, $ex);
             $this->assertEquals(500, $ex->getCode());
             $this->assertEquals("Call API provider failed", $ex->getMessage());
         }

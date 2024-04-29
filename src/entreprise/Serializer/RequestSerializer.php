@@ -13,10 +13,10 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Entreprise\Serializer;
 
+use WBW\Library\Common\Helper\ArrayHelper;
 use WBW\Library\GouvApi\Entreprise\Request\AbstractRequest;
 use WBW\Library\GouvApi\Entreprise\Request\EtablissementsRequest;
 use WBW\Library\GouvApi\Entreprise\Request\UnitesLegalesRequest;
-use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * Request serializer.

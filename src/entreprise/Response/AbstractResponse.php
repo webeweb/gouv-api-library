@@ -13,9 +13,9 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Entreprise\Response;
 
+use WBW\Library\Common\Traits\Strings\StringMessageTrait;
 use WBW\Library\GouvApi\Common\Response\AbstractResponse as BaseResponse;
 use WBW\Library\GouvApi\Entreprise\Model\Meta;
-use WBW\Library\Traits\Strings\StringMessageTrait;
 
 /**
  * Abstract response.

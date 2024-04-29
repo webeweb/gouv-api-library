@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Adresse\Request;
 
+use WBW\Library\Common\Traits\Strings\StringDataTrait;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
-use WBW\Library\Traits\Strings\StringDataTrait;
 
 /**
  * Abstract CSV request.

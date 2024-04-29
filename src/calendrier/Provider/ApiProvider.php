@@ -13,10 +13,10 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Calendrier\Provider;
 
+use WBW\Library\Common\Provider\ProviderException;
 use WBW\Library\GouvApi\Calendrier\Request\JoursFeriesRequest;
 use WBW\Library\GouvApi\Calendrier\Response\JoursFeriesResponse;
 use WBW\Library\GouvApi\Common\Provider\AbstractProvider;
-use WBW\Library\Provider\Exception\ApiException;
 
 /**
  * API Provider.
@@ -45,7 +45,7 @@ class ApiProvider extends AbstractProvider {
      *
      * @param JoursFeriesRequest $request The request.
      * @return JoursFeriesResponse Returns the response.
-     * @throws ApiException Throws an API exception if an error occurs.
+     * @throws ProviderException Throws a provider exception if an error occurs.
      */
     public function sendRequest(JoursFeriesRequest $request): JoursFeriesResponse {
 

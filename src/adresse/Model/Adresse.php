@@ -13,10 +13,10 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Adresse\Model;
 
-use WBW\Library\Traits\Strings\StringIdTrait;
-use WBW\Library\Traits\Strings\StringLabelTrait;
-use WBW\Library\Traits\Strings\StringNameTrait;
-use WBW\Library\Traits\Strings\StringTypeTrait;
+use WBW\Library\Common\Traits\Strings\StringIdTrait;
+use WBW\Library\Common\Traits\Strings\StringLabelTrait;
+use WBW\Library\Common\Traits\Strings\StringNameTrait;
+use WBW\Library\Common\Traits\Strings\StringTypeTrait;
 
 /**
  * Adresse.

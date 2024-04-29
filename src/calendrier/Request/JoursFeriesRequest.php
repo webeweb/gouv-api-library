@@ -13,11 +13,11 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Calendrier\Request;
 
+use WBW\Library\Common\Provider\SubstituableRequestInterface;
 use WBW\Library\GouvApi\Calendrier\Model\ZoneInterface;
 use WBW\Library\GouvApi\Calendrier\Serializer\ResponseDeserializer;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Common\Response\AbstractResponse;
-use WBW\Library\Provider\Api\SubstituableRequestInterface;
 
 /**
  * Jours fériés request.

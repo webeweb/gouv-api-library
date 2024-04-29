@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Common\Request;
 
+use WBW\Library\Common\Provider\AbstractRequest as BaseRequest;
 use WBW\Library\GouvApi\Common\Response\AbstractResponse;
-use WBW\Library\Provider\Request\AbstractRequest as BaseRequest;
 
 /**
  * Abstract request.

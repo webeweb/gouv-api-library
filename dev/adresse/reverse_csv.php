@@ -11,9 +11,9 @@
 
 require_once __DIR__ . "/../../vendor/autoload.php";
 
+use WBW\Library\Common\Helper\ArrayHelper;
 use WBW\Library\GouvApi\Adresse\Provider\ApiProvider;
 use WBW\Library\GouvApi\Adresse\Request\ReverseCsvRequest;
-use WBW\Library\Types\Helper\ArrayHelper;
 
 $data = realpath(__DIR__ . "/../../tests/adresse/Fixtures/Request/ReverseCsvRequest.csv");
 

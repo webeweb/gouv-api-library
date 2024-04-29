@@ -13,14 +13,14 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Adresse\Request;
 
+use WBW\Library\Common\Traits\Floats\FloatLatTrait;
+use WBW\Library\Common\Traits\Floats\FloatLonTrait;
+use WBW\Library\Common\Traits\Strings\StringQTrait;
+use WBW\Library\Common\Traits\Strings\StringTypeTrait;
 use WBW\Library\GouvApi\Adresse\Serializer\RequestSerializer;
 use WBW\Library\GouvApi\Adresse\Serializer\ResponseDeserializer;
 use WBW\Library\GouvApi\Common\Request\AbstractRequest;
 use WBW\Library\GouvApi\Common\Response\AbstractResponse;
-use WBW\Library\Traits\Floats\FloatLatTrait;
-use WBW\Library\Traits\Floats\FloatLonTrait;
-use WBW\Library\Traits\Strings\StringQTrait;
-use WBW\Library\Traits\Strings\StringTypeTrait;
 
 /**
  * Search request.

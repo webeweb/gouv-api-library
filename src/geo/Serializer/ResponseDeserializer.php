@@ -13,6 +13,7 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Geo\Serializer;
 
+use WBW\Library\Common\Helper\ArrayHelper;
 use WBW\Library\GeoJson\Model\Geometry\Point;
 use WBW\Library\GeoJson\Model\Geometry\Polygon;
 use WBW\Library\GeoJson\Serializer\JsonDeserializer;
@@ -22,7 +23,6 @@ use WBW\Library\GouvApi\Geo\Model\Region;
 use WBW\Library\GouvApi\Geo\Response\CommunesResponse;
 use WBW\Library\GouvApi\Geo\Response\DepartementsResponse;
 use WBW\Library\GouvApi\Geo\Response\RegionsResponse;
-use WBW\Library\Types\Helper\ArrayHelper;
 
 /**
  * Response deserializer.

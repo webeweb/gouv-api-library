@@ -13,8 +13,8 @@ declare(strict_types = 1);
 
 namespace WBW\Library\GouvApi\Entreprise\Model;
 
-use WBW\Library\Traits\Integers\IntegerPageTrait;
-use WBW\Library\Traits\Integers\IntegerPerPageTrait;
+use WBW\Library\Common\Traits\Integers\IntegerPageTrait;
+use WBW\Library\Common\Traits\Integers\IntegerPerPageTrait;
 
 /**
  * Meta.
