@@ -7,11 +7,6 @@
     <filter>
         <whitelist>
             <directory>./src</directory>
-            <exclude>
-                <directory>dev</directory>
-                <directory>tests</directory>
-                <directory>vendor</directory>
-            </exclude>
         </whitelist>
     </filter>
     <testsuites>
