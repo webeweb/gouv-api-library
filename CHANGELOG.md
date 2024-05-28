@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+### [2.2.1](https://github.com/webeweb/gouv-api-library/tree/v2.2.1) (2024-05-28)
+
+- Improve code quality
+
 ### [2.2.0](https://github.com/webeweb/gouv-api-library/tree/v2.2.0) (2024-04-29)
 
 - Update dependencies
