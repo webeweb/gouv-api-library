@@ -44,7 +44,7 @@ class ReverseRequest extends AbstractRequest {
      * @param float|null $lat The latitude.
      * @param float|null $lon The longitude.
      */
-    public function __construct(float $lat = null, float $lon = null) {
+    public function __construct(?float $lat = null, ?float $lon = null) {
         parent::__construct();
 
         $this->setLat($lat);

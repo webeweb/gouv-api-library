@@ -51,7 +51,7 @@ class JoursFeriesRequest extends AbstractRequest implements SubstituableRequestI
     /**
      * Constructor.
      */
-    public function __construct(string $zone = null) {
+    public function __construct(?string $zone = null) {
         parent::__construct();
 
         $this->setZone($zone);

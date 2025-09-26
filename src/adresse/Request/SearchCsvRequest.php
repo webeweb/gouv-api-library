@@ -51,7 +51,7 @@ class SearchCsvRequest extends AbstractCsvRequest {
      *
      * @param string|null $data The data.
      */
-    public function __construct(string $data = null) {
+    public function __construct(?string $data = null) {
         parent::__construct($data);
 
         $this->setColumns([]);
