@@ -50,10 +50,10 @@ class ApiProviderTest extends AbstractTestCase {
 
         $this->assertGreaterThanOrEqual(1, count($res->getFeatureCollection()->getFeatures()));
 
-        $this->assertEquals("draft", $res->getFeatureCollection()->getForeignMember("version"));
-        $this->assertEquals("BAN", $res->getFeatureCollection()->getForeignMember("attribution"));
-        $this->assertNotNull($res->getFeatureCollection()->getForeignMember("licence"));
-        $this->assertEquals(1, $res->getFeatureCollection()->getForeignMember("limit"));
+        $this->assertNull($res->getFeatureCollection()->getForeignMember("version"));
+        $this->assertNull($res->getFeatureCollection()->getForeignMember("attribution"));
+        $this->assertNull($res->getFeatureCollection()->getForeignMember("licence"));
+        $this->assertNull($res->getFeatureCollection()->getForeignMember("limit"));
     }
 
     /**
@@ -95,13 +95,13 @@ class ApiProviderTest extends AbstractTestCase {
         $res = $obj->search($arg);
         $this->assertInstanceOf(FeatureCollectionResponse::class, $res);
 
-        $this->assertCount(5, $res->getFeatureCollection()->getFeatures());
+        $this->assertCount(10, $res->getFeatureCollection()->getFeatures());
 
-        $this->assertEquals("draft", $res->getFeatureCollection()->getForeignMember("version"));
-        $this->assertEquals("BAN", $res->getFeatureCollection()->getForeignMember("attribution"));
-        $this->assertNotNull($res->getFeatureCollection()->getForeignMember("licence"));
+        $this->assertNull($res->getFeatureCollection()->getForeignMember("version"));
+        $this->assertNull($res->getFeatureCollection()->getForeignMember("attribution"));
+        $this->assertNull($res->getFeatureCollection()->getForeignMember("licence"));
         $this->assertEquals($arg->getQ(), $res->getFeatureCollection()->getForeignMember("query"));
-        $this->assertEquals(5, $res->getFeatureCollection()->getForeignMember("limit"));
+        $this->assertNull($res->getFeatureCollection()->getForeignMember("limit"));
     }
 
     /**
