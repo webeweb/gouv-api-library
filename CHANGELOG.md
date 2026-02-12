@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+### [2.3.1](https://github.com/webeweb/gouv-api-library/tree/v2.3.1) (2026-02-12)
+
+- Merge PR#4
+
 ### [2.3.0](https://github.com/webeweb/gouv-api-library/tree/v2.3.0) (2025-09-26)
 
 - Add PHP 8.4 support
