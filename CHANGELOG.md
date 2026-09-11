@@ -1,6 +1,11 @@
 CHANGELOG
 =========
 
+### [2.4.0](https://github.com/webeweb/gouv-api-library/tree/v2.4.0) (2026-09-11)
+
+- Update dependencies
+- Update Github actions configuration
+
 ### [2.3.1](https://github.com/webeweb/gouv-api-library/tree/v2.3.1) (2026-02-12)
 
 - Merge PR#4
